@@ -422,7 +422,7 @@ Trước khi hoàn thiện bản dịch cho cảnh học đường, kiểm tra:
 "Điêu vãi! Không tin nổi!"
 ```
 
-**Tham khảo:** Xem `15_VIETNAMESE_EXPRESSION_MAPPING.md` để có danh sách đầy đủ các biến thể cảm thán theo archetype.
+**Tham khảo:** Xem `Ref_VIETNAMESE_EXPRESSION_MAPPING.md` để có danh sách đầy đủ các biến thể cảm thán theo archetype.
 
 ---
 

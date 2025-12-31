@@ -111,7 +111,7 @@ This module should be loaded when:
 
 ## 6. INTEGRATION WITH MAIN PRIMER
 
-This module **OVERRIDES** conflicting tone rules in `00_LOCALIZATION_PRIMER_VN.md`:
+This module **OVERRIDES** conflicting tone rules in `Library_LOCALIZATION_PRIMER_VN.md`:
 - Standard Primer: "Immersive, sensory-rich translation"
 - Safety Module: "Clinical, distanced, testimony-focused translation"
 

@@ -1,5 +1,5 @@
 ---
-**07_LONG_VOWEL_ROMANIZATION.md — HƯỚNG DẪN PHIÊN ÂM NGUYÊN ÂM DÀI TIẾNG NHẬT**
+**Ref_LONG_VOWEL_ROMANIZATION.md — HƯỚNG DẪN PHIÊN ÂM NGUYÊN ÂM DÀI TIẾNG NHẬT**
 **Trạng thái Module:** HOẠT ĐỘNG & UỶ QUYỀN
 **Mục đích:** Phiên âm chính xác nguyên âm dài tiếng Nhật trong tên và thuật ngữ
 ---

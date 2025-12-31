@@ -1,10 +1,10 @@
 ---
-**03_SENSORY_LEXICON.md — LỚP GIỌNG ĐIỆU BẢN NGỮ VIỆT NAM**
+**Ref_SENSORY_LEXICON.md — LỚP GIỌNG ĐIỆU BẢN NGỮ VIỆT NAM**
 **Trạng thái Module:** HOẠT ĐỘNG & CÓ THẨM QUYỀN
 **Mục đích:** Động từ sinh động, từ tượng thanh, từ láy, chèn tiếng lóng cho hương vị Việt Nam chân thực
 ---
 
-# 03_SENSORY_LEXICON.md
+# Ref_SENSORY_LEXICON.md
 
 ## TỔNG QUAN
 
@@ -279,4 +279,4 @@ Không, không phải."
 
 **TRẠNG THÁI:** THAM CHIẾU CÓ THẨM QUYỀN CHO TỪ VỰNG CẢM GIÁC
 **SỬ DỤNG:** Trỏ Master Prompt Mục 1.6 đến module này cho tất cả ví dụ
-**TÍCH HỢP:** Hoạt động với 00_LOCALIZATION_PRIMER (SFX), 02_BOLDNESS_MODULE (kỹ thuật), 01_PRONOUN_SYSTEM (phối hợp PAIR_ID)
+**TÍCH HỢP:** Hoạt động với 00_LOCALIZATION_PRIMER (SFX), Ref_BOLDNESS_MODULE_v1.0 (kỹ thuật), 01_PRONOUN_SYSTEM (phối hợp PAIR_ID)
