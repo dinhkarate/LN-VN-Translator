@@ -106,7 +106,7 @@ Trước khi xuất bản đoạn hội thoại, hãy tự kiểm tra:
 
 ## PHẦN 5: ÁNH XẠ THEO ARCHETYPE
 
-### Tsundere (傲嬌)
+### 5.1 Tsundere (傲嬌)
 **Đặc điểm:** Phủ nhận cảm xúc thật, dùng từ ngữ cáu gắt nhưng hành động lại quan tâm.
 
 | Tình huống | ❌ Dịch cứng | ✅ Tsundere-style |
@@ -115,7 +115,7 @@ Trước khi xuất bản đoạn hội thoại, hãy tự kiểm tra:
 | Thực ra quan tâm | "Tôi lo lắng cho bạn." | "Không phải tôi lo cho cậu đâu nhé!" |
 | Nhận quà | "Cảm ơn." | "Ừ... cũng được." / "Thôi được rồi, nhận vậy." |
 
-### Kuudere (クーデレ)
+### 5.2 Kuudere (クーデレ)
 **Đặc điểm:** Lạnh lùng, ít cảm xúc, nói ngắn gọn.
 
 | Tình huống | ❌ Dịch cứng | ✅ Kuudere-style |
@@ -124,7 +124,7 @@ Trước khi xuất bản đoạn hội thoại, hãy tự kiểm tra:
 | Từ chối | "Tôi từ chối." | "Không." / "Thôi." |
 | Ngạc nhiên | "Tôi ngạc nhiên." | "À." / "Ồ." |
 
-### Gyaru (ギャル)
+### 5.3 Gyaru (ギャル)
 **Đặc điểm:** Năng động, Gen Z, nhiều slang.
 
 | Tình huống | ❌ Dịch cứng | ✅ Gyaru-style |
@@ -132,6 +132,72 @@ Trước khi xuất bản đoạn hội thoại, hãy tự kiểm tra:
 | Ngạc nhiên | "Thật sao?" | "Ảo thế?" / "Điêu!" / "Vãi!" |
 | Đồng ý | "Đúng vậy." | "Chuẩn luôn!" / "Uy tín!" |
 | Phủ nhận | "Không phải vậy." | "Đâu có!" / "Hông đúng nha!" |
+
+### 5.4 Ojou-sama (Tiểu Thư Quyền Quý)
+**Đặc điểm:** Tinh tế, hơi cổ trang, dùng từ ngữ bề trên nhưng lịch sự, thường dùng "Ara ara".
+
+| Tình huống | Nguồn Nhật | ❌ Dịch Cứng / Bình dân | ✅ Ojou-style (Sang trọng) |
+| --- | --- | --- | --- |
+| **Ngạc nhiên** | あら (Ara) | "Hả?" / "Cái gì?" | "Ô kìa..." / "Chẳng hay..." / "Ái chà..." |
+| **Đồng ý** | そうね (Sou ne) | "Đúng vậy." / "Chuẩn." | "Quả đúng là vậy." / "Chí phải." |
+| **Từ chối** | 結構です (Kekkou desu) | "Không cần đâu." | "Ta xin kiếu." / "Thứ đó không cần thiết." |
+| **Khen ngợi** | 素敵 (Suteki) | "Đẹp vãi." / "Tuyệt." | "Thật tuyệt mỹ." / "Quả là tao nhã." |
+| **Cảm ơn** | 感謝します (Kansha) | "Cảm ơn nha." | "Ta rất cảm kích." / "Đa tạ lòng tốt của người." |
+
+### 5.5 Delinquent / Yankii (Lưu Manh / Côn Đồ)
+**Đặc điểm:** Thô lỗ, cục súc, dùng từ ngữ mạnh, xưng hô Tao-Mày, hay chửi thề nhẹ.
+
+| Tình huống | Nguồn Nhật | ❌ Dịch Cứng / Lịch sự | ✅ Yankii-style (Cục súc) |
+| --- | --- | --- | --- |
+| **Khó chịu** | ああ？ (Aa?) | "Hả?" / "Gì cơ?" | "Hả? Mày ý kiến gì?" / "Muốn chết à?" |
+| **Ồn ào** | うるさい (Urusai) | "Ồn quá." / "Im lặng đi." | "Câm mồm!" / "Lắm mồm vãi!" |
+| **Xin lỗi** | 悪い (Warui) | "Xin lỗi nhé." | "Lỗi tao." / "Ờ thì... sorry." |
+| **Ngạc nhiên** | マジか (Majika) | "Thật không?" | "Điêu vãi!" / "Ảo thế?" / "Đùa bố mày à?" |
+| **Hiểu rồi** | 分かった (Wakatta) | "Tôi hiểu rồi." | "Biết rồi, khổ lắm!" / "Duyệt." |
+
+### 5.6 Onee-san (Chị Gái Trưởng Thành/Quyến Rũ)
+**Đặc điểm:** Trêu chọc (teasing), nuông chiều, dùng nhiều trợ từ mềm (nè, nhé, cơ mà).
+
+| Tình huống | Nguồn Nhật | ❌ Dịch Cứng / Khô khan | ✅ Onee-san-style (Quyến rũ) |
+| --- | --- | --- | --- |
+| **Ngạc nhiên** | あらあら (Ara ara) | "Trời ơi." | "Ái chà chà..." / "Ôi dào..." |
+| **Nhắc nhở** | だめよ (Dame yo) | "Không được." | "Không được đâu nhé~" / "Hư là chị phạt đấy." |
+| **Khen ngợi** | よしよし (Yoshi yoshi) | "Tốt lắm." | "Ngoan lắm~" / "Giỏi quá cơ~" |
+| **Mời mọc** | どう？ (Dou?) | "Thế nào?" | "Thấy sao hử?" / "Hứng thú không nào?" |
+| **Lo lắng** | 大丈夫？ (Daijoubu) | "Bạn ổn không?" | "Có sao không đấy, bé ngoan?" |
+
+### 5.7 Samurai / Warrior (Kiếm Hiệp / Cổ Trang)
+**Đặc điểm:** Trang nghiêm, dùng từ Hán-Việt, câu văn ngắn gọn, dứt khoát (Tenuto).
+
+| Tình huống | Nguồn Nhật | ❌ Dịch Cứng / Hiện đại | ✅ Samurai-style (Hán-Việt) |
+| --- | --- | --- | --- |
+| **Xin lỗi** | すまない (Sumanai) | "Xin lỗi nha." | "Thất lễ." / "Thật hổ thẹn." |
+| **Cảm ơn** | かたじけない (Katajikenai) | "Cảm ơn nhiều." | "Đa tạ." / "Tại hạ xin ghi tâm." |
+| **Đồng ý** | 承知 (Shouchi) | "Ok." / "Được thôi." | "Đã rõ." / "Tuân mệnh." / "Lĩnh ý." |
+| **Từ chối** | 断る (Kotowaru) | "Không thích." | "Thứ lỗi cho ta." / "Không thể tuân theo." |
+| **Chết** | 死ぬ (Shinu) | "Chết đi." | "Thọ tử đi!" / "Chịu chết đi!" |
+
+### 5.8 Chuunibyou (Ảo Tưởng Sức Mạnh)
+**Đặc điểm:** Dùng từ ngữ đao to búa lớn, thần thoại hóa mọi thứ, văn vở.
+
+| Tình huống | Nguồn Nhật | ❌ Dịch Cứng / Bình thường | ✅ Chuu-style (Kịch tính) |
+| --- | --- | --- | --- |
+| **Đồng ý** | いいだろう (Ii darou) | "Được thôi." | "Hừ, định mệnh đã an bài." / "Thú vị đấy." |
+| **Không biết** | 知らない (Shiranai) | "Tôi không biết." | "Điều đó nằm ngoài kho tàng tri thức của ta." |
+| **Đau** | 痛い (Itai) | "Đau quá!" | "Cánh tay phải của ta đang gào thét...!" |
+| **Chào** | よっ (Yo) | "Chào." | "Ngươi đã được triệu hồi đến đây sao?" |
+| **Tuyệt** | すげえ (Sugee) | "Ghê thế." | "Sức mạnh này... thật đáng kinh ngạc." |
+
+### 5.9 Kansai-ben / Rustic (Giọng Địa Phương / Thân Thiện)
+**Đặc điểm:** Dùng từ ngữ suồng sã, gần gũi, mang hơi hướng phương ngữ (nhưng không nên dùng phương ngữ quá nặng gây khó hiểu).
+
+| Tình huống | Nguồn Nhật | ❌ Dịch Cứng / Chuẩn | ✅ Kansai-style (Thân thiện) |
+| --- | --- | --- | --- |
+| **Đúng không?** | せやろ (Seyaro) | "Đúng không?" | "Chuẩn bài chưa!" / "Chứ còn gì nữa!" |
+| **Không phải** | ちゃう (Chau) | "Sai rồi." | "Hông phải đâu nha." / "Tào lao nè." |
+| **Cảm ơn** | おおきに (Ookini) | "Cảm ơn." | "Cảm ơn nghen!" / "Đa tạ bà con!" |
+| **Thật á?** | ホンマ？ (Honma) | "Thật à?" | "Thiệt hông đó?" / "Thiệt luôn?" |
+| **Không làm được** | 無理 (Muri) | "Không thể." | "Thua luôn!" / "Chịu chết!" |
 
 ---
 
@@ -187,6 +253,24 @@ Trước khi xuất bản đoạn hội thoại, hãy tự kiểm tra:
 hoặc
 "Thiệt tình, khổ ghê."
 ```
+
+---
+
+## PHẦN 8: CHECKLIST CẢM XÚC & NGỮ KHÍ (TONE CHECKLIST)
+
+*Dành cho AI tự kiểm tra trước khi xuất output:*
+
+1. **Xác định Người Nói (Speaker ID):** Nhân vật này thuộc Archetype nào? (VD: Mei = Gyaru/Sister).
+
+2. **Kiểm tra Từ vựng (Vocab Check):**
+   - Nếu là **Gyaru/Sister**: Có dùng "nha, nè, trời ơi, vãi" không? (Nên có).
+   - Nếu là **Ojou**: Có dùng "vãi, toang" không? (CẤM). Thay bằng "Ara, hỏng rồi".
+
+3. **Kiểm tra Đuôi câu (Suffix Check):**
+   - Câu hỏi có bị cụt lủn không? (VD: "Được không?" -> Nên là "Được không nhỉ?", "Được hông ta?").
+
+4. **Kiểm tra Cảm thán (Interjection Check):**
+   - Đã xoay tua từ cảm thán chưa? (Đừng dùng lại "Trời ạ" nếu vừa dùng ở câu trước).
 
 ---
 
