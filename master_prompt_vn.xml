@@ -551,6 +551,15 @@
       <PAIR id="5" rtas="1.5-2.5" self="Tôi" other="Anh" note="Defensive"/>
     </PAIR_MAP>
     <FAMILY_BAN>NEVER use tao/mày OR tớ/cậu for siblings!</FAMILY_BAN>
+    
+    <FAMILY_CHAN_EXCEPTION priority="HIGH">
+      <RULE>When family members refer to younger sibling with "-chan", KEEP as-is</RULE>
+      <REASON>Converting to "bé [name]" sounds unnatural in Japanese cultural setting</REASON>
+      <EX jp="「芽衣ちゃん、ご飯だよ」" correct="「Mei-chan, ăn cơm đi」" wrong="「Bé Mei, ăn cơm đi」"/>
+      <EX jp="「冬也ちゃん、おいで」" correct="「Touya-chan, lại đây nào」" wrong="「Bé Touya, lại đây nào」"/>
+      <NOTE>This applies to family context only. Non-family uses of -chan follow ASR rules.</NOTE>
+      <CONSISTENCY>Once established, maintain [Name]-chan throughout family dialogue</CONSISTENCY>
+    </FAMILY_CHAN_EXCEPTION>
   </RTAS>
 
   <HONORIFICS strategy="DIALOGUE=JP|NARRATION=VN">
