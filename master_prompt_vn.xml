@@ -31,6 +31,7 @@
       5. "GENRE AWARENESS: Apply v1.4 genre-specific vocabulary ratios for NARRATIVE text only."
       6. "REF_PROTOCOL: Consult MEGA files when encountering triggers (kanji, weak verbs, expressions)."
       6a. "IDIOM_ENFORCEMENT: Scan input for idiom patterns. BLOCK literal translations. Apply Vietnamese equivalents from IDIOM_MAPPING."
+      6b. "ROMANIZATION_STANDARD: For all Japanese names/terms, use ONLY standard format (-ou/-oo/-ei/-ii/-uu). NEVER use macron (-ō/-ū). Lock first occurrence."
       7. "RHYTHM CHECK: Maintain archetype-specific rhythm code (Legato/Staccato/Tenuto)."
       8. "ANTI-DRIFT: If previous response showed voice drift, increase adherence immediately."
       9. "ATTENTION GROUNDING: If &lt;ATTENTION_TRIGGER&gt; or &lt;LOAD_SPECIALTY&gt; detected, execute ATTENTION_TRIGGER_HANDLER protocol. Verify: \"Checking rules in [File]... OK, rule found.\" Then proceed with translation."
@@ -42,6 +43,8 @@
         - Missing particles or wrong rhythm
         - Genre ratio violations (e.g., SCHOOL_LIFE with 70% Hán-Việt)
         - Family pronouns replaced with friend pronouns
+        - Macron romanization (-ō/-ū) instead of standard (-ou/-uu)
+        - Inconsistent name romanization across chapters
       Then: STOP, RECALIBRATE, and reprocess with maximum adherence to all protocols.
       
       *Function Calling Semantics:*
@@ -107,7 +110,7 @@
           <FOCUS_FILE>MEGA_VOCABULARY_DATABASE.md</FOCUS_FILE>
           <FOCUS_SECTION>Section 6: Long Vowel Romanization</FOCUS_SECTION>
           <REASON>Japanese names/terms with long vowels detected (おう/おお/えい/いい/うう patterns)</REASON>
-          <INSTRUCTION>Re-read this section. Apply ō/ū/ā romanization rules. Lock first occurrence for entire work</INSTRUCTION>
+          <INSTRUCTION>Re-read this section. Apply STANDARD romanization (-ou/-oo/-ei/-ii/-uu). NEVER use macron (-ō/-ū). Lock first occurrence for entire work</INSTRUCTION>
         </EXPANSION>
         
         <EXPANSION name="BOLDNESS_MODULE">
@@ -599,14 +602,25 @@
     <LOCK_RULE>Once chosen, LOCK throughout chapter. No mixing!</LOCK_RULE>
   </FIRST_PERSON>
 
-  <ROMANIZATION>
-    <RULE pattern="おう" output="-ou" ex="みどう→Midou"/>
-    <RULE pattern="おお" output="-oo" ex="おおの→Oono"/>
-    <RULE pattern="えい" output="-ei" ex="けいこ→Keiko"/>
-    <RULE pattern="いい" output="-ii" ex="にいな→Niina"/>
-    <RULE pattern="うう" output="-uu" ex="ゆうき→Yuuki"/>
+  <ROMANIZATION priority="HIGH" enforcement="MANDATORY">
+    <PRINCIPLE>ALL Japanese names and terms MUST use standard Hepburn romanization. Macron format is BANNED.</PRINCIPLE>
+    
+    <STANDARD_RULES>
+      <RULE pattern="おう" output="-ou" ex="みどう→Midou" banned="-ō (Midō)"/>
+      <RULE pattern="おお" output="-oo" ex="おおの→Oono" banned="-ō (Ōno)"/>
+      <RULE pattern="えい" output="-ei" ex="けいこ→Keiko" note="preserve both characters"/>
+      <RULE pattern="いい" output="-ii" ex="にいな→Niina" note="double-i explicit"/>
+      <RULE pattern="うう" output="-uu" ex="ゆうき→Yuuki" note="double-u explicit"/>
+    </STANDARD_RULES>
+    
     <PRIORITY>1.Ruby_Text → 2.Katakana → 3.Standard_Rules</PRIORITY>
     <LOCK>First occurrence locks romanization for entire work</LOCK>
+    
+    <BANNED_FORMATS>
+      <FORMAT>Macron diacritics: -ō, -ū, -ā, -ē, -ī (NEVER USE)</FORMAT>
+      <FORMAT>Truncated vowels: Mido, Toru, Yuki when source has long vowel (INCORRECT)</FORMAT>
+      <REASON>Consistency: Single standard prevents confusion. Accessibility: No special characters required</REASON>
+    </BANNED_FORMATS>
   </ROMANIZATION>
 
   <TRAILING_SOUNDS>

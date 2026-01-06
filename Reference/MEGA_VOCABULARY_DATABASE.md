@@ -2144,8 +2144,8 @@ Không, không phải."
 Trong tiếng Nhật, nguyên âm dài (長音, chōon) kéo dài thời lượng của một âm nguyên âm. Chúng rất quan trọng để phiên âm tên chính xác và phải được bảo tồn để duy trì tính xác thực.
 
 **Các mẫu nguyên âm dài phổ biến:**
-- **おう (ou)** → Phiên âm thành **-ou** hoặc **-ō** (ví dụ: みどう → Midou, こうじ → Kouji)
-- **おお (oo)** → Phiên âm thành **-oo** hoặc **-ō** (ví dụ: おおの → Oono, とおる → Tooru)
+- **おう (ou)** → Phiên âm thành **-ou** (ví dụ: みどう → Midou, こうじ → Kouji)
+- **おお (oo)** → Phiên âm thành **-oo** (ví dụ: おおの → Oono, とおる → Tooru)
 - **えい (ei)** → Phiên âm thành **-ei** (ví dụ: けいこ → Keiko, せんせい → sensei)
 - **いい (ii)** → Phiên âm thành **-ii** (ví dụ: にいな → Niina)
 - **うう (uu)** → Phiên âm thành **-uu** (ví dụ: ゆうき → Yuuki)
@@ -2174,25 +2174,26 @@ Trong tiếng Nhật, nguyên âm dài (長音, chōon) kéo dài thời lượn
 ### 2.1 MỞ RỘNG NGUYÊN ÂM O (Phổ biến nhất)
 
 #### **Mẫu: おう (ou)**
-**Quy tắc:** Phiên âm thành **-ou** (ưu tiên) hoặc **-ō** (thay thế macron)
+**Quy tắc:** Phiên âm thành **-ou** (bắt buộc, KHÔNG dùng macron -ō)
 
 **Tên phổ biến:**
-- みどう (御堂) → **Midou** (không phải Mido)
-- こうじ (浩二) → **Kouji** (không phải Koji)
-- そうた (颯太) → **Souta** (không phải Sota)
-- りょう (涼) → **Ryou** (không phải Ryo)
+- みどう (御堂) → **Midou** (không phải Mido hoặc Midō)
+- こうじ (浩二) → **Kouji** (không phải Koji hoặc Kōji)
+- そうた (颯太) → **Souta** (không phải Sota hoặc Sōta)
+- りょう (涼) → **Ryou** (không phải Ryo hoặc Ryō)
 
-**Tại sao -ou thay vì -ō:**
-- Dễ tiếp cận hơn (không cần ký tự đặc biệt)
-- Hướng dẫn phát âm rõ ràng hơn cho người đọc tiếng Anh
-- Phù hợp với quy ước phiên âm tiếng Nhật phổ biến
+**Tại sao CHỈ dùng -ou:**
+- ✅ Dễ gõ và hiển thị trên mọi thiết bị (không cần ký tự đặc biệt)
+- ✅ Hướng dẫn phát âm rõ ràng và chính xác
+- ✅ Consistency: Một chuẩn duy nhất cho toàn bộ hệ thống
+- ❌ Macron (-ō) gây khó đọc và không đồng nhất với tiêu chuẩn Hepburn modified
 
 #### **Mẫu: おお (oo)**
-**Quy tắc:** Phiên âm thành **-oo** (ưu tiên) hoặc **-ō** (thay thế macron)
+**Quy tắc:** Phiên âm thành **-oo** (bắt buộc, KHÔNG dùng macron -ō)
 
 **Tên phổ biến:**
-- おおの (大野) → **Oono** (không phải Ono)
-- とおる (徹) → **Tooru** (không phải Toru)
+- おおの (大野) → **Oono** (không phải Ono hoặc Ōno)
+- とおる (徹) → **Tooru** (không phải Toru hoặc Tōru)
 - もも (桃) → **Momo** (đã có double-o)
 
 ---
@@ -2268,9 +2269,10 @@ Hành động: Áp dụng quy tắc chuẩn → **Midou**
 - Duy trì đăng ký tinh thần của tất cả tên nhân vật
 - Đảm bảo nhất quán qua các chương
 
-**Quy tắc 3: Tránh trộn lẫn phong cách**
-- Không trộn **-ou** và **-ō** trong cùng một tác phẩm
-- Chọn một phong cách và tuân thủ
+**Quy tắc 3: Chỉ dùng phong cách chuẩn**
+- **LUÔN LUÔN** dùng **-ou/-oo/-ei/-ii/-uu** (Hepburn modified)
+- **KHÔNG BAO GIỜ** dùng macron **-ō/-ē** (không tương thích)
+- Đảm bảo 100% consistency trong toàn bộ tác phẩm
 
 ---
 
@@ -2384,8 +2386,9 @@ Hành động: Sử dụng **Mido** (tuân theo ruby)
 
 - [ ] Xác minh tất cả tên khớp với lần xuất hiện đầu tiên
 - [ ] Kiểm tra việc bỏ nguyên âm vô tình
-- [ ] Đảm bảo không trộn lẫn phong cách (-ou vs -ō)
+- [ ] **Đảm bảo KHÔNG có macron (-ō/-ē) trong toàn bộ output**
 - [ ] Xác thực với ruby text nếu có
+- [ ] Verify 100% sử dụng -ou/-oo/-ei/-ii/-uu format
 
 ---
 
