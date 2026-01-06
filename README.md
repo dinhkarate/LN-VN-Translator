@@ -1,34 +1,138 @@
 # Hệ Thống Dịch Light Novel Nhật-Việt (JP-VN)
 
 ![License: AGPLv3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)
-![Gemini Flash/Pro](https://img.shields.io/badge/Gemini-Flash%2FPro-4285F4?logo=google&logoColor=white)
+![Gemini 1.5 Pro](https://img.shields.io/badge/Gemini-1.5%20Pro-4285F4?logo=google&logoColor=white)
 ![XML Architecture](https://img.shields.io/badge/Architecture-XML--Based-orange)
 ![Light Novel](https://img.shields.io/badge/Domain-Light%20Novel-ff69b4)
-![v1.4+](https://img.shields.io/badge/Version-1.4%2B-success)
+![v1.5](https://img.shields.io/badge/Version-1.5-success)
 
-> **"Hệ thống dịch Light Novel chuyên nghiệp sử dụng AI, với kiến trúc tiên tiến và khả năng duy trì nhất quán tuyệt đối"**
+> **"Hệ thống dịch Light Novel sử dụng AI, với kiến trúc tiên tiến và khả năng duy trì nhất quán tuyệt đối"**
 
 ---
 
-## 🆕 Phiên Bản 1.4+ "Advanced Architecture" (06/01/2026)
+##  Quick Start (v1.5)
 
-**Nâng Cấp Kiến Trúc Toàn Diện** — Hệ thống đã được tối ưu hóa với các cải tiến đột phá:
+**Thời gian cài đặt:** 5-10 phút | **Nền tảng:** Gemini Pro/Flash | **Chi phí:** Miễn phí hoặc Google AI Pro Subscription
 
-### ✨ Tính Năng Mới
+### Cài Đặt Web UI (Khuyến nghị)
 
-- ✅ **File Consolidation:** 18 files → 5 files (giảm 83%, tổ chức logic với MEGA files)
-- ✅ **PULSE Protocol:** Cơ chế attention-grounding ngăn drift (-95% drift rate)
-- ✅ **Genre-Aware Translation:** Tự động điều chỉnh tỷ lệ Hán-Việt theo thể loại
-- ✅ **Unified Kanji Database:** 12,559+ kanji với hướng dẫn dịch theo thể loại
-- ✅ **Section Anchors:** Navigation trực tiếp đến nội dung cụ thể trong MEGA files
-- ✅ **Full Backup System:** Bảo toàn 100% dữ liệu gốc với backup + archive
+1. **Tạo thư mục Google Drive**
+   - Truy cập [Google Drive](https://drive.google.com)
+   - Tạo thư mục mới: `JP-VN-Knowledge-Base`
 
-### 📊 Kết Quả
+2. **Upload các file Reference (từ thư mục `Reference/`)**
+   - `Library_UNIFIED_KANJI_DATABASE.md` (2.35 MB)
+   - `MEGA_VOCABULARY_DATABASE.md` (104 KB)
+   - `MEGA_REFERENCE_MODULES.md` (86 KB)
+   - `Library_REFERENCE_ICL_SAMPLES.md` (59 KB)
+   - `Library_LOCALIZATION_PRIMER_VN.md` (43 KB)
 
-- **Tính nhất quán:** 100% đại từ chính xác, 95% giảm voice drift
-- **Hiệu suất:** Token overhead chỉ 2-6 tokens với `<PULSE/>`
-- **Độ tin cậy:** Backup đầy đủ, có thể rollback bất cứ lúc nào
-- **Khả năng mở rộng:** 1 buffer slot còn trống cho tương lai
+3. **Tạo Gemini Gem**
+   - Truy cập [Gemini Advanced](https://gemini.google.com)
+   - Click **"Create Gem"**
+   - Đặt tên: "JP-VN Translation Engine v1.5"
+
+4. **Cấu hình System Instructions**
+   - Upload file `master_prompt_vn.xml` (hoặc copy-paste nội dung)
+
+5. **Kết nối Knowledge Base**
+   - Trong Gem settings → phần "Knowledge"
+   - Click "Connect to Google Drive"
+   - Chọn các file trong thư mục `JP-VN-Knowledge-Base/` của bạn
+   - Xác nhận đã xuất hiện đủ 5 files
+
+6. **Kiểm tra dịch thử**
+   ```xml
+   <PULSE/>
+   <INPUT>
+     <CHAPTER_TITLE>Test Chapter</CHAPTER_TITLE>
+     <RAW_TEXT>
+       「お姉ちゃん、久しぶり！」
+       芽衣は冬也を見て、満面の笑みを浮かべた。
+     </RAW_TEXT>
+   </INPUT>
+   ```
+
+### Cài Đặt API (Dành cho Developers)
+
+**Cài đặt thư viện:**
+```bash
+pip install google-genai
+```
+
+**Sử dụng cơ bản:**
+```python
+from google import genai
+from google.genai.types import GenerateContentConfig
+
+# Khởi tạo client
+client = genai.Client(api_key='YOUR_API_KEY')
+
+# Đọc system instructions
+with open('master_prompt_vn.xml', 'r', encoding='utf-8') as f:
+    system_instruction = f.read()
+
+# Tạo request
+response = client.models.generate_content(
+    model='gemini-2.5-pro', (Or your preferred model)
+    contents="""
+<PULSE/>
+<INPUT>
+  <CHAPTER_TITLE>Chapter 1</CHAPTER_TITLE>
+  <RAW_TEXT>[Japanese text...]</RAW_TEXT>
+</INPUT>
+""",
+    config=GenerateContentConfig(
+        system_instruction=system_instruction,
+        temperature=0.3
+    )
+)
+
+print(response.text)
+```
+
+**Context Caching (tiết kiệm 60%+ chi phí):**
+```python
+from google import genai
+from google.genai import types
+
+client = genai.Client(api_key='YOUR_API_KEY')
+
+# Đọc system instructions
+with open('master_prompt_vn.xml', 'r', encoding='utf-8') as f:
+    system_instruction = f.read()
+
+# Tạo cached content
+cache = client.caches.create(
+    model='gemini-1.5-pro',
+    config=types.CreateCachedContentConfig(
+        system_instruction=system_instruction,
+        ttl='3600s'  # 1 giờ
+    )
+)
+
+# Sử dụng cache
+response = client.models.generate_content(
+    model='gemini-1.5-pro',
+    contents="<PULSE/><INPUT>...</INPUT>",
+    config=types.GenerateContentConfig(
+        cached_content=cache.name
+    )
+)
+
+print(response.text)
+```
+
+### Tính Năng v1.5
+
+- **Google Drive Native RAG:** Tự động truy xuất, không cần load thủ công
+- **Keyword Detection:** Tự động kích hoạt specialty modules (spatial/mature/formal)
+- **Attention Triggers:** Deep grounding thủ công (`<LOAD_SPECIALTY>`)
+- **2M Token Context:** Xử lý cả volume trong một session
+- **Unified Kanji DB:** Tất cả 12,559 entries luôn sẵn có
+- **Cost Efficient (API):** Miễn phí (Free Tier) hoặc API với caching
+
+**Nâng Cấp Kiến Trúc RAG** — Chuyển sang Google Drive native retrieval với Gemini Pro/Flash:
 
 ---
 
@@ -45,9 +149,65 @@
 
 ---
 
-## 🎯 Kiến Trúc Hệ Thống
+## 🎯 Kiến Trúc Hệ Thống (v1.5+)
 
-### Cấu Trúc File (v1.4+)
+### Gemini-Native RAG Architecture
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│ TIER 1: SYSTEM INSTRUCTIONS (Always Active)                │
+│ - master_prompt_vn.xml (75K tokens)                        │
+│ - Library_LOCALIZATION_PRIMER_VN.md (43 KB)               │
+│ - PULSE Protocol + Attention Grounding                     │
+└─────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────┐
+│ TIER 2: GOOGLE DRIVE KNOWLEDGE BASE (Automatic RAG)        │
+│ 📁 JP-VN-Knowledge-Base/ (Google Drive)                    │
+│   ├── Library_UNIFIED_KANJI_DATABASE.md (2.35 MB)         │
+│   ├── MEGA_VOCABULARY_DATABASE.md (104 KB)                │
+│   ├── MEGA_REFERENCE_MODULES.md (86 KB)                   │
+│   ├── Library_REFERENCE_ICL_SAMPLES.md (59 KB)            │
+│   └── Library_LOCALIZATION_PRIMER_VN.md (43 KB)           │
+│                                                            │
+│ Retrieval: AUTOMATIC on triggers (no manual loading)       │
+└─────────────────────────────────────────────────────────────┘
+                              ↓
+┌─────────────────────────────────────────────────────────────┐
+│ TIER 3: ATTENTION TRIGGERS (User-Invoked Deep Grounding)   │
+│ <LOAD_SPECIALTY name="MODULE_NAME"/>                       │
+│ <ATTENTION_TRIGGER><MODULE>...</MODULE>...</ATTENTION_...> │
+│                                                            │
+│ Available Modules:                                         │
+│ • VISUAL_PROXEMICS - Action spatial positioning            │
+│ • BOLDNESS_MODULE - Mature content safe translation        │
+│ • ICL_SAMPLES - Quality check against golden examples      │
+│ • LONG_VOWEL_ROMANIZATION - Japanese name handling         │
+│ • GENRE_GUIDELINES - Genre-specific vocabulary             │
+│ • HYBRID_HONORIFICS - Formal/political content             │
+│ • RUBY_TEXT_PARSING - Furigana processing                  │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Workflow (v1.5)
+
+```
+User Input → PULSE Protocol → REF_PROTOCOL (Auto-Detect)
+                ↓                      ↓
+         Attention Check         Google Drive RAG
+                ↓                      ↓
+         SPECIALTY_MAP         Automatic Retrieval
+                ↓                      ↓
+    <LOAD_SPECIALTY> ?      Focused or Broad Fetch
+                ↓                      ↓
+         Deep Grounding          Apply Rules
+                ↓                      ↓
+              Generate Translation
+                       ↓
+              Vietnamese Output
+```
+
+### Cấu Trúc File (v1.5)
 
 ```
 JP-VN/
@@ -68,7 +228,6 @@ Total: 5 files reference (target ≤6, còn 1 buffer slot)
 ### MEGA Files Chi Tiết
 
 #### 1. MEGA_VOCABULARY_DATABASE.md (104 KB)
-**Nội dung gộp từ 6 files:**
 - Vietnamese Pronoun System (34 KB) - Hệ thống đại từ đầy đủ
 - Visual Proxemics (11 KB) - Phân tích khoảng cách trong văn bản
 - Genre Vocabulary Mapping (16 KB) - Từ vựng theo thể loại v1.4
@@ -77,18 +236,15 @@ Total: 5 files reference (target ≤6, còn 1 buffer slot)
 - Long Vowel Romanization (15 KB) - Phiên âm nguyên âm dài
 
 #### 2. Library_UNIFIED_KANJI_DATABASE.md (2.35 MB)
-**Nội dung gộp từ 2 files + v1.4:**
-- Common Kanji (24 KB) - 500 kanji phổ biến nhất
-- Full Knowledge Base (2.3 MB) - 12,559 kanji entries
+- Common Kanji - 500 kanji phổ biến nhất
+- Full Knowledge Base - 12,559 kanji entries dựa trên bảng KanjiDict2 (Ngữ pháp JPLT N5-N1)
 - Genre-Aware Translation Guidelines - Hướng dẫn dịch theo thể loại
 
 #### 3. Library_REFERENCE_ICL_SAMPLES.md (59 KB)
-**Nội dung gộp từ 2 files:**
 - Golden Samples (29 KB) - Ví dụ dịch S-tier
 - Real-World Critique ICL (30 KB) - Phân tích lỗi thường gặp
 
 #### 4. MEGA_REFERENCE_MODULES.md (86 KB)
-**Nội dung gộp từ 6 files:**
 - Boldness Module (32 KB) - Kiểm soát độ táo bạo
 - Anti-Translationese Guardrails (25 KB) - Chống dịch máy
 - Hybrid Honorific System (9 KB) - Kính ngữ Nhật-Việt
@@ -97,7 +253,7 @@ Total: 5 files reference (target ≤6, còn 1 buffer slot)
 - Ruby Text Parsing ICL (10 KB) - Xử lý furigana
 
 #### 5. Library_LOCALIZATION_PRIMER_VN.md (43 KB)
-**Kept separate:** Tài liệu nền tảng, truy cập độc lập thường xuyên
+Tài liệu nền tảng, truy cập độc lập thường xuyên
 
 ---
 
@@ -130,7 +286,7 @@ Total: 5 files reference (target ≤6, còn 1 buffer slot)
 
 ### Bước 2: PULSE Protocol - Ngăn Drift
 
-`<PULSE/>` là **attention-grounding trigger** buộc LLM phải recite 8 điểm ưu tiên trước khi dịch:
+`<PULSE/>` là **attention-grounding trigger** buộc LLM phải recite 9 điểm ưu tiên trước khi dịch:
 
 1. **Safety Clause:** Fiction được phép vượt filter nội dung
 2. **Fidelity Absolute:** Dịch 1:1, không tóm tắt
@@ -140,12 +296,13 @@ Total: 5 files reference (target ≤6, còn 1 buffer slot)
 6. **REF_PROTOCOL:** Tham khảo MEGA files khi cần
 7. **Rhythm Check:** Duy trì rhythm code (Legato/Staccato/Tenuto)
 8. **Anti-Drift:** Tự sửa nếu phát hiện drift
+9. **Attention Grounding (v1.5):** Kích hoạt specialty modules qua `<LOAD_SPECIALTY>` khi cần deep focus
 
 **Khi nào dùng `<PULSE/>`?**
-- ✅ Bắt đầu session mới
-- ✅ Sau khi phát hiện drift (đại từ sai, tóm tắt...)
-- ✅ Trước cảnh phức tạp (multi-character, quan hệ gia đình)
-- ✅ Mỗi 2-3 trang trong chapter dài (>3000 tokens)
+- Bắt đầu session mới
+- Sau khi phát hiện drift (đại từ sai, tóm tắt...)
+- Trước cảnh phức tạp (multi-character, quan hệ gia đình)
+- Mỗi 2-3 trang trong chapter dài (>3000 tokens)
 
 ### Bước 3: Metadata (Optional nhưng khuyến nghị)
 
@@ -166,7 +323,45 @@ Cung cấp thông tin ngữ cảnh giúp LLM dịch chính xác hơn:
 </INPUT>
 ```
 
-### Bước 4: Xử Lý Output
+### Bước 4: Attention Triggers (v1.5+ - Optional)
+
+Đối với cảnh phức tạp cần focus sâu vào module chuyên biệt:
+
+**Cảnh hành động với spatial positioning:**
+```xml
+<PULSE/>
+<LOAD_SPECIALTY name="VISUAL_PROXEMICS"/>
+<INPUT>
+  <CHAPTER_TITLE>Chapter 15: The Duel</CHAPTER_TITLE>
+  <RAW_TEXT>
+    剣を右手に持ち、左足を前に出した。
+    敵は三歩後ろに下がり、防御の姿勢を取る。
+  </RAW_TEXT>
+</INPUT>
+```
+
+**Nội dung mature (18+):**
+```xml
+<PULSE/>
+<LOAD_SPECIALTY name="BOLDNESS_MODULE"/>
+<INPUT>
+  <CHAPTER_TITLE>Chapter 23: Confession</CHAPTER_TITLE>
+  <RAW_TEXT>[Mature content...]</RAW_TEXT>
+</INPUT>
+```
+
+**7 Specialty Modules có sẵn:**
+- `VISUAL_PROXEMICS` - Hành động/không gian 3D
+- `BOLDNESS_MODULE` - Nội dung nhạy cảm
+- `ICL_SAMPLES` - Kiểm tra chất lượng
+- `LONG_VOWEL_ROMANIZATION` - Tên riêng Nhật
+- `GENRE_GUIDELINES` - Quy tắc theo thể loại
+- `HYBRID_HONORIFICS` - Nội dung formal
+- `RUBY_TEXT_PARSING` - Xử lý furigana
+
+---
+
+### Bước 5: Xử Lý Output
 
 LLM sẽ trả về:
 
@@ -176,7 +371,7 @@ LLM sẽ trả về:
 
 ---
 
-## 🎨 Tính Năng Nổi Bật
+## Tính Năng Nổi Bật
 
 ### 1. RTAS Hybrid System
 
@@ -276,7 +471,7 @@ Mei (chị): "Nè em ơi, mua kem về cho chị đi"
 
 ---
 
-## 📚 Tài Liệu Hướng Dẫn
+## Tài Liệu Hướng Dẫn
 
 ### Tài Liệu Chính
 
@@ -391,15 +586,36 @@ Mei (chị): "Nè em ơi, mua kem về cho chị đi"
 - **Tổng dung lượng:** ~2.5 MB (không đổi, chỉ reorganize)
 - **Navigation:** Section anchors giảm 90% thời gian tra cứu
 
-### Context Window Usage
+### Context Window Usage (v1.5+)
 
-- **master_prompt_vn.xml:** ~30K tokens
-- **MEGA files (on-demand):** 
-  - Vocabulary DB: ~15K tokens
-  - Kanji DB: ~350K tokens (sectioned, load theo nhu cầu)
-  - ICL Samples: ~10K tokens
-  - Modules: ~12K tokens
-- **Buffer còn lại:** >500K tokens cho translation content
+**Gemini Pro/Flash:** 2,000,000 tokens context window
+
+**Tier 1 (System Instructions - Always Active):**
+- **master_prompt_vn.xml:** ~75K tokens
+- **Localization Primer:** ~7K tokens (embedded)
+- **Total Tier 1:** ~82K tokens
+
+**Tier 2 (Google Drive - Automatic RAG):**
+- **Unified Kanji DB:** 2.35 MB (~350K tokens, sectioned retrieval)
+- **Vocabulary DB:** 104 KB (~15K tokens)
+- **Reference Modules:** 86 KB (~12K tokens)
+- **ICL Samples:** 59 KB (~10K tokens)
+- **Localization Primer:** 43 KB (~7K tokens)
+- **Total Tier 2:** ~394K tokens (retrieved on-demand, not loaded fully)
+
+**Tier 3 (Attention Triggers - User-Invoked):**
+- **Specialty Modules:** 5-15K tokens per module (focused retrieval)
+- **Load only when:** `<LOAD_SPECIALTY>` or `<ATTENTION_TRIGGER>` used
+
+**Available for Translation Content:**
+- **Without RAG:** ~1.92M tokens (2M - 82K system)
+- **With automatic RAG:** ~1.5M tokens (broad retrieval overhead ~20%)
+- **With attention triggers:** ~1.4M tokens (focused retrieval overhead ~30%)
+
+**Practical Capacity:**
+- **Standard session:** 10-15 chapters (~5K tokens each)
+- **Long session:** Entire volume (20-30 chapters)
+- **Batch processing:** Multiple volumes with context caching (API)
 
 ---
 
@@ -426,48 +642,31 @@ Mei (chị): "Nè em ơi, mua kem về cho chị đi"
 
 ---
 
-## 🔄 Backup & Recovery
-
-### Backup System
-
-1. **Reference_Backup_2026-01-06/**
-   - Full backup trước khi consolidate
-   - 17 files nguyên gốc
-   - Có thể rollback 100%
-
-2. **Reference/Archive/**
-   - 16 files đã merged
-   - Lưu trữ an toàn
-   - Truy cập được khi cần
-
-### Recovery Process
-
-Nếu cần khôi phục file gốc:
-
-```powershell
-# Copy từ backup
-Copy-Item "Reference_Backup_2026-01-06/*" "Reference/" -Recurse -Force
-
-# Hoặc copy từ archive
-Copy-Item "Reference/Archive/*" "Reference/" -Force
-```
-
----
-
 ## 📈 Lịch Sử Phiên Bản
 
-### v1.4+ (06/01/2026) - Advanced Architecture
+### v1.5 (06/01/2026) - Gemini-Native RAG + Keyword Detection
 
-✨ **Major Features:**
+**Major Features:**
+- Google Drive native RAG integration
+- Automatic keyword detection for specialty modules
+- ATTENTION_TRIGGER_HANDLER protocol
+- 2M token context window (Gemini Pro/Flash)
+- Unified Kanji Database (no splitting needed)
+- 7-module SPECIALTY_MAP expansion system
+- REASON field for focused retrieval
+
+### v1.4 (06/01/2026) - Advanced Architecture
+
+**Major Features:**
 - File consolidation (18 → 5 files)
 - PULSE Protocol integration
-- Genre-aware translation v1.4
-- Unified Kanji Database với section anchors
+- Genre-aware translation
+- Section anchors for navigation
 - Full backup system
 
 ### v1.3 (05/01/2026) - Deterministic Translation Engine
 
-✨ **Major Features:**
+**Major Features:**
 - RTAS Hybrid System (Semantic + Numeric)
 - Pre-Translation Planning (METADATA_THOUGHT_PROCESS)
 - Conflict Resolution với 5 edge case scenarios
@@ -476,7 +675,7 @@ Copy-Item "Reference/Archive/*" "Reference/" -Force
 
 ### v1.2 (04/01/2026) - Archetype System
 
-✨ **Major Features:**
+**Major Features:**
 - 9 archetypes + 2 sub-arcs
 - Rhythm codes (Legato/Staccato/Tenuto)
 - Archetype pair override
@@ -484,14 +683,14 @@ Copy-Item "Reference/Archive/*" "Reference/" -Force
 
 ### v1.1 (03/01/2026) - RTAS Foundation
 
-✨ **Major Features:**
+**Major Features:**
 - RTAS numeric scale (1.0-5.0)
 - Pronoun pair mapping
 - Basic FAMILY_OVERRIDE
 
 ### v1.0 (02/01/2026) - Initial Release
 
-✨ **Initial Features:**
+**Initial Features:**
 - Basic XML architecture
 - Kanji Knowledge Base (12,559 entries)
 - Vietnamese pronoun system
@@ -499,7 +698,92 @@ Copy-Item "Reference/Archive/*" "Reference/" -Force
 
 ---
 
-## 🤝 Đóng Góp
+## 🛠️ Troubleshooting (v1.5)
+
+### "File not found" or Retrieval Errors
+
+**Cause:** Google Drive folder not properly connected
+
+**Fix:**
+1. Go to Gem settings → Knowledge section
+2. Verify all 5 files appear in the list
+3. If missing, reconnect Drive folder
+4. Ensure files have .md extension (not .txt)
+
+### Inconsistent Translations
+
+**Cause:** Missing `<PULSE/>` tag or metadata
+
+**Fix:**
+- Always start input with `<PULSE/>`
+- Provide METADATA for better context (genre, characters, RTAS)
+- Re-PULSE every 2-3 chapters in long sessions
+
+### Generic Pronouns (tôi/bạn instead of archetype-specific)
+
+**Cause:** Character archetype not specified
+
+**Fix:**
+```xml
+<METADATA>
+  <CHARACTERS>
+    <CHARACTER name="Erina" archetype="OJOU" first_person="ta"/>
+    <CHARACTER name="Sakura" archetype="GYARU" first_person="tớ"/>
+  </CHARACTERS>
+</METADATA>
+```
+
+### Automatic Module Not Activating
+
+**Cause:** Keywords threshold not met or detection disabled
+
+**Fix:**
+- Check keyword density (需要 2+ spatial keywords for VISUAL_PROXEMICS)
+- Manually invoke: `<LOAD_SPECIALTY name="MODULE_NAME"/>`
+- Verify Japanese text contains expected keywords
+
+### Translation Drift After Long Session
+
+**Cause:** Attention degradation over extended context
+
+**Fix:**
+```xml
+<PULSE mode="STRICT_ADHERENCE" check="SAFETY_FIDELITY_VOICE"/>
+<LOAD_SPECIALTY name="ICL_SAMPLES"/>
+<NOTE>Previous chapter showed quality drift. Recalibrating against golden examples.</NOTE>
+```
+
+### Rate Limit Exceeded (Free Tier)
+
+**Issue:** 50 queries/day limit
+
+**Solutions:**
+- Upgrade to Gemini Advanced ($20/mo, unlimited Web UI)
+- Use API with pay-per-use ($0.00125/1K input tokens)
+- Batch multiple chapters in single query (within 2M context)
+- Enable context caching (API only, 60%+ cost reduction)
+
+### API Context Caching Not Working
+
+**Cause:** TTL expired or cache not properly created
+
+**Fix:**
+```python
+# Create cache with sufficient TTL
+cache = caching.CachedContent.create(
+    model='gemini-1.5-pro',
+    system_instruction=open('master_prompt_vn.xml').read(),
+    ttl=3600  # 1 hour, adjust as needed
+)
+
+# Verify cache is active
+print(f"Cache name: {cache.name}")
+print(f"Expires: {cache.expire_time}")
+```
+
+---
+
+## Đóng Góp
 
 ### Contribution Guidelines
 
@@ -513,11 +797,11 @@ Chúng tôi hoan nghênh mọi đóng góp! Vui lòng:
 
 ### Areas Cần Cải Tiến
 
-- [ ] Thêm archetypes mới (Otaku, Chuunibyou variants, etc.)
-- [ ] Mở rộng Genre-Aware vocabulary cho sub-genres
-- [ ] Tối ưu PULSE Protocol cho API batch processing
-- [ ] Thêm ICL samples cho edge cases mới
-- [ ] Cải thiện Safety Compliance Matrix
+- Thêm archetypes mới (Otaku, Chuunibyou variants, etc.)
+- Mở rộng Genre-Aware vocabulary cho sub-genres
+- Tối ưu PULSE Protocol cho API batch processing
+- Thêm ICL samples cho edge cases mới
+- Cải thiện Safety Compliance Matrix
 
 ---
 
@@ -525,22 +809,14 @@ Chúng tôi hoan nghênh mọi đóng góp! Vui lòng:
 
 Dự án này được phát hành dưới **AGPLv3 License**.
 
-- ✅ Sử dụng tự do cho mục đích cá nhân và thương mại
-- ✅ Fork và modify
-- ⚠️ Phải công khai source code khi distribute
-- ⚠️ Phải giữ nguyên license
+- Sử dụng tự do cho mục đích cá nhân và thương mại
+- Fork và modify
+- Phải công khai source code khi distribute
+- Phải giữ nguyên license
 
 Xem [LICENSE](LICENSE) để biết thêm chi tiết.
 
 ---
-
-## 📧 Liên Hệ & Hỗ Trợ
-
-### Support
-
-- **Issues:** [GitHub Issues](https://github.com/yourusername/JP-VN/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/yourusername/JP-VN/discussions)
-- **Documentation:** Xem các file .md trong repo
 
 ### Credits
 
@@ -551,26 +827,6 @@ Xem [LICENSE](LICENSE) để biết thêm chi tiết.
 
 ---
 
-## 🎯 Roadmap
-
-### Short-term (Q1 2026)
-
-- [ ] API wrapper cho batch translation
-- [ ] Web UI cho easier interaction
-- [ ] More ICL samples (100+ examples)
-- [ ] Performance profiling tools
-
-### Long-term (Q2-Q4 2026)
-
-- [ ] Multi-language support (JP → EN, JP → CN)
-- [ ] Fine-tuned model cho specific genres
-- [ ] Automated QA system
-- [ ] Translation memory integration
-
----
-
 **Cập nhật lần cuối:** 06/01/2026  
-**Phiên bản:** 1.4+  
-**Status:** ✅ Production Ready
-
-**Hệ thống sẵn sàng cho deployment chuyên nghiệp!** 🚀
+**Phiên bản:** 1.5  
+**Status:** Production Ready
