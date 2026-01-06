@@ -44,3 +44,8 @@ CLAUDE-GUIDELINES.md
 CLAUDE-SETUP-GUIDE.txt
 CLAUDERC-QUICK-REF.md
 PROMPT-CLAUDERC-QUICKREF.md
+
+# Node.js (not needed for prompt engineering project)
+node_modules/
+package.json
+package-lock.json
