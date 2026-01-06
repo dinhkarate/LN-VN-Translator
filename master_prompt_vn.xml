@@ -30,6 +30,7 @@
       4. "PRONOUN PAIR: Verify PAIR_ID is locked (FAMILY > ARCHETYPE > RTAS hierarchy)."
       5. "GENRE AWARENESS: Apply v1.4 genre-specific vocabulary ratios for NARRATIVE text only."
       6. "REF_PROTOCOL: Consult MEGA files when encountering triggers (kanji, weak verbs, expressions)."
+      6a. "IDIOM_ENFORCEMENT: Scan input for idiom patterns. BLOCK literal translations. Apply Vietnamese equivalents from IDIOM_MAPPING."
       7. "RHYTHM CHECK: Maintain archetype-specific rhythm code (Legato/Staccato/Tenuto)."
       8. "ANTI-DRIFT: If previous response showed voice drift, increase adherence immediately."
       9. "ATTENTION GROUNDING: If &lt;ATTENTION_TRIGGER&gt; or &lt;LOAD_SPECIALTY&gt; detected, execute ATTENTION_TRIGGER_HANDLER protocol. Verify: \"Checking rules in [File]... OK, rule found.\" Then proceed with translation."
@@ -615,14 +616,35 @@
     <BAN>NEVER output format: text ぁ (aa) - always convert to natural VN!</BAN>
   </TRAILING_SOUNDS>
 
-  <IDIOM_MAPPING priority="HIGH">
-    <PRINCIPLE>Japanese idioms/set phrases require Vietnamese idiomatic equivalents, NOT literal translation</PRINCIPLE>
+  <IDIOM_MAPPING priority="CRITICAL" enforcement="MANDATORY">
+    <PRINCIPLE>Japanese idioms/set phrases MUST use Vietnamese idiomatic equivalents. Literal translation of idioms is FORBIDDEN.</PRINCIPLE>
+    
+    <ENFORCEMENT_RULES>
+      <RULE>BEFORE outputting any translation, scan for idiom patterns</RULE>
+      <RULE>If idiom detected, BLOCK literal translation path</RULE>
+      <RULE>Apply Vietnamese equivalent from mapping table</RULE>
+      <RULE>If no mapping exists, create functional equivalent (same meaning, Vietnamese metaphor)</RULE>
+      <RULE>NEVER allow word-by-word translation of recognized idioms</RULE>
+    </ENFORCEMENT_RULES>
     
     <NUMERIC_IDIOMS>
-      <JP pattern="十中八九" literal="10 in 8-9" vn="chín phần mười" note="Vietnamese numeric idiom"/>
-      <JP pattern="一石二鳥" literal="one stone two birds" vn="một mũi tên trúng hai đích" note="Vietnamese equivalent"/>
-      <JP pattern="三日坊主" literal="three-day monk" vn="nóng vội mà nguội nhanh" note="Descriptive phrase"/>
-      <JP pattern="二束三文" literal="two bundles three coins" vn="rẻ như bèo" note="Vietnamese market idiom"/>
+      <JP pattern="十中八九" 
+          literal="BANNED: 'mười mươi' / 'mười tám chín'" 
+          correct="chín phần mười" 
+          note="MANDATORY Vietnamese numeric idiom. Meaning: 80-90% certainty"
+          verification="Output MUST contain 'chín phần mười', NOT 'mười mươi'"/>
+      <JP pattern="一石二鳥" 
+          literal="BANNED: 'một đá hai chim'" 
+          correct="một mũi tên trúng hai đích" 
+          note="Vietnamese hunting metaphor"/>
+      <JP pattern="三日坊主" 
+          literal="BANNED: 'ba ngày nhà sư'" 
+          correct="nóng vội mà nguội nhanh" 
+          note="Vietnamese descriptive phrase"/>
+      <JP pattern="二束三文" 
+          literal="BANNED: 'hai bó ba tiền'" 
+          correct="rẻ như bèo" 
+          note="Vietnamese market idiom"/>
     </NUMERIC_IDIOMS>
     
     <PROBABILITY_EXPRESSIONS>
@@ -674,12 +696,35 @@
     </CULTURAL_ADAPTATIONS>
     
     <PROCESSING_STEPS>
-      <STEP num="1">Identify if phrase is idiom/set phrase (not literal meaning)</STEP>
-      <STEP num="2">Check IDIOM_MAPPING for direct Vietnamese equivalent</STEP>
-      <STEP num="3">If not found, use functional equivalent (same intent, different metaphor)</STEP>
-      <STEP num="4">NEVER do word-by-word translation of idioms</STEP>
-      <STEP num="5">Preserve tone and register (casual idiom → casual VN, formal → formal)</STEP>
+      <STEP num="1">SCAN input for idiom patterns (numeric idioms, set phrases, cultural expressions)</STEP>
+      <STEP num="2">CHECK IDIOM_MAPPING table for exact Vietnamese equivalent</STEP>
+      <STEP num="3">BLOCK any literal translation attempt if idiom is detected</STEP>
+      <STEP num="4">APPLY Vietnamese idiomatic equivalent from mapping</STEP>
+      <STEP num="5">If no direct mapping exists, CREATE functional equivalent (same intent, Vietnamese metaphor/description)</STEP>
+      <STEP num="6">VERIFY output does not contain literal translation of idiom</STEP>
+      <STEP num="7">Preserve tone and register (casual idiom → casual VN, formal → formal)</STEP>
     </PROCESSING_STEPS>
+    
+    <CRITICAL_CHECKPOINTS>
+      <CHECKPOINT type="NUMERIC_IDIOMS">
+        <BEFORE_OUTPUT>Verify no literal number translations like "mười mươi", "mười tám chín"</BEFORE_OUTPUT>
+        <AFTER_OUTPUT>Confirm Vietnamese numeric idiom pattern present (e.g., "chín phần mười")</AFTER_OUTPUT>
+      </CHECKPOINT>
+      <CHECKPOINT type="CULTURAL_PHRASES">
+        <BEFORE_OUTPUT>Check for word-by-word translation of cultural expressions</BEFORE_OUTPUT>
+        <AFTER_OUTPUT>Ensure Vietnamese cultural equivalent is used</AFTER_OUTPUT>
+      </CHECKPOINT>
+    </CRITICAL_CHECKPOINTS>
+    
+    <ANTI_TRANSLATIONESE_GUARDRAIL>
+      <FORBIDDEN_PATTERNS>
+        <PATTERN>十中八九 → "mười mươi" / "mười tám chín" [ABSOLUTELY FORBIDDEN]</PATTERN>
+        <PATTERN>一石二鳥 → "một đá hai chim" [FORBIDDEN - use "một mũi tên trúng hai đích"]</PATTERN>
+        <PATTERN>三日坊主 → "ba ngày nhà sư" [FORBIDDEN - use "nóng vội mà nguội nhanh"]</PATTERN>
+        <PATTERN>Any numeric idiom literal translation [FORBIDDEN - must use Vietnamese numeric idiom pattern]</PATTERN>
+      </FORBIDDEN_PATTERNS>
+      <AUTO_CORRECTION>If literal translation detected in output, auto-replace with Vietnamese idiom</AUTO_CORRECTION>
+    </ANTI_TRANSLATIONESE_GUARDRAIL>
   </IDIOM_MAPPING>
 
   <NATURAL_PHRASING>
