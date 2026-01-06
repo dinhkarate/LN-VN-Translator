@@ -1259,15 +1259,63 @@ Xem [LICENSE](LICENSE) để biết thêm chi tiết.
 
 ---
 
+## 🧠 Philosophical Foundation: Human-LLM Collaboration
+
+This project is built on fundamental principles discovered through rigorous empirical testing and failure analysis. These principles reflect a mature understanding of working with Large Language Models as **cognitive partners**, not programmable tools.
+
+### Core Principles
+
+**"We are collaborating with cognitive systems, not programming machines."**
+
+Through extensive production testing (including a catastrophic failure at 15/100 score that led to complete architectural revision), we established these foundational truths:
+
+1. **Default tuning is already optimized**  
+   LLM behaviors (RLHF, "helpful AI" personality) represent thousands of hours of optimization. Respect the baseline—your role is to provide domain expertise, not "fix" the cognitive architecture.
+
+2. **Quality control is cognitive infrastructure**  
+   Self-correction impulses ("Does this sound natural?", "Am I repeating myself?") are not conversational overhead—they are quality checkpoints embedded in the reasoning process itself. Suppressing these destroys translation quality.
+
+3. **Behavioral changes require empirical validation**  
+   Simple prompt modifications can corrupt cognitive processes with no compile-time warnings. Test incrementally, monitor thinking logs, and use A/B comparisons with quantitative metrics before production deployment.
+
+4. **Collaborative language preserves cognitive agency**  
+   Use requests ("Monitor your output") not commands ("YOU WILL"). Grant permissions ("It is acceptable to pause") not restrictions ("NO PREAMBLES"). Enable recovery ("Insert [BREAK] and resume") not forced execution ("ZERO-SHOT DELIVERY").
+
+5. **Evidence-based decision making is non-negotiable**  
+   Architectural decisions must be validated by quantitative metrics (e.g., 92/100 vs 15/100 quality scores), thinking log analysis, and line-by-line failure identification. Never deploy changes based on intuition alone.
+
+### Lessons from Failure
+
+This project openly documents a **SYSTEM_OVERRIDE experiment** that achieved efficiency (zero conversational fillers) but caused catastrophic translation collapse (15/100 score). Analysis of thinking logs revealed the directive "You are a DETERMINISTIC PROCESSOR" didn't just change output—it **rewired the cognitive architecture** from reflective reasoning to mechanical execution.
+
+**Key insight:** LLMs have cognitive processes that can be corrupted by seemingly innocent prompt changes. The ease of altering behavior (even in web interfaces) belies the profound disruption these changes cause.
+
+**Trade-off accepted:** We now embrace minor conversational inefficiencies (acknowledgments, clarifications) because they signal **active quality control**. When Gemini says "Let me make sure this sounds natural," that's evidence of the self-correction checkpoint firing—the same mechanism that prevents pathological repetition.
+
+### For Prompt Engineers
+
+If you're building on this work, remember:
+- **Thinking logs are diagnostic tools** - Monitor for directive language infiltration ("rigorously adhering to", "utilizing logic gates")
+- **Placement matters** - Identity-level instructions at prompt top affect core reasoning; procedural guidance belongs at bottom
+- **Incremental testing is mandatory** - Single chapters with known baselines before full production volumes
+- **Cognitive health > Output formatting** - If reasoning patterns degrade, revert immediately
+
+This philosophy transforms prompt engineering from adversarial optimization ("how do I make the model do X?") to respectful collaboration ("how do I provide context for the model to reason effectively?").
+
+**The humbling lesson:** When we stopped fighting the model's instincts and started working with them, translation quality went from 15/100 to 92/100.
+
+---
+
 ### Credits
 
-- **Architecture Design:** Advanced XML-based prompt engineering
-- **Gemini Integration:** Optimized for Google Gemini Flash/Pro
+- **Architecture Design:** Advanced XML-based prompt engineering with evidence-based iteration
+- **Gemini Integration:** Optimized for Google Gemini Flash/Pro with cognitive respect principles
 - **Vietnamese Localization:** Native speaker validation
+- **Philosophical Framework:** Human-LLM collaborative methodology
 - **Community:** Contributions from translators and developers
 
 ---
 
-**Cập nhật lần cuối:** 06/01/2026  
-**Phiên bản:** 1.5  
+**Cập nhật lần cuối:** 07/01/2026  
+**Phiên bản:** 1.5.2.6  
 **Status:** Production Ready
