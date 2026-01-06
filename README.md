@@ -709,7 +709,7 @@ Mei (chị): "Nè em ơi, mua kem về cho chị đi"
 - **Nguồn:** [Kakuyomu](https://kakuyomu.jp/works/16818093090336191546)
 - **Lưu ý:** _Bản dịch mẫu chỉ phục vụ mục đích nghiên cứu và giáo dục. Mọi quyền thuộc về tác giả gốc._
 
-Bản dịch đầy đủ có tại [`Examples/sample_chapter_VN_2nd_run.md`](Examples/sample_chapter_VN_2nd_run.md)
+Bản dịch đầy đủ có tại [`Examples/sample_chapter_VN.md`](Examples/sample_chapter_VN.md)
 
 ---
 
@@ -767,68 +767,68 @@ nhìn bóng dáng tiền bối Watanuki rảo bước tiến về phía trước
 
 **Tiếng Nhật gốc:**
 ```
-黒髪がさらさらと流れる美人な先輩
+唯一、後頭部でお団子にまとめられてる黒髪から伸びた細い髪が、さらりと秋風にそよいでいた
 ```
 
 **Dịch Trực Tiếp:**
 ```
-Tiền bối xinh đẹp với mái tóc đen dài mượt mà
+Chỉ có những sợi tóc mỏng từ mái tóc đen búi sau đầu là nhẹ nhàng rung động theo gió thu
 ```
-✅ Chính xác nhưng miêu tả cơ bản
+✅ Chính xác nhưng miêu tả cơ bản, thiếu cảm giác chuyển động
 
 **JP-VN Translator v1.5.2:**
 ```
-đàn chị xinh đẹp với mái tóc đen nhánh đung đưa mềm mại
+Duy chỉ có những sợi tóc mai mảnh mai thoát ra từ búi tóc sau gáy là khẽ đung đưa theo làn gió thu
 ```
-✅ Nâng cao: "đàn chị" (thân mật hơn), "nhánh" (bóng mượt), "đung đưa" (chuyển động mềm mại)
+✅ Nâng cao: "sợi tóc mai" (poetic), "mảnh mai" (delicate), "thoát ra" (dynamic verb), "đung đưa" (flowing motion)
 
-**Kỹ thuật:** Thể loại `SCHOOL_LIFE` với ngưỡng 30% Hán-Việt + `VIVID_VERBS` + nhiều lớp giác quan
+**Kỹ thuật:** Thể loại `SCHOOL_LIFE` với ngưỡng 30% Hán-Việt + `VIVID_VERBS` (thoát ra, đung đưa) + nhiều lớp giác quan
 
 ---
 
-#### Ví Dụ 4: Giao Thức FAMILY_OVERRIDE
+#### Ví Dụ 4: Khóa Đại Từ Gia Đình (FAMILY_OVERRIDE)
 
-**Tiếng Nhật gốc (Thành Viên Gia Đình Nói):**
+**Tiếng Nhật gốc (Em Trai Gọi Chị Gái):**
 ```
-「芽衣ちゃん、ご飯だよ」
+「ねー透也ぁ、アイス買ってきてぇ」
 ```
 
-**Không có FAMILY_CHAN_EXCEPTION:**
+**Dịch Sai (Không tuân thủ FAMILY_OVERRIDE):**
 ```
-「Bé Mei, ăn cơm đi」
+「Nè Touya, mua kem vềee」
 ```
-⚠️ Việt hóa quá mức, mất đi sự ấm áp văn hóa Nhật
+⚠️ Thiếu đại từ gia đình, không thể hiện quan hệ anh-chị
 
 **JP-VN Translator v1.5.2:**
 ```
-「Mei-chan, ăn cơm đi」
+「Nèee Touyaaa, mua kem cho chị điiii」
 ```
-✅ Giữ nguyên -chan trong ngữ cảnh gia đình, bảo tồn sắc thái văn hóa Nhật
+✅ Bổ sung "cho chị" để thể hiện rõ quan hệ gia đình (chị gọi em trai)
 
-**Kỹ thuật:** `FAMILY_CHAN_EXCEPTION` duy trì hậu tố Nhật khi thành viên gia đình dùng từ trìu mến
+**Kỹ thuật:** `FAMILY_OVERRIDE` ưu tiên tuyệt đối - luôn dùng đại từ gia đình Việt, không phụ thuộc RTAS hay archetype
 
 ---
 
 #### Ví Dụ 5: Khóa Giọng Điệu Archetype (Nhân Vật GYARU)
 
-**Tiếng Nhật gốc (Em Gái - GYARU):**
+**Tiếng Nhật gốc (Chị Gái GYARU - Giọng Nũng Nịu):**
 ```
-「お兄ちゃん、超やばくない？」
+「えー、むりむり耐えられない、あたしってば園児のころから成長ないちゃんだからさぁ」
 ```
 
 **Dịch Chung Chung:**
 ```
-「Anh ơi, không quá tệ sao?」
+「Hả, không thể chịu được, tôi không trưởng thành từ nhỏ mà」
 ```
-⚠️ Quá trang trọng, mất năng lượng Gen Z
+⚠️ Quá trang trọng, mất năng lượng Gen Z và giọng nũng nịu
 
 **JP-VN Translator v1.5.2:**
 ```
-「Anh ơi, kinh khủng lắm luôn á?」
+「Ơơơ, không được không đượccc, chị không chịu nổi đâuuu. Chị vẫn là đứa trẻ chưa lớn từ hồi mẫu giáo tới giờ mà lịii」
 ```
-✅ Cách nói thân mật "kinh khủng lắm luôn" + trợ từ "á" phù hợp archetype GYARU
+✅ Giọng nũng nịu: "Ơơơ", kéo dài "đượccc", "đâuuu", "lịii" + trợ từ "mà" phù hợp GYARU
 
-**Kỹ thuật:** `ARCHETYPE_VOICE_LOCK` đảm bảo giọng điệu nhân vật nhất quán (GYARU = Tớ-Cậu, slang Gen Z, trợ từ)
+**Kỹ thuật:** `ARCHETYPE_VOICE_LOCK` với `TRAILING_VOWELS` (kéo dài nguyên âm), slang Gen Z, giọng điệu cá nhân hóa
 
 ---
 
