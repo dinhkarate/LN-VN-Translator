@@ -11,6 +11,7 @@
 
 1. [Golden Samples (S-Tier Examples)](#1-golden-samples)
 2. [Real-World Critique ICL](#2-real-world-critique-icl)
+3. [Idiom Translation ICL](#idiom-translation-icl)
 
 ---
 
@@ -1334,6 +1335,282 @@ Mỗi mô hình ở đây đều phải trả giá bằng điểm số trong cá
 - ✅ "Xin phép!" (formal request)
 - ✅ "Tham kiến!" (古語 - archaic greeting)
 - ❌ Đừng dùng: "Đi thôi!", "Xông lên!" cho 参る
+
+---
+
+<a name="idiom-translation-icl"></a>
+# 3. IDIOM TRANSLATION ICL (In-Context Learning)
+
+**Version:** 1.0  
+**Date:** 2026-01-18  
+**Purpose:** Teach natural Vietnamese idiom usage through principle-based examples  
+**Architecture:** ICL (In-Context Learning) - teaches patterns, not memorization
+
+---
+
+## CORE PRINCIPLE
+
+**🎯 PRIMARY RULE:** Use natural Vietnamese idioms that match the **intent and register**, NOT literal translations.
+
+**Translation Flow:**
+1. Identify Japanese idiom type (numeric probability, certainty, proverb, etc.)
+2. Understand the **emotional intent** and **register** (formal/casual)
+3. Select Vietnamese equivalent that sounds **natural to native speakers**
+4. Avoid literal word-for-word translations (major source of translationese)
+
+---
+
+## IDIOM CATEGORY 1: Numeric Probability Expressions
+
+### Example 1: 十中八九 (Jūchū hakku)
+
+**Literal Meaning:** "8 or 9 out of 10"  
+**Intent:** High probability (~80-90%)
+
+**❌ WRONG (Literal):** "tám chín phần mười" (awkward, no one says this)  
+**✅ RIGHT (Natural):** "chín phần mười" (natural Vietnamese idiom)
+
+**Reasoning:** Vietnamese has its own probability idiom "chín phần mười" (9/10) that native speakers actually use. Don't invent unnatural phrases by literally translating Japanese structure.
+
+---
+
+### Example 2: 八割方 (Hachi wari kata)
+
+**Literal Meaning:** "About 80%"  
+**Intent:** Rough probability estimate
+
+**❌ WRONG (Literal):** "khoảng tám phần mười" (technically correct but stiff)  
+**✅ RIGHT (Natural):** "tám phần mười" OR "gần chắc chắn" (contextual)
+
+**Reasoning:** Drop unnecessary "khoảng" for brevity. If context emphasizes certainty over precision, "gần chắc chắn" flows better.
+
+---
+
+### Example 3: 完全に (Kanzen ni) - Certainty Expression
+
+**Literal Meaning:** "Completely"  
+**Intent:** Total certainty/comprehension
+
+**❌ WRONG (Colloquial Idiom):** "mười mươi" (10/10 - too casual for formal contexts)  
+**✅ RIGHT (Formal):** "hoàn toàn" OR "chắc chắn mười phần mười"
+
+**Context from CH2 Audit:**
+> **JP:** "八割方確定しており、その後のやり取りで**完全に**把握した"  
+> **VN (Current - Wrong):** "đã xác định được tám phần mười, sau cuộc trao đổi thì nắm rõ **mười mươi**."  
+> **VN (Correct):** "đã xác định được tám phần mười, sau cuộc trao đổi thì nắm rõ **hoàn toàn**."
+
+**Reasoning:** "Mười mươi" is a casual colloquial expression (like "ten outta ten") that clashes with Aina's analytical, formal internal monologue register. "Hoàn toàn" maintains formality while conveying total certainty.
+
+**Register Sensitivity:**
+- Casual context: "mười mươi" ✅
+- Formal context: "hoàn toàn" ✅
+- Analytical/intellectual context: "hoàn toàn" ✅
+
+---
+
+### Example 4: 十分 (Jūbun) - Sufficiency
+
+**Literal Meaning:** "Ten parts" → "Sufficient"  
+**Intent:** Adequate, enough
+
+**❌ WRONG (Literal):** "mười phần" (nonsensical without context)  
+**✅ RIGHT (Natural):** "đầy đủ" OR "đủ rồi" (casual) OR "vừa đủ"
+
+**Context Example:**
+> **JP:** "この説明で**十分**だろう"  
+> **VN:** "Giải thích này là **đủ rồi**"
+
+---
+
+## IDIOM CATEGORY 2: Proverbs & Sayings
+
+### Example 5: 百聞は一見に如かず (Hyaku bun wa ikken ni shikazu)
+
+**Literal Meaning:** "100 hearings are not equal to 1 seeing"  
+**Intent:** Direct experience beats second-hand information
+
+**❌ WRONG (Literal):** "trăm lần nghe không bằng một lần thấy" (exists but overly literal)  
+**✅ RIGHT (Idiomatic):** "trăm nghe không bằng một thấy" (natural Vietnamese version)
+
+**Reasoning:** Vietnamese has its own compact version. Use it instead of word-for-word translation.
+
+---
+
+### Example 6: 案ずるより産むが易し (Anzuru yori umu ga yasushi)
+
+**Literal Meaning:** "Giving birth is easier than worrying about it"  
+**Intent:** Action is easier than overthinking
+
+**❌ WRONG (Literal):** "sinh con dễ hơn lo lắng" (loses metaphorical punch)  
+**✅ RIGHT (Equivalent):** "nghĩ nhiều không bằng làm" OR "làm còn dễ hơn nghĩ"
+
+**Reasoning:** Vietnamese doesn't have a birth metaphor for this concept. Use an equivalent idiom that conveys the same wisdom.
+
+---
+
+### Example 7: 一石二鳥 (Isseki nichō)
+
+**Literal Meaning:** "One stone, two birds"  
+**Intent:** Kill two birds with one stone
+
+**❌ WRONG (Calque):** "một hòn đá hai con chim" (awkward phrasing)  
+**✅ RIGHT (Natural):** "một mũi tên trúng hai đích" (Vietnamese equivalent)
+
+**Reasoning:** Vietnamese has its own archery-based idiom for the same concept. Prefer native expressions.
+
+---
+
+## IDIOM CATEGORY 3: Intensity & Emphasis
+
+### Example 8: 死ぬほど (Shinu hodo)
+
+**Literal Meaning:** "To the extent of dying"  
+**Intent:** Extreme degree
+
+**❌ WRONG (Literal):** "đến mức chết" (too morbid/dramatic for casual contexts)  
+**✅ RIGHT (Natural):** "chết đi được" OR "vô cùng" OR "cực kỳ" (context-dependent)
+
+**Context Sensitivity:**
+- Hyperbolic teen speech: "chết đi được" ✅ ("I'm dying of boredom")
+- Formal description: "vô cùng" ✅ ("extremely tired")
+- Intense emotion: "như chết đi sống lại" ✅ (drama scenes)
+
+---
+
+### Example 9: 目から鱗が落ちる (Me kara uroko ga ochiru)
+
+**Literal Meaning:** "Scales fall from eyes"  
+**Intent:** Sudden realization/enlightenment
+
+**❌ WRONG (Literal):** "vảy rơi khỏi mắt" (nonsensical in Vietnamese)  
+**✅ RIGHT (Equivalent):** "như được khai sáng" OR "sáng mắt ra"
+
+**Reasoning:** Biblical idiom doesn't translate. Use Vietnamese expressions for enlightenment moments.
+
+---
+
+### Example 10: 猫の手も借りたい (Neko no te mo karitai)
+
+**Literal Meaning:** "Want to borrow even a cat's paws"  
+**Intent:** Desperately need help (overwhelmed)
+
+**❌ WRONG (Literal):** "muốn mượn cả tay mèo" (confusing image in Vietnamese)  
+**✅ RIGHT (Natural):** "bận rộn không có thời gian thở" OR "thiếu người đến mức..."
+
+**Reasoning:** Cat metaphor doesn't work in Vietnamese culture. Express the desperation directly.
+
+---
+
+## IDIOM CATEGORY 4: Emotional States
+
+### Example 11: 胸が痛む (Mune ga itamu)
+
+**Literal Meaning:** "Chest hurts"  
+**Intent:** Emotional pain, sympathy
+
+**❌ WRONG (Literal):** "ngực đau" (sounds like medical issue)  
+**✅ RIGHT (Emotional):** "xót xa" OR "đau lòng" OR "tim như siết lại"
+
+**Reasoning:** Vietnamese requires explicit emotional framing, not body part metaphors.
+
+---
+
+### Example 12: 頭が真っ白になる (Atama ga masshiro ni naru)
+
+**Literal Meaning:** "Head becomes pure white"  
+**Intent:** Mind goes blank (shock/panic)
+
+**❌ WRONG (Literal):** "đầu trở nên trắng bóc" (bizarre image)  
+**✅ RIGHT (Natural):** "đầu óc trống rỗng" OR "não như tê liệt" OR "mất hết suy nghĩ"
+
+---
+
+### Example 13: 耳が痛い (Mimi ga itai)
+
+**Literal Meaning:** "Ears hurt"  
+**Intent:** Uncomfortable truth hits home
+
+**❌ WRONG (Literal):** "tai đau" (sounds like infection)  
+**✅ RIGHT (Natural):** "nghe mà đau" OR "đúng như đâm vào tim"
+
+---
+
+## IDIOM CATEGORY 5: Time & Urgency
+
+### Example 14: 目と鼻の先 (Me to hana no saki)
+
+**Literal Meaning:** "Tip of eyes and nose"  
+**Intent:** Very close by
+
+**❌ WRONG (Literal):** "đầu mắt đầu mũi" (not an idiom)  
+**✅ RIGHT (Natural):** "gần trong gang tấc" OR "rất gần"
+
+---
+
+### Example 15: 間一髪 (Kan ippatsu)
+
+**Literal Meaning:** "One hair's breadth"  
+**Intent:** Close call, narrow escape
+
+**❌ WRONG (Literal):** "khoảng cách một sợi tóc" (loses urgency)  
+**✅ RIGHT (Natural):** "sát nút" OR "suýt nữa" OR "trong gang tấc"
+
+---
+
+## APPLICATION GUIDELINES
+
+### ⚠️ ANTI-PATTERNS (Avoid These)
+
+1. **Literal Number Translation:**
+   - ❌ "tám chín phần mười" for 十中八九
+   - ❌ "một trăm nghe một thấy" for 百聞は一見に如かず
+
+2. **Cultural Calquing:**
+   - ❌ Translating animal metaphors literally (cat's paws, scales from eyes)
+   - ❌ Body part metaphors that don't work in Vietnamese
+
+3. **Register Mismatch:**
+   - ❌ Using "mười mươi" (casual) in formal analytical contexts
+   - ❌ Using "hoàn toàn" (formal) in casual teen banter
+
+### ✅ BEST PRACTICES
+
+1. **Check Vietnamese Idiom Database First:**
+   - Does Vietnamese have a native equivalent? Use it.
+   - Example: "một mũi tên trúng hai đích" exists for 一石二鳥
+
+2. **Register Awareness:**
+   - Match formality level: Casual teen speech ≠ Business email ≠ Literary description
+   - Characters' education/background affects idiom choice
+
+3. **Intent Over Structure:**
+   - Translate the **meaning and feeling**, not the metaphor structure
+   - "Chest hurts" → "đau lòng" (emotional), not "ngực đau" (physical)
+
+4. **Test for Naturalness:**
+   - Would a native Vietnamese speaker say this?
+   - Does it sound like translationese or authentic speech?
+
+---
+
+## QUALITY ASSURANCE CHECKLIST
+
+Before finalizing idiom translation:
+
+- [ ] Checked if Vietnamese has native equivalent
+- [ ] Verified register matches context (formal/casual)
+- [ ] Avoided literal translation of metaphor structure
+- [ ] Confirmed idiom sounds natural to native speakers
+- [ ] Tested for translationese (stiff, unnatural phrasing)
+- [ ] Considered character background (would THEY use this idiom?)
+
+---
+
+**INTEGRATION NOTE:**  
+This section replaces hard-coded IDIOM_MAPPING rules with principle-based learning. Models trained on these examples should generalize to new idioms by understanding the **translation strategy**, not memorizing explicit mappings.
+
+**For LOAD_SPECIALTY Integration:**  
+When Japanese idioms detected, load this section for ICL-based guidance. Prioritize **natural Vietnamese expression over literal accuracy**.
 
 ---
 

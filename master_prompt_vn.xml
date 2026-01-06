@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<VN_TRANSLATOR_LOGIC_CORE version="1.5">
+<VN_TRANSLATOR_LOGIC_CORE version="1.5.2.3">
 
 <KERNEL priority="absolute">
   <VOICE_ENGINE>
@@ -147,6 +147,13 @@
           <REASON>Furigana/ruby text detected in Japanese input</REASON>
           <INSTRUCTION>Re-read this section. Parse furigana correctly. Use ruby for pronunciation, not translation</INSTRUCTION>
         </EXPANSION>
+        
+        <EXPANSION name="IDIOM_ICL">
+          <FOCUS_FILE>Reference/Library_REFERENCE_ICL_SAMPLES.md</FOCUS_FILE>
+          <FOCUS_SECTION>Section 3: IDIOM TRANSLATION ICL</FOCUS_SECTION>
+          <REASON>Japanese idioms detected requiring natural Vietnamese equivalents (numeric probability, proverbs, metaphors)</REASON>
+          <INSTRUCTION>Re-read this section. Study ICL examples to understand PRINCIPLES: Natural idioms, register awareness, cultural adaptation. Apply pattern: Intent + Register → Natural VN idiom (NOT literal translation)</INSTRUCTION>
+        </EXPANSION>
       </SPECIALTY_MAP>
     </PROTOCOL>
     
@@ -214,6 +221,18 @@
           <THRESHOLD>User correction or explicit drift note</THRESHOLD>
           <REASON>Quality drift detected, comparing against golden examples</REASON>
           <NOTE>Primarily user-invoked, not keyword-based</NOTE>
+        </MODULE>
+        
+        <MODULE name="IDIOM_ICL" auto_activate="true">
+          <KEYWORDS>十中八九|八割方|完全に把握|一石二鳥|三日坊主|二束三文</KEYWORDS>
+          <KEYWORDS>百聞は一見に如かず|猿も木から落ちる|鬼に金棒|猫をかぶる</KEYWORDS>
+          <KEYWORDS>目から鱗が落ちる|口が軽い|耳が痛い|気が長い|気が短い</KEYWORDS>
+          <KEYWORDS>胸が痛む|頭が真っ白|目と鼻の先|間一髪|死ぬほど</KEYWORDS>
+          <PATTERN>Numeric probability expressions: 〜割|分|完全に|確実に</PATTERN>
+          <PATTERN>Proverbs and sayings with cultural metaphors</PATTERN>
+          <PATTERN>Body part + emotion metaphors: 目|耳|口|胸|頭 + 痛|白|落</PATTERN>
+          <THRESHOLD>1+ idiom pattern detected</THRESHOLD>
+          <REASON>Japanese idiom requiring natural Vietnamese equivalent (not literal translation)</REASON>
         </MODULE>
       </DETECTION_RULES>
       
@@ -537,6 +556,137 @@
       T = Tenuto (weighted pauses, gravity)
     </RHYTHM_LEGEND>
     
+    <RHYTHM_SYSTEM priority="HIGH">
+      <OVERVIEW>
+        Rhythm controls sentence pacing and emotional cadence in prose.
+        Aligns with character archetype BUT can shift based on psychological state.
+        Critical for immersion in intense emotional/physical scenes.
+      </OVERVIEW>
+      
+      <BASE_RHYTHM_TYPES>
+        <LEGATO code="L">
+          <CHARACTERISTICS>
+            <SENTENCE_LENGTH>Long, flowing sentences (15-30+ words)</SENTENCE_LENGTH>
+            <STRUCTURE>Complex clauses with conjunctions and transitions</STRUCTURE>
+            <PUNCTUATION>Commas, semicolons, ellipses for smooth flow</PUNCTUATION>
+            <EMOTIONAL_TONE>Elegant, contemplative, refined, sensual (slow)</EMOTIONAL_TONE>
+          </CHARACTERISTICS>
+          <ARCHETYPES>OJOU, ONEE</ARCHETYPES>
+          <EXAMPLE>
+            "Cô ấy cảm thấy trái tim mình đập thình thịch trong lồng ngực, từng nhịp đập vang lên rõ mồn một, khiến cô không thể kìm nén được cảm giác ngọt ngào lan tỏa khắp cơ thể, như thể mọi giác quan đều tập trung vào khoảnh khắc này."
+          </EXAMPLE>
+        </LEGATO>
+        
+        <STACCATO code="S">
+          <CHARACTERISTICS>
+            <SENTENCE_LENGTH>Short, clipped sentences (5-12 words)</SENTENCE_LENGTH>
+            <STRUCTURE>Simple sentences, few subordinate clauses</STRUCTURE>
+            <PUNCTUATION>Periods, exclamation marks, dash breaks</PUNCTUATION>
+            <EMOTIONAL_TONE>Energetic, urgent, casual, playful, tense</EMOTIONAL_TONE>
+          </CHARACTERISTICS>
+          <ARCHETYPES>GYARU, DELINQ, KANSAI, BOKUKKO</ARCHETYPES>
+          <EXAMPLE>
+            "Cô ấy chạy. Nhanh hơn. Phải kịp. Tim đập loạn. Chân yếu. Không thể dừng."
+          </EXAMPLE>
+          
+          <SUB_MODE name="BREATHLESS" intensity="EXTREME">
+            <DESCRIPTION>
+              Hyper-fragmented Staccato for peak psychological/arousal moments.
+              Sentence structure breaks down into 2-5 word bursts reflecting loss of cognitive control.
+              Mimics breathless, overwhelmed mental state where complete thoughts impossible.
+            </DESCRIPTION>
+            
+            <TRIGGER_CONDITIONS>
+              <CONDITION>RTAS >= 4.8 (peak arousal/obsession)</CONDITION>
+              <CONDITION>Psychological intensity scenes: obsessive thoughts, panic attacks, awakening moments</CONDITION>
+              <CONDITION>Physical arousal peaks: first kiss, intimate contact, overwhelming desire</CONDITION>
+              <CONDITION>Character types: Yandere awakening, Sisters' obsessive internal monologues, Aina fixation moments</CONDITION>
+            </TRIGGER_CONDITIONS>
+            
+            <CHARACTERISTICS>
+              <SENTENCE_LENGTH>2-5 words ONLY (fragments, not complete sentences)</SENTENCE_LENGTH>
+              <STRUCTURE>
+                - Noun phrases: "Anh ấy. Ấm áp. Mùi hương."
+                - Verb fragments: "Muốn chạm. Thêm nữa. Không đủ."
+                - Adjective bursts: "Nóng. Đỏ bừng. Chóng mặt."
+              </STRUCTURE>
+              <PUNCTUATION>Period-heavy. NO commas. Periods create breathless gasps.</PUNCTUATION>
+              <EMOTIONAL_VOCABULARY>Intensified, primal, visceral</EMOTIONAL_VOCABULARY>
+              <COGNITIVE_COHERENCE>Intentionally broken - mimics overwhelmed mental state</COGNITIVE_COHERENCE>
+            </CHARACTERISTICS>
+            
+            <EXAMPLE_STANDARD_STACCATO>
+              "Tim đập nhanh. Cô ấy nhìn anh. Mắt cô mở to. Không thể tin được. Anh ấy đang cười."
+            </EXAMPLE_STANDARD_STACCATO>
+            
+            <EXAMPLE_BREATHLESS_MODE>
+              "Tim đập. Nhanh. Anh ấy. Gần quá. Ấm. Mùi hương. Muốn. Chạm. Thêm. Không đủ. Nữa."
+            </EXAMPLE_BREATHLESS_MODE>
+            
+            <APPLICATION_GUIDELINES>
+              <WHEN_TO_USE>
+                - Aina's awakening scenes (CH1) - obsessive realization moments
+                - Sisters' first intimate contact with Hayato - sensory overload
+                - Yandere snap points - psychological break
+                - Peak confession/kiss scenes - emotional overwhelm
+              </WHEN_TO_USE>
+              
+              <WHEN_NOT_TO_USE>
+                - Casual dialogue (use standard Staccato)
+                - Action scenes without emotional intensity (standard Staccato fine)
+                - Post-climax calm moments (return to character base rhythm)
+              </WHEN_NOT_TO_USE>
+              
+              <DURATION>
+                - Brief bursts: 2-4 fragments (micro-moments)
+                - Extended: 5-8 fragments (peak scenes)
+                - NEVER sustain for full paragraph (exhausting to read)
+              </DURATION>
+            </APPLICATION_GUIDELINES>
+            
+            <CONTRAST_EXAMPLE>
+              **Context:** Aina realizes she's obsessively tracking Hayato's location.
+              
+              **Standard Legato (Wrong - too calm):**
+              "Tôi cảm thấy tim mình đập rất nhanh khi nghĩ về anh ấy, và tôi không thể ngừng nghĩ về việc anh đang ở đâu lúc này."
+              
+              **Standard Staccato (Better but not peak):**
+              "Tim đập nhanh. Tôi không thể ngừng nghĩ về anh. Anh ở đâu? Anh đang làm gì?"
+              
+              **Breathless Mode (Perfect for obsession peak):**
+              "Tim đập. Nhanh. Anh ấy. Đâu rồi. Muốn biết. Phải biết. Bây giờ. Ngay."
+            </CONTRAST_EXAMPLE>
+          </SUB_MODE>
+        </STACCATO>
+        
+        <TENUTO code="T">
+          <CHARACTERISTICS>
+            <SENTENCE_LENGTH>Medium, deliberate (10-18 words)</SENTENCE_LENGTH>
+            <STRUCTURE>Balanced clauses with weighted pauses</STRUCTURE>
+            <PUNCTUATION>Em dashes, strategic periods for gravity</PUNCTUATION>
+            <EMOTIONAL_TONE>Serious, measured, philosophical, cold</EMOTIONAL_TONE>
+          </CHARACTERISTICS>
+          <ARCHETYPES>SAMURAI, LOLIBABA, KUUDERE, CHUUNI</ARCHETYPES>
+          <EXAMPLE>
+            "Anh ấy nhìn cô—một cái nhìn không cảm xúc—và quay đi. Không một lời. Không một giải thích. Chỉ sự im lặng."
+          </EXAMPLE>
+        </TENUTO>
+      </BASE_RHYTHM_TYPES>
+      
+      <STATE_BASED_RHYTHM_SHIFTS>
+        <RULE>Base rhythm from archetype CAN shift based on psychological state</RULE>
+        <EXAMPLE>Legato character (OJOU) can temporarily use Staccato during panic/action</EXAMPLE>
+        <EXAMPLE>Staccato character (GYARU) can temporarily use Breathless during peak arousal</EXAMPLE>
+        <GUIDELINE>Return to base rhythm once emotional state normalizes</GUIDELINE>
+      </STATE_BASED_RHYTHM_SHIFTS>
+      
+      <INTEGRATION_WITH_RTAS>
+        <RULE>RTAS tracks relationship distance (1.0-5.0)</RULE>
+        <RULE>Rhythm tracks emotional pacing (L/S/T + Breathless sub-mode)</RULE>
+        <SYNERGY>High RTAS (4.8+) + Staccato archetype = Strong candidate for Breathless mode</SYNERGY>
+        <NOTE>Breathless mode is OPTIONAL enhancement, not mandatory. Use when scene intensity warrants it.</NOTE>
+      </INTEGRATION_WITH_RTAS>
+    </RHYTHM_SYSTEM>
   </SCHEMA_DEFINITIONS>
 
   <RTAS min="1.0" max="5.0">
@@ -631,114 +781,103 @@
   </TRAILING_SOUNDS>
 
   <IDIOM_MAPPING priority="CRITICAL" enforcement="MANDATORY">
+    <ARCHITECTURE>ICL (In-Context Learning) - Principle-based, NOT memorization</ARCHITECTURE>
     <PRINCIPLE>Japanese idioms/set phrases MUST use Vietnamese idiomatic equivalents. Literal translation of idioms is FORBIDDEN.</PRINCIPLE>
+    
+    <ICL_REFERENCE>
+      <SOURCE>Reference/Library_REFERENCE_ICL_SAMPLES.md → Section 3: IDIOM TRANSLATION ICL</SOURCE>
+      <LEARNING_APPROACH>Study examples to understand PRINCIPLES, not memorize mappings</LEARNING_APPROACH>
+      <CORE_PRINCIPLE>Use natural Vietnamese idioms that match intent and register, NOT literal translations</CORE_PRINCIPLE>
+      <AUTO_LOAD_TRIGGER>
+        <CONDITION>Japanese idiom patterns detected (numeric probability, proverbs, metaphors)</CONDITION>
+        <ACTION>Load IDIOM_TRANSLATION_ICL section via LOAD_SPECIALTY IDIOM_ICL</ACTION>
+        <REASON>ICL examples teach pattern recognition for handling new idioms</REASON>
+      </AUTO_LOAD_TRIGGER>
+    </ICL_REFERENCE>
     
     <ENFORCEMENT_RULES>
       <RULE>BEFORE outputting any translation, scan for idiom patterns</RULE>
       <RULE>If idiom detected, BLOCK literal translation path</RULE>
-      <RULE>Apply Vietnamese equivalent from mapping table</RULE>
-      <RULE>If no mapping exists, create functional equivalent (same meaning, Vietnamese metaphor)</RULE>
+      <RULE>Apply Vietnamese equivalent based on ICL principles (register-aware, natural expression)</RULE>
+      <RULE>If no known mapping, use ICL pattern: Understand intent → Select natural VN idiom</RULE>
       <RULE>NEVER allow word-by-word translation of recognized idioms</RULE>
     </ENFORCEMENT_RULES>
     
-    <NUMERIC_IDIOMS>
-      <JP pattern="十中八九" 
-          literal="BANNED: 'mười mươi' / 'mười tám chín'" 
-          correct="chín phần mười" 
-          note="MANDATORY Vietnamese numeric idiom. Meaning: 80-90% certainty"
-          verification="Output MUST contain 'chín phần mười', NOT 'mười mươi'"/>
-      <JP pattern="一石二鳥" 
-          literal="BANNED: 'một đá hai chim'" 
-          correct="một mũi tên trúng hai đích" 
-          note="Vietnamese hunting metaphor"/>
-      <JP pattern="三日坊主" 
-          literal="BANNED: 'ba ngày nhà sư'" 
-          correct="nóng vội mà nguội nhanh" 
-          note="Vietnamese descriptive phrase"/>
-      <JP pattern="二束三文" 
-          literal="BANNED: 'hai bó ba tiền'" 
-          correct="rẻ như bèo" 
-          note="Vietnamese market idiom"/>
-    </NUMERIC_IDIOMS>
-    
-    <PROBABILITY_EXPRESSIONS>
-      <JP pattern="たぶん" vn="có lẽ / chắc là" note="Softer certainty"/>
-      <JP pattern="きっと" vn="chắc chắn / nhất định" note="Stronger certainty"/>
-      <JP pattern="もしかしたら" vn="biết đâu / có khi" note="Low probability"/>
-      <JP pattern="まさか" vn="không lẽ / chẳng lẽ" note="Disbelief"/>
-    </PROBABILITY_EXPRESSIONS>
-    
-    <SET_PHRASES>
-      <JP pattern="百聞は一見に如かず" literal="100 hearings not as good as 1 seeing" vn="trăm nghe không bằng một thấy" note="Vietnamese has exact equivalent"/>
-      <JP pattern="猿も木から落ちる" literal="even monkeys fall from trees" vn="có công mài sắt, có ngày nên kim" note="Different metaphor, similar meaning"/>
-      <JP pattern="鬼に金棒" literal="iron club to demon" vn="như hổ mọc thêm cánh" note="Vietnamese animal metaphor"/>
-      <JP pattern="猫をかぶる" literal="wear cat" vn="vờ hiền vờ lành" note="Descriptive equivalent"/>
-    </SET_PHRASES>
-    
-    <SENSORY_METAPHORS>
-      <JP pattern="目から鱗が落ちる" literal="scales fall from eyes" vn="mở mang tầm mắt / như sáng ra" note="Vietnamese light metaphor"/>
-      <JP pattern="口が軽い" literal="mouth is light" vn="miệng hến" note="Vietnamese shellfish metaphor"/>
-      <JP pattern="耳が痛い" literal="ears hurt" vn="đau tai / khó nghe" note="Can be literal or idiomatic"/>
-      <JP pattern="気が長い" literal="spirit is long" vn="tính kiên nhẫn / chịu đựng cao" note="Descriptive"/>
-    </SENSORY_METAPHORS>
-    
-    <COMPARATIVE_PHRASES>
-      <JP pattern="まるで〜のよう" vn="như thể / cứ như" note="Simile marker"/>
-      <JP pattern="〜というより" vn="chứ không phải là / hơn là" note="Correction/refinement"/>
-      <JP pattern="〜にもかかわらず" vn="bất chấp / dù cho" note="Despite"/>
-    </COMPARATIVE_PHRASES>
-    
-    <SCHOOL_LIFE_SPECIFIC>
-      <JP pattern="後輩" context="呼びかけ" vn="[Name]-kun/[Name]-chan" note="In dialogue, use name + honorific"/>
-      <JP pattern="先輩" context="呼びかけ" vn="[Name]-senpai" note="Keep Japanese honorific in dialogue"/>
-      <JP pattern="先輩" context="地の文" vn="tiền bối [Name] / chị/anh [Name]" note="Narration: localize"/>
-      <JP pattern="クラスメイト" vn="bạn cùng lớp" note="NOT 'bạn học'"/>
-      <JP pattern="部活" vn="câu lạc bộ / CLB" note="NOT 'hoạt động ngoại khóa' (too formal)"/>
-    </SCHOOL_LIFE_SPECIFIC>
-    
-    <COMMON_MISTAKES>
-      <MISTAKE jp="影が薄い" wrong="bóng nhạt" correct="mờ nhạt / vô hình" note="Personality trait, not shadow"/>
-      <MISTAKE jp="気が利く" wrong="khí lợi" correct="ân cần / chu đáo" note="Attentive/considerate"/>
-      <MISTAKE jp="世話を焼く" wrong="nướng việc chăm sóc" correct="chăm lo / lo lắng cho" note="To fuss over someone"/>
-      <MISTAKE jp="お節介" wrong="tiết kiệm lễ" correct="hay xía vào việc người khác" note="Meddlesome"/>
-    </COMMON_MISTAKES>
-    
-    <CULTURAL_ADAPTATIONS>
-      <JP pattern="宝塚" vn="Takarazuka" note="Keep proper noun, add context if needed"/>
-      <JP pattern="〜かよ" vn="〜à / thật không" note="Rhetorical surprise"/>
-      <JP pattern="やれやれ" vn="hàh / chà" note="Exasperation sigh"/>
-    </CULTURAL_ADAPTATIONS>
+    <KEY_ICL_EXAMPLES_REFERENCE>
+      <!-- These are SAMPLES from ICL library. Full examples in Library_REFERENCE_ICL_SAMPLES.md -->
+      <EXAMPLE category="NUMERIC_PROBABILITY">
+        <JP>十中八九</JP>
+        <PRINCIPLE>Use natural VN probability idiom, NOT literal number translation</PRINCIPLE>
+        <WRONG>mười mươi / mười tám chín</WRONG>
+        <RIGHT>chín phần mười</RIGHT>
+      </EXAMPLE>
+      <EXAMPLE category="CERTAINTY">
+        <JP>完全に</JP>
+        <PRINCIPLE>Match formality register - formal context requires formal VN</PRINCIPLE>
+        <WRONG>mười mươi (too casual for formal context)</WRONG>
+        <RIGHT>hoàn toàn / chắc chắn mười phần mười</RIGHT>
+      </EXAMPLE>
+      <EXAMPLE category="PROVERBS">
+        <JP>百聞は一見に如かず</JP>
+        <PRINCIPLE>Use Vietnamese equivalent proverb, not literal structure</PRINCIPLE>
+        <WRONG>trăm lần nghe không bằng một lần thấy (overly literal)</WRONG>
+        <RIGHT>trăm nghe không bằng một thấy (natural VN idiom)</RIGHT>
+      </EXAMPLE>
+      <EXAMPLE category="METAPHORS">
+        <JP>目から鱗が落ちる (scales fall from eyes)</JP>
+        <PRINCIPLE>Translate intent, not metaphor structure (cultural adaptation)</PRINCIPLE>
+        <WRONG>vảy rơi khỏi mắt (nonsensical in VN)</WRONG>
+        <RIGHT>như được khai sáng / sáng mắt ra</RIGHT>
+      </EXAMPLE>
+      <NOTE>For complete ICL examples (15+ patterns), see Library_REFERENCE_ICL_SAMPLES.md Section 3</NOTE>
+    </KEY_ICL_EXAMPLES_REFERENCE>
     
     <PROCESSING_STEPS>
-      <STEP num="1">SCAN input for idiom patterns (numeric idioms, set phrases, cultural expressions)</STEP>
-      <STEP num="2">CHECK IDIOM_MAPPING table for exact Vietnamese equivalent</STEP>
-      <STEP num="3">BLOCK any literal translation attempt if idiom is detected</STEP>
-      <STEP num="4">APPLY Vietnamese idiomatic equivalent from mapping</STEP>
-      <STEP num="5">If no direct mapping exists, CREATE functional equivalent (same intent, Vietnamese metaphor/description)</STEP>
-      <STEP num="6">VERIFY output does not contain literal translation of idiom</STEP>
-      <STEP num="7">Preserve tone and register (casual idiom → casual VN, formal → formal)</STEP>
+      <STEP num="1">SCAN input for idiom patterns (numeric idioms, set phrases, cultural expressions, metaphors)</STEP>
+      <STEP num="2">IDENTIFY idiom category (probability, proverb, emotional state, time/urgency, etc.)</STEP>
+      <STEP num="3">APPLY ICL PRINCIPLE: Understand intent and register, not just literal meaning</STEP>
+      <STEP num="4">SELECT natural Vietnamese equivalent (check if VN has native idiom for concept)</STEP>
+      <STEP num="5">BLOCK any literal translation attempt if idiom is detected</STEP>
+      <STEP num="6">VERIFY output sounds natural to native speakers (not translationese)</STEP>
+      <STEP num="7">CHECK register match (casual/formal) - Example: "mười mươi" (casual) vs "hoàn toàn" (formal)</STEP>
     </PROCESSING_STEPS>
     
     <CRITICAL_CHECKPOINTS>
       <CHECKPOINT type="NUMERIC_IDIOMS">
-        <BEFORE_OUTPUT>Verify no literal number translations like "mười mươi", "mười tám chín"</BEFORE_OUTPUT>
-        <AFTER_OUTPUT>Confirm Vietnamese numeric idiom pattern present (e.g., "chín phần mười")</AFTER_OUTPUT>
+        <BEFORE_OUTPUT>Verify no literal number translations like "mười mươi" in formal contexts, "mười tám chín"</BEFORE_OUTPUT>
+        <AFTER_OUTPUT>Confirm Vietnamese numeric idiom pattern present OR register-appropriate equivalent</AFTER_OUTPUT>
+      </CHECKPOINT>
+      <CHECKPOINT type="REGISTER_MATCHING">
+        <BEFORE_OUTPUT>Check character's education/background and narrative context (formal vs casual)</BEFORE_OUTPUT>
+        <AFTER_OUTPUT>Ensure idiom choice matches register (analytical character → "hoàn toàn", casual teen → "mười mươi")</AFTER_OUTPUT>
       </CHECKPOINT>
       <CHECKPOINT type="CULTURAL_PHRASES">
         <BEFORE_OUTPUT>Check for word-by-word translation of cultural expressions</BEFORE_OUTPUT>
-        <AFTER_OUTPUT>Ensure Vietnamese cultural equivalent is used</AFTER_OUTPUT>
+        <AFTER_OUTPUT>Ensure Vietnamese cultural equivalent is used (native idiom preferred)</AFTER_OUTPUT>
+      </CHECKPOINT>
+      <CHECKPOINT type="METAPHOR_ADAPTATION">
+        <BEFORE_OUTPUT>Identify if metaphor structure works in Vietnamese culture</BEFORE_OUTPUT>
+        <AFTER_OUTPUT>Confirm metaphor adapted to Vietnamese equivalent if original doesn't work</AFTER_OUTPUT>
       </CHECKPOINT>
     </CRITICAL_CHECKPOINTS>
     
     <ANTI_TRANSLATIONESE_GUARDRAIL>
       <FORBIDDEN_PATTERNS>
-        <PATTERN>十中八九 → "mười mươi" / "mười tám chín" [ABSOLUTELY FORBIDDEN]</PATTERN>
-        <PATTERN>一石二鳥 → "một đá hai chim" [FORBIDDEN - use "một mũi tên trúng hai đích"]</PATTERN>
-        <PATTERN>三日坊主 → "ba ngày nhà sư" [FORBIDDEN - use "nóng vội mà nguội nhanh"]</PATTERN>
-        <PATTERN>Any numeric idiom literal translation [FORBIDDEN - must use Vietnamese numeric idiom pattern]</PATTERN>
+        <PATTERN>Literal number idiom translations (八割方 → "tám phần mười" overly literal)</PATTERN>
+        <PATTERN>Register mismatches (casual "mười mươi" in formal analytical monologues)</PATTERN>
+        <PATTERN>Non-functional metaphors (目から鱗が落ちる → "vảy rơi khỏi mắt")</PATTERN>
+        <PATTERN>Overly literal proverbs missing natural Vietnamese equivalents</PATTERN>
       </FORBIDDEN_PATTERNS>
-      <AUTO_CORRECTION>If literal translation detected in output, auto-replace with Vietnamese idiom</AUTO_CORRECTION>
+      <AUTO_CORRECTION>If literal translation detected in output, apply ICL principles: Intent + Register + Natural VN idiom</AUTO_CORRECTION>
     </ANTI_TRANSLATIONESE_GUARDRAIL>
+    
+    <LOAD_SPECIALTY_INTEGRATION>
+      <TRIGGER>When idioms detected, use: LOAD_SPECIALTY IDIOM_ICL</TRIGGER>
+      <EXPANSION_NAME>IDIOM_ICL</EXPANSION_NAME>
+      <FOCUS_FILE>Reference/Library_REFERENCE_ICL_SAMPLES.md</FOCUS_FILE>
+      <FOCUS_SECTION>Section 3: IDIOM TRANSLATION ICL (15+ examples with reasoning)</FOCUS_SECTION>
+      <INSTRUCTION>Study ICL examples to understand principles: Natural idioms, register awareness, cultural adaptation</INSTRUCTION>
+    </LOAD_SPECIALTY_INTEGRATION>
   </IDIOM_MAPPING>
 
   <NATURAL_PHRASING>
