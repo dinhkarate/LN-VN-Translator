@@ -570,6 +570,252 @@ Mei (chị): "Nè em ơi, mua kem về cho chị đi"
 
 ---
 
+## 🔄 Tính Năng Volume Continuity (CONTINUITY_DATA_PACK)
+
+### Tổng Quan
+
+**CONTINUITY_DATA_PACK** cho phép duy trì nhất quán hoàn hảo khi dịch nhiều volume trong các chat session riêng biệt. Hệ thống tự động xuất metadata khi phát hiện volume kết thúc (Epilogue hoặc final chapter), và bạn có thể import metadata này vào session mới để tiếp tục dịch volume tiếp theo.
+
+### Khi Nào Cần Dùng?
+
+- **Dịch series nhiều volume:** Volume 1 → Volume 2 → Volume 3...
+- **Session mới cho volume mới:** Bắt đầu chat mới cho volume tiếp theo
+- **Đảm bảo nhất quán:** Romanization, đại từ, RTAS, archetype không đổi
+- **Theo dõi phát triển nhân vật:** Sub-arc states (TSUNDERE → DERE, SWEET → UNHINGED)
+
+### Cách Sử Dụng
+
+#### Bước 1: Xuất Metadata (Cuối Volume)
+
+Khi dịch xong chapter cuối hoặc Epilogue, gõ lệnh:
+
+```xml
+<PULSE/>
+generate volume summary
+```
+
+Hệ thống sẽ tự động tạo **CONTINUITY_DATA_PACK** với format:
+
+```xml
+<CONTINUITY_DATA_PACK version="1.0">
+  <META>
+    <SERIES>Tên Series</SERIES>
+    <VOLUME_END>1</VOLUME_END>
+    <LAST_CHAPTER>Epilogue</LAST_CHAPTER>
+  </META>
+  
+  <ROSTER>
+    <CHAR name="堂本隼人" romaji="Hayato" archetype="NORMAL" 
+          pair="Anh-Em" rtas_baseline="5.0" />
+    <CHAR name="新条亜利沙" romaji="Arisa" archetype="OJOU" 
+          pair="Em-Anh" rtas_baseline="5.0" />
+    <CHAR name="新条藍那" romaji="Aina" archetype="GYARU" 
+          pair="Em-Anh" rtas_baseline="5.0" />
+  </ROSTER>
+  
+  <RELATIONSHIPS>
+    <PAIR source="Hayato" target="Sisters" 
+          rtas="5.0" pair="Anh-Em" 
+          notes="Chính thức hẹn hò sau màn tỏ tình tại phòng Arisa." />
+  </RELATIONSHIPS>
+  
+  <SUB_ARC_STATE>
+    <CHAR name="Arisa" subarc="YANDERE" 
+          current_state="SWEET" 
+          notes="Khao khát được lệ thuộc và phụng sự (Slave mode)." />
+    <CHAR name="Aina" subarc="YANDERE" 
+          current_state="SWEET" 
+          notes="Khao khát mãnh liệt về việc duy trì nòi giống (Maternal obsession)." />
+  </SUB_ARC_STATE>
+  
+  <GLOSSARY>
+    <TERM jp="合鍵" vn="Chìa khóa dự phòng" romaji="Aikagi" 
+          type="Item" />
+    <TERM jp="ジャック" vn="Jack" romaji="Jack" 
+          type="Title" />
+  </GLOSSARY>
+  
+  <RTAS_ANALYTICS>
+    <BASELINE>2.0</BASELINE>
+    <CURRENT_AVG>5.0</CURRENT_AVG>
+    <DRIFT>Positive/Intense</DRIFT>
+  </RTAS_ANALYTICS>
+</CONTINUITY_DATA_PACK>
+```
+
+#### Bước 2: Copy & Lưu Metadata
+
+1. **Copy toàn bộ block XML** từ output của Gemini
+2. **Lưu vào file text** (ví dụ: `Series_Name_Vol1_Continuity.xml`)
+3. **Hoặc lưu trong notes app** để dùng cho volume tiếp theo
+
+#### Bước 3: Import vào Session Mới (Volume Tiếp Theo)
+
+Khi bắt đầu dịch Volume 2 trong chat session mới:
+
+```xml
+<PULSE/>
+
+<!-- Paste toàn bộ CONTINUITY_DATA_PACK từ Volume 1 -->
+<CONTINUITY_DATA_PACK version="1.0">
+  <META>
+    <SERIES>Tên Series</SERIES>
+    <VOLUME_END>1</VOLUME_END>
+    <LAST_CHAPTER>Epilogue</LAST_CHAPTER>
+  </META>
+  
+  <ROSTER>
+    <!-- ... (paste full metadata) ... -->
+  </ROSTER>
+  
+  <RELATIONSHIPS>
+    <!-- ... -->
+  </RELATIONSHIPS>
+  
+  <SUB_ARC_STATE>
+    <!-- ... -->
+  </SUB_ARC_STATE>
+  
+  <GLOSSARY>
+    <!-- ... -->
+  </GLOSSARY>
+  
+  <RTAS_ANALYTICS>
+    <BASELINE>2.0</BASELINE>
+    <CURRENT_AVG>5.0</CURRENT_AVG>
+    <DRIFT>Positive/Intense</DRIFT>
+  </RTAS_ANALYTICS>
+</CONTINUITY_DATA_PACK>
+
+<INPUT>
+  <CHAPTER_TITLE>Volume 2 - Chapter 1</CHAPTER_TITLE>
+  <RAW_TEXT>
+    [Japanese text của Volume 2...]
+  </RAW_TEXT>
+</INPUT>
+```
+
+#### Bước 4: Kiểm Tra Sync
+
+Hệ thống sẽ tự động:
+- ✅ **Lock Romanization:** Tên nhân vật dùng chính xác format từ Volume 1
+- ✅ **Lock Đại Từ:** Pronoun pairs được duy trì (Anh-Em, Tớ-Cậu, etc.)
+- ✅ **Sync RTAS:** Baseline và current scores được kế thừa
+- ✅ **Kích Hoạt Sub-Arc:** YANDERE/TSUNDERE states tiếp tục từ Vol 1
+- ✅ **Thuật Ngữ Nhất Quán:** Glossary terms được khóa
+
+### Thông Tin Chi Tiết Các Trường
+
+#### META Block
+- **SERIES:** Tên đầy đủ của series (Nhật hoặc Việt)
+- **VOLUME_END:** Số volume vừa hoàn thành
+- **LAST_CHAPTER:** Chapter cuối cùng (Epilogue, Chapter 6, etc.)
+
+#### ROSTER Block
+- **name:** Tên tiếng Nhật (kanji) - KEY quan trọng nhất
+- **romaji:** Romanization đã LOCKED (Hayato, Arisa, Aina)
+- **archetype:** OJOU, GYARU, NORMAL, ONEE, DELINQ, etc.
+- **pair:** Đại từ LOCKED (self-other format: "Em-Anh", "Tớ-Cậu")
+- **rtas_baseline:** Điểm RTAS cuối volume (1.0-5.0)
+
+#### RELATIONSHIPS Block
+- **source/target:** Nhân vật A → Nhân vật B
+- **rtas:** Điểm RTAS hiện tại
+- **pair:** Đại từ đang dùng
+- **notes:** Sự kiện quan trọng (tỏ tình, hẹn hò, conflict, etc.)
+
+#### SUB_ARC_STATE Block
+- **name:** Tên nhân vật có sub-arc
+- **subarc:** TSUNDERE, YANDERE, hoặc custom
+- **current_state:** 
+  - TSUNDERE: TSUN (defensive) hoặc DERE (sweet)
+  - YANDERE: SWEET (doting) hoặc UNHINGED (possessive)
+- **notes:** Trigger conditions hoặc character development notes
+
+#### GLOSSARY Block
+- **jp:** Thuật ngữ tiếng Nhật (kanji/kana)
+- **vn:** Bản dịch tiếng Việt đã LOCKED
+- **romaji:** Phiên âm (nếu cần)
+- **type:** Skill, Place, Item, Title, Organization, etc.
+
+#### RTAS_ANALYTICS Block
+- **BASELINE:** RTAS trung bình lúc bắt đầu volume
+- **CURRENT_AVG:** RTAS trung bình lúc kết thúc volume
+- **DRIFT:** Positive (relationships deepen), Negative (conflicts), Stable (unchanged)
+
+### Ví Dụ Thực Tế
+
+**Scenario:** Dịch xong Volume 1 của "What Happens If I Save the Man-Hating Beautiful Sisters Without Even Telling Them My Name"
+
+**Volume 1 kết thúc với:**
+- Hayato và hai chị em Shinjo chính thức hẹn hò
+- RTAS tăng từ 2.0 (ban đầu) lên 5.0 (cuối volume)
+- Arisa và Aina activate YANDERE sub-arc (SWEET state)
+- Romanization locked: Hayato, Arisa, Aina, Sakina
+
+**Export metadata cuối Volume 1:**
+```xml
+<PULSE/>
+generate volume summary
+```
+
+**Import vào Volume 2 (chat session mới):**
+```xml
+<PULSE/>
+
+<CONTINUITY_DATA_PACK version="1.0">
+  <!-- Paste toàn bộ metadata từ Volume 1 -->
+</CONTINUITY_DATA_PACK>
+
+<INPUT>
+  <CHAPTER_TITLE>Volume 2 - Chapter 1: After the Confession</CHAPTER_TITLE>
+  <RAW_TEXT>
+    「隼人、おはよう」
+    亜利沙が満面の笑みで俺に抱きついてきた。
+  </RAW_TEXT>
+</INPUT>
+```
+
+**Kết quả:** Gemini sẽ tự động:
+- Dùng "Hayato" (KHÔNG phải "Hayate" hay "Haruto")
+- Dùng "Arisa" (KHÔNG phải "Alisa")
+- Đại từ: Arisa → "Em-Anh" (LOCKED từ Vol 1)
+- YANDERE SWEET mode: Arisa dùng ngôn ngữ doting/possessive
+- RTAS baseline: 5.0 (thay vì reset về 2.0)
+
+### Lợi Ích
+
+✅ **Nhất Quán Tuyệt Đối:** Không bao giờ sai romanization hay đại từ cross-volume  
+✅ **Zero Context Loss:** Session mới = continuation hoàn hảo  
+✅ **Character Development Tracking:** Sub-arc states được preserve  
+✅ **Terminology Lock:** Thuật ngữ đặc biệt không bị dịch lại khác  
+✅ **RTAS Continuity:** Relationship dynamics không reset  
+
+### Lưu Ý Quan Trọng
+
+⚠️ **Không skip bước export:** Metadata rất quan trọng cho volume continuity  
+⚠️ **Copy chính xác:** Paste TOÀN BỘ XML block, không chỉnh sửa  
+⚠️ **Verify sync:** Sau khi import, check ngay output đầu tiên xem có đúng romanization/pronouns không  
+⚠️ **Update nếu cần:** Nếu có nhân vật mới Volume 2, thêm vào ROSTER manually  
+
+---
+
+### Tips & Best Practices
+
+✅ **Nên làm:**
+- Dùng `<PULSE/>` đầu mỗi session và mỗi 2-3 trang
+- Cung cấp METADATA đầy đủ cho context
+- Kiểm tra đại từ gia đình TRƯỚC tiên
+- Test với chapter nhỏ trước khi dịch volume
+
+❌ **Không nên:**
+- Bỏ qua `<PULSE/>` trong session dài
+- Trộn lẫn đại từ bạn bè/gia đình
+- Summarize thay vì dịch 1:1
+- Bỏ qua genre-specific vocabulary guidelines
+
+---
+
 ## 📊 Hiệu Suất & Metrics
 
 ### Performance với PULSE Protocol
@@ -698,7 +944,7 @@ Mei (chị): "Nè em ơi, mua kem về cho chị đi"
 
 ---
 
-## 📚 Ví Dụ Dịch Thuật (v1.5.2)
+## Ví Dụ Dịch Thuật (v1.5.2)
 
 ### Giới Thiệu Chương Mẫu
 
