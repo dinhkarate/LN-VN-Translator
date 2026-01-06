@@ -1614,6 +1614,166 @@ When Japanese idioms detected, load this section for ICL-based guidance. Priorit
 
 ---
 
+<a name="4-school-life-excellence"></a>
+# 4. SCHOOL_LIFE Translation Excellence Examples
+
+**Source:** Kuranika V1 Production Audit (Early Chapters, Pre-Failure)  
+**Purpose:** Demonstrate translation principles that achieved 92/100 in Man-Hating Sisters, 70-75/100 in early Kuranika chapters  
+**Context:** These examples come from chapters translated using v1.5.2.2 (stable architecture, before SYSTEM_OVERRIDE)  
+**Note:** All examples rated EXCELLENT (⭐⭐⭐⭐⭐) by independent audit
+
+---
+
+## MẪU 030: Emotional Nuance (Struggle vs Simple Dislike)
+
+### GỐC
+俺は春が苦手だ。
+
+### DỊCH
+Tôi vốn không giỏi đối phó với mùa xuân.
+
+### LẬP LUẬN (Analysis)
+**Why this works:**
+- **Avoided Literal Translation:** "苦手" (nigate) ≠ simple "don't like" (không thích)
+- **Nuanced Verb Choice:** "không giỏi đối phó với" (not good at dealing with) captures the **struggle** aspect
+- **Natural Vietnamese Structure:** "vốn" (originally/inherently) adds introspective weight
+- **Sets Narrative Tone:** Opens the story with measured, contemplative voice (Tenuto rhythm)
+
+**Translation Principle:**  
+For psychological/emotional states, prioritize **connotation over denotation**. "苦手" implies difficulty/struggle, not just preference.
+
+**Grade:** EXCELLENT ⭐⭐⭐⭐⭐
+
+---
+
+## MẪU 031: Teacher Dialogue (Question Particles & Register)
+
+### GỐC
+『前原君は松原中……ってどこ？　ここらへんの学区じゃないよね？』
+
+### DỊCH
+『Em Maehara học trường Matsubara... là ở đâu nhỉ? Không phải học khu quanh đây đúng không?』
+
+### LẬP LUẬN (Analysis)
+**Why this works:**
+- **Teacher Pronoun:** "Cô-Em" relationship (teacher → student) using "Em" appropriately
+- **Question Particles:**
+  - "nhỉ" = Japanese "ね" (soft questioning, musing)
+  - "đúng không" = Japanese "よね" (seeking confirmation)
+- **Informal Tone Preserved:** Teacher's casual curiosity maintained (not overly formal)
+- **School Terminology:** "học khu" (school district) precise and natural
+
+**Translation Principle:**  
+Vietnamese question particles carry emotional nuance. Match Japanese particles to Vietnamese equivalents that preserve speaker attitude.
+
+**Grade:** EXCELLENT ⭐⭐⭐⭐⭐
+
+---
+
+## MẪU 032: Psychological Complexity (Long Introspection)
+
+### GỐC
+だが、一度こじらせてしまった性根を矯正することも、そうしようとする勇気もだんだん薄れていて。
+
+### DỊCH
+Nhưng cái bản tính đã lún quá sâu vào sự đơn độc ấy, cả việc sửa đổi nó lẫn lòng dũng cảm để cố gắng làm điều đó đều đang dần phai nhạt.
+
+### LẬP LUẬN (Analysis)
+**Why this works:**
+- **Vivid Metaphor:** "lún quá sâu" (sunk too deep) ≠ literal "こじらせた" (tangled/complicated)
+- **Grammatical Restructuring:** Japanese structure broken and rebuilt for Vietnamese flow
+- **Emotional Weight Maintained:** Despair and resignation conveyed through verb choices
+- **Parallel Structure:** "cả... lẫn..." (both... and...) mirrors Japanese "も...も" gracefully
+
+**Translation Principle:**  
+Complex psychological sentences require **structural adaptation**. Don't force Vietnamese grammar to match Japanese syntax. Break, rethink, rebuild.
+
+**Grade:** EXCELLENT ⭐⭐⭐⭐⭐
+
+---
+
+## MẪU 033: Character Voice (Interjections & Complaints)
+
+### GỐC
+「ちょっ、海ってばひどくない？　それじゃあ私、まるで捨て犬みたいじゃん」
+
+### DỊCH
+"Kìa, Umi nói thế quá đáng không chứ? Làm như mình là con chó bị bỏ rơi không bằng."
+
+### LẬP LUẬN (Analysis)
+**Why this works:**
+- **Perfect Interjection:** "Kìa" captures "ちょっ" (protest/objection) naturally
+- **Complaint Structure:** "quá đáng không chứ?" = natural Vietnamese rhetorical question
+- **Humor Preserved:** "con chó bị bỏ rơi" (abandoned dog) maintains comedic tone
+- **Character Personality:** Amami's bright, slightly dramatic voice comes through
+
+**Translation Principle:**  
+Character voice emerges from **small words** (interjections, particles, question structures). These carry more personality than content words.
+
+**Grade:** EXCELLENT ⭐⭐⭐⭐⭐
+
+---
+
+## MẪU 034: Atmospheric Description (Sensory Language)
+
+### GỐC
+俺は春が苦手だ。もちろん、気候のことを言っているのではない。暖かな日差しと穏やかに頬を撫でるそよ風...
+
+### DỊCH
+Tôi vốn không giỏi đối phó với mùa xuân. Dĩ nhiên, tôi không hề nói về vấn đề khí hậu. Những tia nắng ấm áp, làn gió nhẹ nhàng mơn trớn đôi gò má...
+
+### LẬP LUẬN (Analysis)
+**Why this works:**
+- **Sensory Verb:** "mơn trớn" (caressing) ≠ literal "撫でる" (stroke)—more poetic, vivid
+- **Natural Collocations:** "tia nắng ấm áp" (warm sunlight), "làn gió nhẹ nhàng" (gentle breeze)
+- **Proper Idiom Use:** "Dĩ nhiên" (of course) used **once**, naturally placed (cf. pathological repetition in corrupted chapters)
+- **Contemplative Mood:** Maintains introspective tone through measured pacing
+
+**Translation Principle:**  
+Atmospheric prose requires **sensory verbs** and **natural collocations**. Vietnamese has rich sensory vocabulary—use it to enhance immersion.
+
+**CONTRAST NOTE:**  
+This same passage in later chapters (post-SYSTEM_OVERRIDE) inserted "dĩ nhiên" 5-10 times per sentence, destroying naturalness. This demonstrates the importance of cognitive quality control.
+
+**Grade:** EXCELLENT ⭐⭐⭐⭐⭐
+
+---
+
+## KEY LESSONS FROM SCHOOL_LIFE EXAMPLES
+
+### What Made These Translations Excellent:
+
+1. **Cognitive Agency Preserved**  
+   - Translator had freedom to rethink structure ("lún quá sâu" for "こじらせた")
+   - Reflective reasoning enabled nuanced choices ("struggle" vs "dislike")
+   - Quality checkpoints active (natural Vietnamese verified before moving on)
+
+2. **Character Voice Prioritized**  
+   - Small words carry personality ("Kìa", "nhỉ", "đúng không")
+   - Register awareness (teacher's casual tone, student introspection)
+   - Emotional authenticity over literal accuracy
+
+3. **Vietnamese Naturalness First**  
+   - Grammatical restructuring when needed (MẪU 032)
+   - Natural collocations ("tia nắng ấm áp", "làn gió nhẹ nhàng")
+   - Sensory vocabulary prioritized ("mơn trớn" over literal "rub")
+
+4. **Contextual Idiom Use**  
+   - "Dĩ nhiên" used once, naturally (vs pathological 10x repetition in corrupted version)
+   - Proves cognitive quality control prevents mechanical insertion
+
+### Integration with v1.5.2.5:
+
+These examples validate current architecture:
+- ICL idiom learning (not hard-coded rules) ✅
+- Native quality control mechanisms active ✅
+- Cognitive agency preserved (reflective reasoning) ✅
+- Character voice differentiation maintained ✅
+
+**Use these examples as benchmarks:** If output quality matches these samples, architecture is functioning correctly.
+
+---
+
 ## CHECKLIST TRƯỚC KHI DỊCH (CẬP NHẬT v2.0)
 
 **Khi dịch:**
