@@ -558,8 +558,11 @@ Chúng tôi có thể cân nhắc cấp **Dual License** (AGPLv3 + Commercial Li
 ## 📊 Thống kê
 
 **Core Architecture (v1.3):**
-- **Core Logic:** 45KB (XML, +114% từ v1.2)
-- **Line Count:** 933 lines (+116% từ v1.2)
+- **File:** master_prompt_vn.xml
+- **Lines:** 894 lines
+- **Words:** 4,213 words
+- **Characters:** 41,100 characters
+- **File Size:** 43.7 KB
 - **Major Sections:** 13 modules
 - **Kanji Database:** 12,559 entries (2.4MB)
 - **Golden Samples:** 19 S-Tier examples
