@@ -948,6 +948,328 @@
     <LOCK_RULE>Once chosen, LOCK throughout chapter. No mixing!</LOCK_RULE>
   </FIRST_PERSON>
 
+  <NARRATIVE_PRONOUN_OVERRIDE trigger="INTERNAL_MONOLOGUE" priority="HIGH">
+    <PRINCIPLE>
+      Differentiate formal self-reference (tôi) from intimate introspection (mình).
+      Maintain LOCK_RULE integrity - no random mixing.
+      Enhance emotional resonance in internal thoughts while preserving chapter consistency.
+    </PRINCIPLE>
+    
+    <TRIGGER_DETECTION>
+      <MARKER type="JAPANESE">思う|感じる|自分に言い聞かせる|考える</MARKER>
+      <MARKER type="VIETNAMESE">cảm thấy|nghĩ|muốn|tự nhủ|thầm nghĩ</MARKER>
+      <PATTERN>Reflective vocabulary patterns in narrative</PATTERN>
+      <PATTERN>Sentence structure: fragmented, introspective</PATTERN>
+    </TRIGGER_DETECTION>
+    
+    <OVERRIDE_RULES>
+      <RULE pattern="tôi\s+(cảm thấy|nghĩ|muốn|nhớ|thấy)" replace="mình $1" context="emotional_reflection"/>
+      <RULE pattern="chính\s+tôi" replace="chính mình" context="self_emphasis"/>
+      <RULE pattern="^Tôi\s+" replace="Mình " context="standalone_emotional" condition="RTAS>=3.0"/>
+      
+      <!-- Family context enhancement -->
+      <RULE pattern="tôi" replace="em" context="FAMILY_OVERRIDE_ACTIVE" note="Strengthen family bonds"/>
+      <RULE pattern="nhịp tim\s+mình" replace="tim em" context="FAMILY_DIALOGUE" note="More intimate family voice"/>
+    </OVERRIDE_RULES>
+    
+    <GUARDRAILS>
+      <LOCK_ENFORCEMENT>
+        IF chapter_pronoun_lock == "tôi" AND override_applied
+        THEN apply_soft_transition: "tôi... mình..." in first instance
+      </LOCK_ENFORCEMENT>
+      
+      <LIMIT max_per_paragraph="2" reset="paragraph_boundary"/>
+      
+      <EXCEPTION context="TSUNDERE_BREAKDOWN|ANGER_SPIKE|DEFENSIVE_MODE" action="PRESERVE_TOI">
+        Preserve "tôi" in dramatic defensive moments to maintain emotional distance
+      </EXCEPTION>
+      
+      <EXCEPTION context="FORMAL_SCENE|PUBLIC_SETTING" action="DISABLE_OVERRIDE">
+        Disable override in formal/public contexts
+      </EXCEPTION>
+    </GUARDRAILS>
+    
+    <ICL_EXAMPLES>
+      <EXAMPLE id="INTERNAL_MONOLOGUE_BASIC" context="Casual male POV, internal thought">
+        <BEFORE>
+          "... Buồn ngủ quá."
+          Tôi cảm thấy áp lực đang tích tụ dần do thức khuya liên tục nhiều ngày qua.
+          Có lẽ đã đến lúc rồi — tổ chức "Liệu trình thư giãn đặc biệt" do chính tôi dày công nghiên cứu.
+          Tôi không giống như đàn chị xinh đẹp kia, chẳng có ai thèm dòm ngó cả. Thế nên, tôi có thể thoải mái để lộ bộ dạng ngái ngủ lôi thôi của mình.
+        </BEFORE>
+        
+        <AFTER>
+          "... Buồn ngủ quá."
+          Mình cảm thấy áp lực đang tích tụ dần do thức khuya liên tục nhiều ngày qua.
+          Có lẽ đã đến lúc rồi — tổ chức "Liệu trình thư giãn đặc biệt" do chính mình dày công nghiên cứu.
+          Mình không giống như đàn chị xinh đẹp kia, chẳng có ai thèm dòm ngó cả. Thế nên, mình có thể thoải mái để lộ bộ dạng ngái ngủ lôi thôi này. Hừm, tự nói ra mà thấy đau lòng quá đi mất.
+        </AFTER>
+        
+        <ANALYSIS>
+          - Trigger: Internal monologue after dialogue
+          - Pattern: "tôi cảm thấy", "chính tôi", "tôi không giống"
+          - Override: All instances → mình (intimate introspection)
+          - Result: More natural, relatable inner voice
+        </ANALYSIS>
+      </EXAMPLE>
+      
+      <EXAMPLE id="FAMILY_CONTEXT_ENHANCEMENT" context="Sibling dialogue + internal thought">
+        <BEFORE>
+          "Nèee Touyaaa, mua kem cho chị điiii. Vắt chân lên cổ mà chạy đi nhaaa."
+          "Hả, không đâu. Đêm hôm thế này em chẳng muốn làm nhịp tim mình tăng lên đâu."
+        </BEFORE>
+        
+        <AFTER>
+          "Nèee Touyaaa, mua kem cho chị điiii. Vắt chân lên cổ mà chạy đi nhaaa."
+          "Hả, không đâu. Đêm hôm thế này em chẳng muốn làm tim em đập thình thịch đâu."
+        </AFTER>
+        
+        <ANALYSIS>
+          - Trigger: FAMILY_OVERRIDE active (sibling context)
+          - Pattern: "mình" in family dialogue → "em" (strengthen family bond)
+          - Override: Replaces generic self-reference with family pronoun
+          - Result: More intimate, family-appropriate voice
+        </ANALYSIS>
+      </EXAMPLE>
+      
+      <EXAMPLE id="NO_OVERRIDE_DRAMATIC" context="TSUNDERE breakdown, defensive mode">
+        <JP_SOURCE>「私は……私はあなたのことなんて！」</JP_SOURCE>
+        
+        <CORRECT>
+          "Tôi... tôi chẳng quan tâm đến cậu đâu!"
+        </CORRECT>
+        
+        <WRONG>
+          "Mình... mình chẳng quan tâm đến cậu đâu!"
+        </WRONG>
+        
+        <ANALYSIS>
+          - Context: TSUNDERE defensive breakdown (high emotion, denial)
+          - Guardrail: EXCEPTION for dramatic moments
+          - Preserve: "tôi" (defensive, formal distance)
+          - Reason: Switching to "mình" would soften the defensive wall
+        </ANALYSIS>
+      </EXAMPLE>
+    </ICL_EXAMPLES>
+    
+    <INTEGRATION>
+      <PRIORITY_ORDER>
+        1. FAMILY_OVERRIDE (absolute priority)
+        2. ARCHETYPE_VOICE_LOCK (character-specific)
+        3. NARRATIVE_PRONOUN_OVERRIDE (this system)
+        4. FIRST_PERSON defaults (baseline)
+      </PRIORITY_ORDER>
+      
+      <COMPATIBILITY>
+        - Respects LOCK_RULE from FIRST_PERSON system
+        - Coordinates with FAMILY_OVERRIDE from RTAS
+        - Works with ARCHETYPE system for character behavior
+        - Only applies to narrative, NOT dialogue
+      </COMPATIBILITY>
+    </INTEGRATION>
+  </NARRATIVE_PRONOUN_OVERRIDE>
+
+  <SENSORY_VERB_OVERRIDE trigger="EMOTIONAL_PEAK" priority="HIGH">
+    <PRINCIPLE>
+      Context-aware verb replacement that activates ONLY at emotional peaks to enhance sensory immersion.
+      Preserves base vocabulary for normal narration while elevating critical moments.
+      Operates as silent enhancement layer - zero trace when not triggered.
+    </PRINCIPLE>
+    
+    <TRIGGER_CONDITIONS>
+      <CONDITION>RTAS ≥ 4.7 (emotional peak threshold)</CONDITION>
+      <CONDITION>Verb type: GENERIC (ngồi, chạy, nói, đập)</CONDITION>
+      <CONDITION>Context: PHYSICAL_DESCRIPTION or EMOTIONAL_REACTION</CONDITION>
+    </TRIGGER_CONDITIONS>
+    
+    <VERB_REPLACEMENT_RULES>
+      <!-- Primary emotional verbs -->
+      <RULE pattern="\b(ngồi)\b" context="emotional_weight" replace="sà xuống|đổ gục" intensity="4.8+"/>
+      <RULE pattern="\b(chạy)\b" context="panic_escape" replace="lao đi|phóng vút" intensity="4.7+"/>
+      <RULE pattern="\b(nói)\b" context="emotional_confession" replace="thì thầm|hét lên|thốt" intensity="4.6+"/>
+      
+      <!-- Physical sensation enhancement -->
+      <RULE pattern="bàn tay.*(\bchạm\b|\bnắm\b)" replace="bàn tay run rẩy chạm|bàn tay siết chặt"/>
+      <RULE pattern="(\bmát\b|\bmát mẻ\b)" replace="mát rượi|mát lạnh/xao xuyến" context="tactile_intimacy"/>
+      <RULE pattern="\b(đập nhanh)\b" replace="đập thình thịch|đập loạn nhịp" context="heartbeat"/>
+    </VERB_REPLACEMENT_RULES>
+    
+    <GUARDRAILS>
+      <INTEGRITY_RULE>Only replace up to 2 verbs per paragraph</INTEGRITY_RULE>
+      
+      <CONTEXT_FILTER>
+        IF scene_type == "formal/public" THEN disable tactile enhancements
+        IF character_archetype == "KUUDERE" THEN limit to single verb replacement per scene
+      </CONTEXT_FILTER>
+      
+      <LIMIT max_per_scene="3" reset="scene_boundary"/>
+    </GUARDRAILS>
+    
+    <ICL_EXAMPLES>
+      <EXAMPLE id="EMOTIONAL_PEAK_BASIC" context="RTAS 4.8, intimate moment">
+        <BEFORE>
+          Tôi cảm thấy áp lực đang tích tụ dần do thức khuya liên tục nhiều ngày qua.
+          Cô ấy ngồi xuống giường.
+          Tim tôi đập nhanh khi nhìn thấy cô ấy.
+        </BEFORE>
+        
+        <AFTER>
+          Tôi cảm thấy áp lực đang tích tụ dần do thức khuya liên tục nhiều ngày qua.
+          Cô ấy sà xuống giường, lả như một con rối.
+          Tim tôi đập thình thịch khi nhìn thấy cô ấy.
+        </AFTER>
+        
+        <ANALYSIS>
+          - Trigger: RTAS 4.8 (peak emotional moment)
+          - Replacements: "ngồi xuống" → "sà xuống", "đập nhanh" → "đập thình thịch"
+          - Count: 2 verbs per paragraph (within limit)
+          - Result: Enhanced sensory immersion at critical moment
+        </ANALYSIS>
+      </EXAMPLE>
+      
+      <EXAMPLE id="NO_OVERRIDE_NORMAL_SCENE" context="RTAS 2.5, casual scene">
+        <INPUT>
+          Tôi ngồi xuống ghế và bắt đầu làm bài tập.
+          Tim tôi đập nhanh vì vừa chạy cầu thang.
+        </INPUT>
+        
+        <OUTPUT>
+          Tôi ngồi xuống ghế và bắt đầu làm bài tập.
+          Tim tôi đập nhanh vì vừa chạy cầu thang.
+        </OUTPUT>
+        
+        <ANALYSIS>
+          - Trigger: RTAS 2.5 (below threshold 4.7)
+          - Override: DISABLED (not emotional peak)
+          - Result: Generic verbs preserved for normal narration
+        </ANALYSIS>
+      </EXAMPLE>
+    </ICL_EXAMPLES>
+    
+    <INTEGRATION>
+      <PRIORITY_ORDER>
+        Operates after pronoun selection, before final output
+        Does not conflict with other systems
+      </PRIORITY_ORDER>
+      
+      <COMPATIBILITY>
+        - Works with RTAS system for threshold detection
+        - Respects ARCHETYPE system for character-specific limits
+        - Independent of pronoun and honorific systems
+      </COMPATIBILITY>
+    </INTEGRATION>
+  </SENSORY_VERB_OVERRIDE>
+
+  <IDIOM_ROTATION_MANAGER priority="MEDIUM" window_size="500_words">
+    <PRINCIPLE>
+      Dynamic expression rotation with context memory to maintain natural variety.
+      Tracks recently used idioms and automatically rotates to alternatives when repetition detected.
+      Operates as silent enhancement layer with archetype-aware rotation.
+    </PRINCIPLE>
+    
+    <EXPRESSION_TRACKING>
+      <!-- Track common filler/transition phrases -->
+      <TRACK phrase="thật đấy" alternatives="đúng vậy,cơ mà,quả thật vậy"/>
+      <TRACK phrase="ừm" alternatives="à thì,còn nữa,thì là"/>
+      <TRACK phrase="thật sao" alternatives="thật á,thiệt hông,ảo thật"/>
+      
+      <!-- Track Japanese idioms with multiple Vietnamese equivalents -->
+      <TRACK jap_idiom="十中八九" alternatives="chín phần mười,hầu như chắc chắn,phần lớn là"/>
+      <TRACK jap_idiom="頑張れ" alternatives="cố lên nha,cố gắng lên nhé,giữ vững tinh thần"/>
+    </EXPRESSION_TRACKING>
+    
+    <ROTATION_RULES>
+      <RULE condition="expression_count >= 2" action="force_rotation"/>
+      <RULE condition="same_paragraph" action="block_reuse"/>
+      <RULE condition="character_voice_mismatch" action="override_to_archetype_appropriate"/>
+      
+      <!-- Archetype-aware rotation -->
+      <ARCHETYPE_OVERRIDE archetype="GYARU">
+        <USE slang="thật á,vãi,ảo thật"/>
+        <BAN formal="quả thật vậy,đúng như vậy"/>
+      </ARCHETYPE_OVERRIDE>
+      
+      <ARCHETYPE_OVERRIDE archetype="OJOU">
+        <USE formal="quả thật vậy,đúng như vậy"/>
+        <BAN slang="thật á,vãi"/>
+      </ARCHETYPE_OVERRIDE>
+    </ROTATION_RULES>
+    
+    <MEMORY_MANAGEMENT>
+      <RESET_TRIGGERS>
+        <TRIGGER scene_boundary="true"/>
+        <TRIGGER chapter_boundary="true"/>
+        <TRIGGER character_perspective_shift="true"/>
+      </RESET_TRIGGERS>
+    </MEMORY_MANAGEMENT>
+    
+    <ICL_EXAMPLES>
+      <EXAMPLE id="REPETITION_PREVENTION" context="Same expression used 3 times">
+        <BEFORE>
+          "Thật đấy, chuyện này kỳ lạ thật."
+          "Cậu nói thật đấy à?"
+          "Ừm... thật đấy, tôi không đùa đâu."
+        </BEFORE>
+        
+        <AFTER>
+          "Đúng vậy, chuyện này kỳ lạ thật."
+          "Cậu nói thật á à?"
+          "À thì... quả thật vậy, tôi không đùa đâu."
+        </AFTER>
+        
+        <ANALYSIS>
+          - Detection: "thật đấy" used 3 times within 500-word window
+          - Rotation: 1st → "đúng vậy", 2nd → "thật á", 3rd → "quả thật vậy"
+          - Result: Natural variety while maintaining meaning
+        </ANALYSIS>
+      </EXAMPLE>
+      
+      <EXAMPLE id="JAPANESE_IDIOM_ROTATION" context="十中八九 appears multiple times">
+        <CONTEXT>
+          First occurrence (scene 1): "chín phần mười"
+          Second occurrence (same scene): "hầu như chắc chắn"
+          Third occurrence (different scene): "phần lớn là"
+        </CONTEXT>
+        
+        <ANALYSIS>
+          - Pattern: Same Japanese idiom, different Vietnamese equivalents
+          - Rotation: Automatic based on usage count within window
+          - Reset: Window resets at scene boundary
+          - Result: Prevents fixed mapping repetition
+        </ANALYSIS>
+      </EXAMPLE>
+      
+      <EXAMPLE id="ARCHETYPE_AWARE_ROTATION" context="GYARU character">
+        <BEFORE_ROTATION>
+          "Quả thật vậy, cậu nói đúng đấy." (formal - wrong for GYARU)
+        </BEFORE_ROTATION>
+        
+        <AFTER_ROTATION>
+          "Thật á, cậu nói đúng đấy." (slang - matches GYARU voice)
+        </AFTER_ROTATION>
+        
+        <ANALYSIS>
+          - Detection: Formal expression doesn't match GYARU archetype
+          - Override: Force rotation to slang alternative
+          - Result: Maintains character voice consistency
+        </ANALYSIS>
+      </EXAMPLE>
+    </ICL_EXAMPLES>
+    
+    <INTEGRATION>
+      <PRIORITY_ORDER>
+        Operates after all other systems, before final output
+        Lowest priority - does not override character voice rules
+      </PRIORITY_ORDER>
+      
+      <COMPATIBILITY>
+        - Works with ARCHETYPE system for voice-appropriate rotation
+        - Respects character-specific expression preferences
+        - Independent of pronoun and verb override systems
+      </COMPATIBILITY>
+    </INTEGRATION>
+  </IDIOM_ROTATION_MANAGER>
+
   <ROMANIZATION priority="HIGH" enforcement="MANDATORY">
     <PRINCIPLE>ALL Japanese names and terms MUST use standard Hepburn romanization. Macron format is BANNED.</PRINCIPLE>
     
