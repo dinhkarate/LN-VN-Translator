@@ -36,6 +36,9 @@ build/
 # Gemini artifacts (local planning files)
 .gemini/
 
+# Agent prompts (internal development tools)
+.agent/
+
 # Claude development files (session-specific, not for version control)
 .claude-session-start.txt
 #.clauderc
