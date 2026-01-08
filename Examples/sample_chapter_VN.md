@@ -1,504 +1,483 @@
-### 🔍 VN-Translator ANALYSIS LOG (Compact Mode)
+## **Chương 1: Sự Kiện Hiếm Có Lúc Nửa Đêm**
 
-```
-[META] GENRE: SCHOOL_LIFE | HV: 30% | SCENE: ConvStore_Night, Help_Senpai | VISUAL: Intimate(<50cm, support)
-[RTAS] MC→W: 3.5/Worry | W→MC: 3.8/Relief | MC↔Mei: FAMILY_LOCK
-[LOCK] MC:Em ↔ Mei:Chị | MC:Tôi ↔ W:Chị/Senpai | W:Chị ↔ MC:Ame-moto-kun/Cậu
-[TECH] Vivid_Verbs(W), Shattering(W_distress), Slang_L2(Mei), Idiom_MAPPING(10/9, 100_Hear)
-[POV] 1P_MC | [RHYTHM] MC:Normal, W:Legato(weak), Mei:Staccato
+Chỉ cần lệch giờ đến trường một chút thôi là tôi đã thấy được một cảnh tượng hiếm có.
 
-```
+Một nữ sinh với dáng người cao ráo đang đứng chờ đèn đỏ trên đường đến trường — đó là chuyện thường tình ai cũng thấy.
 
-# Đàn Chị Xinh Đẹp CLB Cung Đạo Đang Để Bụng Trần Ngủ Trong Phòng Tôi
+Điều đáng nói ở đây chính là dáng đứng của cô ấy.
 
-## Chương 1: Sự Kiện Hiếm Có Lúc Nửa Đêm
+Chỉ là chờ đèn đỏ thôi mà lưng cô ấy thẳng tắp, cứ như thể đang chuẩn bị lên bục nhận bằng khen vậy.
 
-Thay đổi thời gian đến trường một chút, tôi đã được tận mắt chứng kiến một điều hiếm thấy.
+Trên tấm lưng khoác chiếc áo cardigan dài tay ấy là một chiếc túi dài và mảnh. Chắc cũng phải gần 2 mét, vượt xa cả chiều cao của cô ấy. Đến một nam sinh cao trung năm nhất có chiều cao trung bình như tôi cũng phải ngước nhìn.
 
-Một nữ sinh dáng người cao ráo đang đứng chờ đèn giao thông trên đường đến trường — đến đó thì vẫn là một cảnh tượng thường thấy.
+Dù đang đeo vác vật nặng như thế, nữ sinh ấy vẫn đứng bất động.
 
-Nhưng điều đáng nói ở đây chính là dáng đứng của chị ấy.
+Chiếc váy ngắn trên người cô không hề lay chuyển.
 
-Dù chỉ là đang chờ đèn xanh, nhưng chị ấy lại đứng thẳng lưng như thể sắp lên nhận bằng khen vậy.
+Đôi chân thon dài được bao bọc trong lớp tất đen kia cũng chẳng hề nhúc nhích.
 
-Trên tấm lưng đang khoác chiếc áo khoác cardigan dài tay là một chiếc túi thon dài. Chắc phải dài gần hai mét, vượt xa cả chiều cao của chị ấy. Ngay cả một đứa có chiều cao trung bình của nam sinh lớp mười như tôi cũng phải ngước nhìn.
+Thứ duy nhất chuyển động là vài sợi tóc mảnh mai vương ra từ búi tóc đen sau đầu, khẽ lay động trong làn gió thu.
 
-Dù đang vác trên vai vật nặng như thế, nữ sinh ấy vẫn đứng bất động.
+Chứng kiến cảnh tượng đó, hai nữ sinh đi gần đấy bắt đầu xôn xao bàn tán.
 
-Chiếc váy hơi ngắn không hề lung lay.
+"Nè, kia có phải là Watanuki-senpai không?"
 
-Đôi chân thon dài bọc trong lớp tất đen cũng chẳng hề nhúc nhích.
+"Chị ấy thực sự vác cung đi học vào buổi sáng kìa...\!"
 
-Thứ duy nhất khẽ đung đưa trong làn gió thu là những sợi tóc mai nhỏ bé thoát ra từ búi tóc đen sau gáy.
+"Nghe nói là một phần của việc luyện tập đấy. Tớ nghe bạn trong câu lạc bộ Cung đạo kể vậy."
 
-Nhìn thấy chị ấy, hai nữ sinh đi gần đó bắt đầu ríu rít bàn tán.
+Có lẽ nhận ra mình đang là chủ đề của những lời đồn đại, người được gọi là Watanuki-senpai kia quay lại, mỉm cười và khẽ cúi đầu chào. *Mỉm cười, gật đầu.* Một chuỗi động tác hoàn hảo. Rồi cô lại nhẹ nhàng quay mặt về phía trước.
 
-"Nè, kia chẳng phải là đàn chị Watanuki sao?"
+Chỉ thoáng nhìn qua góc nghiêng thanh tú ấy thôi tôi cũng đủ hiểu. Là hàng thật.
 
-"Đúng là chị ấy vác cung đi học thật kìa...!"
+Nụ cười ấy rạng rỡ và trong trẻo tựa tiết trời thu, chẳng hề vương chút khó chịu nào dù bị người ta xì xào bàn tán sau lưng.
 
-"Nghe đâu đó là một phần của quá trình luyện tập đấy. Tớ nghe mấy đứa bạn bên CLB Cung Đạo kể rồi."
+Quả thực, biểu cảm của Watanuki-senpai xuất sắc đến mức mấy nữ sinh gần đó phải khẽ thốt lên những tiếng hét đầy phấn khích. Giờ thì họ đang kêu *kya kya* lên rồi. Cứ như diễn viên Takarazuka\* vậy.
 
-Có lẽ đã nhận ra mình đang bị bàn tán, người được gọi là chị Watanuki ấy quay lại, mỉm cười và cúi đầu chào. Cười tươi một cái, rồi gật đầu nhẹ. Cứ như thế. Đoạn, chị ấy lại thản nhiên nhìn về phía trước.
+*(TL: Takarazuka \- Đoàn kịch nữ nổi tiếng Nhật Bản, nơi các diễn viên nữ đóng cả vai nam với phong thái lịch lãm, cuốn hút.)*
 
-Chỉ nhìn qua góc nghiêng thanh tú ấy thôi tôi cũng đủ hiểu. Đúng là hàng thật giá thật.
+Trường mình hóa ra lại có một tiền bối ở câu lạc bộ Cung đạo tỏa ra khí chất ngời ngời như thế sao.
 
-Trong nụ cười rạng rỡ hợp với bầu trời thu trong xanh ấy, tôi chẳng cảm thấy chút khó chịu nào dù chị ấy vừa bị xì xào bàn tán sau lưng.
+Đèn tín hiệu chuyển màu, nhìn Watanuki-senpai rảo bước nhanh qua đường, tôi cũng bắt đầu lê bước uể oải về phía trường học.
 
-Thực tế, trước biểu cảm hoàn hảo của chị Watanuki, mấy nữ sinh gần đó đã thốt lên những tiếng reo hò khe khẽ. Cứ gọi là ríu rít cả lên. Cứ như kịch Takarazuka ấy.
+Mà, chắc sau này cũng chẳng có cơ hội dính dáng gì đâu... Phận trai CLB Về Nhà, chẳng có chút duyên nợ gì với vận động như tôi thì mơ mộng gì chứ.
 
-Không ngờ trường mình lại có một đàn chị CLB Cung Đạo toát ra khí chất ngời ngời đến thế.
+Hơn nữa, bây giờ chỉ riêng việc duy trì mối quan hệ với đám bạn cùng lớp thôi cũng đã đủ khiến tôi bở hơi tai rồi.
 
-Đèn chuyển xanh, tôi vừa ngắm nhìn chị Watanuki rảo bước đi trước, vừa lững thững bắt đầu bước về phía trường.
-
-Mà, chắc sau này cũng chẳng có dịp gì liên quan đến nhau đâu... vì tôi là thành viên của "CLB Về Nhà", hoàn toàn không có duyên với vận động mà.
-
-Hơn nữa, hiện tại tôi đã đủ mệt mỏi với việc duy trì các mối quan hệ với bạn cùng lớp rồi.
-
-"... Buồn ngủ quá."
+"...Buồn ngủ quá."
 
 Tôi cảm thấy áp lực đang tích tụ dần do thức khuya liên tục nhiều ngày qua.
 
-Có lẽ đã đến lúc rồi — tổ chức "Liệu trình thư giãn đặc biệt" do chính tôi dày công nghiên cứu.
+Có lẽ đã đến lúc rồi — tổ chức "Liệu trình thư giãn đặc biệt" do chính mình dày công nghiên cứu.
 
-"Oáp..."
+"Oáppp..."
 
-Vừa nghĩ ngợi, tôi vừa thành thật biểu lộ cơn buồn ngủ qua một cái ngáp dài.
+Vừa nghĩ ngợi lung tung, tôi vừa vô tư ngáp dài một cái để thể hiện cơn buồn ngủ.
 
-Tôi không giống như đàn chị xinh đẹp kia, chẳng có ai thèm dòm ngó cả. Thế nên, tôi có thể thoải mái để lộ bộ dạng ngái ngủ lôi thôi của mình. Hừm, tự nói ra mà thấy đau lòng quá đi mất.
+Tôi không giống như vị tiền bối xinh đẹp kia, chẳng có ai thèm dòm ngó cả. Thế nên, mình có thể thoải mái để lộ bộ dạng ngái ngủ lôi thôi này. Hừm, tự nói ra mà thấy đau lòng quá đi mất.
 
-"Chào nhé Amemoto! Cảm ơn hôm qua đã leo rank cùng tôi nha! Vui quá vì cày được đống điểm nên tôi chẳng ngủ nghê gì được luôn!"
+"Chàooo Amemoto, hôm qua cảm ơn vì đã leo rank cùng nhé\! Cày được mớ điểm sướng quá làm tao mất ngủ luôn\!"
 
-Ngay cả một đứa mờ nhạt như tôi cũng có những người bạn cùng lớp chủ động chào hỏi từ sáng sớm. Dù ít hiện diện nhưng cũng chẳng sao. Tôi vẫn đang sống khá ổn thỏa.
+Cũng may là dù mờ nhạt thế này, tôi vẫn có bạn cùng lớp bắt chuyện ngay từ sáng sớm. Bóng dáng có mờ nhạt chút cũng không sao. Miễn là vẫn xoay sở ổn thỏa.
 
 Một cuộc sống thường nhật ít áp lực là tuyệt vời nhất.
 
-"Chào buổi sáng. Tôi cũng đang thiếu ngủ đây."
+"Chào. Tôi cũng thiếu ngủ đây."
 
-Vừa tận hưởng cuộc sống học đường bình lặng, tôi vừa đưa ra những câu trả lời bình thường như thế.
+Vừa tận hưởng cuộc sống học đường bình yên, tôi vừa đáp lại bằng một câu trả lời cũng bình thường không kém.
 
-◆
+Lại kết thúc chuỗi ngày cày game cùng thằng bạn, giờ cũng đã đến lúc mí mắt sụp xuống rồi.
 
-Lại kết thúc một ngày chơi game liên tục với đám bạn, lúc này đã là giờ tôi khá buồn ngủ.
-
-Ngay khi tôi vừa bước vào phòng khách, Mei đang nằm ườn trên ghế sofa liền uể oải lên tiếng.
+Tôi vừa bước vào phòng khách, Mei đang nằm ườn trên ghế sofa đã cất giọng uể oải.
 
 "Nèee Touyaaa, mua kem cho chị điiii. Vắt chân lên cổ mà chạy đi nhaaa."
 
-"Hả, không đâu. Đêm hôm thế này em chẳng muốn làm nhịp tim mình tăng lên đâu. Với lại chị có biết bây giờ là mấy giờ rồi không?"
+"Hả, không đâu. Đêm hôm thế này em chẳng muốn làm tim em đập thình thịch đâu. Chị nghĩ bây giờ là mấy giờ rồi hả."
 
-"Chưa đến mười hai giờ màaa... Tầm này không phải lúc để một nữ sinh trung học mặt mộc một mình ra ngoài đâuuu."
+"Sắp 0 giờ rồi... Giờ này đâu phải lúc để một nữ sinh cao trung mặt mộc như chị ra đường một mình đâuuu."
 
-"Thế thì nhịn kem đi. Chị mười bảy tuổi rồi đấy. Sắp thành người lớn đến nơi rồi. Biết kiềm chế chút đi."
+"Thế thì nhịn kem đi. Mười bảy tuổi rồi còn gì. Sắp làm người lớn đến nơi rồi. Ráng mà nhịn đi."
 
-"Ơơơ, không đượccc không đượccc, chị không chịu nổi đâu. Chị đây là kiểu chẳng lớn thêm tí nào từ hồi mẫu giáo mà. Không nhõng nhẽo với thằng em chín chắn như người lớn này thì chị sống không nổiii."
+"Êuuu, chịu chịu chịu hổng nổi đâu, chị đây là kiểu người không chịu lớn từ hồi mẫu giáo rồi nháaa. Không làm nũng thằng em trai chững chạc thì sao mà chị sốooong."
 
-"............"
+"......"
 
-Mei đúng là sinh ra trước tôi một năm thật sao... là chị gái lớn hơn tôi một tuổi thật đấy à?
+Mei thật sự sinh ra trước tôi một năm sao... Thật sự là bà chị hơn tôi một tuổi sao?
 
-Chị gái nhà Amemoto dạo này lôi thôi đến mức khiến tôi phải nghi ngờ chính ký ức của mình.
+Bà chị nhà Amemoto dạo này bê tha đến mức khiến tôi muốn nghi ngờ trí nhớ của chính mình.
 
-"Dạo này chị thật sự cố gắng ăn kiêng lắm rồi, nên thỉnh thoảng cũng phải có phần thưởng chứ! Nha, nhaaa? Đi màaa. Bây giờ chị muốn ăn lắm rồi, không nhịn nổi đâu!"
+"Dạo này chị ăn kiêng vất vả lắm rồiii, thỉnh thoảng cũng muốn tự thưởng chút chứ\! Nha, nhaaa? Đi màaa. Tự nhiên chị thèm chịu không nổiii\!"
 
-"... Thật là bó tay với chị. Chỉ lần này thôi đấy."
+"...Hết cách thật. Chỉ lần này thôi đấy."
 
-Khi Mei đã trở nên như vậy, tôi đành tiếp đãi chị ấy như một đứa em gái ngang ngược kém mình năm tuổi. Nghĩ thế cho tâm hồn nó thanh thản.
+Tôi đành coi cái con người mang tên Mei này như đứa em gái nhỏ hơn năm tuổi hay vòi vĩnh cho xong. Nghĩ thế cho đỡ hại não.
 
-"Hả, thật á? Cảm ơn em yêuuu! Để đền đáp, chị sẽ cho em ăn ké không-phẩy-năm miếng nhaaa."
+"Ê thật á? Yêu em nhấttt\! Để trả ơn, chị sẽ cho em ăn 0.5 miếng nhéee."
 
-"Nửa miếng á... Đúng là bà chị keo kiệt."
+"Một nửa của một miếng... Bà chị keo kiệt."
 
-"Đùa thôi đùa thôi, cho em ăn bao nhiêu miếng cũng được hết á! Vậy nha, đi mạnh giỏi. Khẩn trương lên, nhanh nhẹn lênnn. Nếu mua về an toàn, chị sẽ xoa đầu rồi ôm hôn thắm thiết luôn cho xemmm."
+"Đùa thôi đùa thôi, cho ăn mấy miếng cũng được mà\! Rồi, đi nhanh về nhanh nhaaa. Vận động lẹ làng lên nàooo. Mua được về an toàn thì chị sẽ xoa đầu với ôm một cái thật chặt nàooo."
 
-"Khỏi, em chẳng cần."
+"Hoàn toàn không cần."
 
-Đúng là một màn tiễn đưa chẳng đáng giá chút nào.
+Lời tiễn chân chẳng có chút giá trị nào.
 
-Vừa nghịch móng tay, Mei vừa gác đôi chân đang mặc chiếc quần short màu xám chuột lên thành ghế, có vẻ như chẳng thèm nhìn sang phía tôi nữa. Dù là vì mang ơn chị ấy, nhưng có vẻ tôi đã quá nuông chiều rồi chăng...?
+Vừa nghịch móng tay, vừa gác đôi chân thon dài lộ ra từ chiếc quần short màu xám tro lên tựa lưng ghế, Mei dường như chẳng thèm nhìn về phía này nữa. Có phải vì mang ơn nên tôi đã chiều hư bà chị này quá rồi không...?
 
-Vừa tự kiểm điểm, tôi vừa chuẩn bị đồ để ra ngoài.
+Vừa tự kiểm điểm, tôi vừa chuẩn bị đồ đạc để ra ngoài.
 
-◆
+Tôi tản bộ chậm rãi trên con đường đêm se lạnh giữa tháng Chín.
 
-Tôi chậm rãi bước đi trên con đường đêm se lạnh vào giữa tháng Chín.
+Không cần phải vội. Cửa hàng tiện lợi nằm ngay sát vách nhà Amemoto (mới xây được hai năm).
 
-Chẳng việc gì phải vội. Cửa hàng tiện lợi nằm ngay sát nhà Amemoto (vừa xây được hai năm).
+Thế nên, dù bà chị có tự đi mua thì cũng khá an toàn, nhưng khổ nỗi bả cứ nằng nặc: "Cho người ngoài thấy mặt mộc thì thà ch\*t còn hơn\! Toang mất\!".
 
-Thế nên, dù chị gái tôi có tự đi mua thì cũng khá an toàn, nhưng chị ấy lại bảo: "Mặt mộc mà để người ngoài nhìn thấy á, thà chúa giết con đi còn hơn! Chếttt mất!".
+Thật tình, tôi thấy Mei trẻ con quá đỗi. Cùng là nữ sinh cao trung mà khác xa một trời một vực với Watanuki-senpai tôi gặp hồi sáng.
 
-Tôi thật sự thấy Mei giống trẻ con quá đi mất. Dù cùng là nữ sinh trung học, nhưng chị ấy khác xa với đàn chị Watanuki mà tôi thấy hồi sáng.
+Nếu vị tiền bối kiêu sa lẫm liệt ấy là chị gái tôi, chắc chắn sẽ chẳng bao giờ sai tôi đi mua đồ giữa đêm hôm thế này đâu.
 
-Nếu đàn chị đường hoàng ấy mà là chị gái tôi, chắc chị ấy sẽ không sai em trai mình đi mua đồ giữa đêm thế này đâu.
+Đang mải mê với những suy nghĩ viển vông ấy, tôi bước vào cửa hàng tiện lợi.
 
-Vừa nghĩ ngợi lung tung như thế, tôi vừa bước vào cửa hàng tiện lợi.
+Tiếng nhạc chào mừng nhẹ nhàng vang lên. Cùng lúc đó, tôi ngẩng mặt lên và ngay lập tức mở to mắt kinh ngạc.
 
-Tiếng nhạc chào mừng vang lên nhẹ nhàng. Tôi ngẩng mặt lên cùng lúc đó, rồi ngay lập tức mở to mắt kinh ngạc.
+Bởi vì, người đang đứng trước mặt nhân viên thu ngân bận rộn kia chính là—
 
-Bởi vì, người đang đứng trước mặt nhân viên thu ngân bận rộn quét mã sản phẩm chính là—
+"A, chết, lỡ lấy nhiều quá... Không đủ tiền rồi. Xin lỗi ạ."
 
-"A, chết rồi, lấy quá tay mất rồi... Em không đủ tiền ạ. Em xin lỗi."
+Là Watanuki-senpai đang dụi mắt đầy vẻ ngái ngủ.
 
-Đó chính là chị Watanuki, người đang dụi mắt có vẻ rất buồn ngủ.
+"Cái này, cho tôi trả lại 4 lon được không ạ?"
 
-"Cái này, cho em trả lại bốn lon được không ạ?"
+Trong giỏ hàng của chị ấy, những lon nước tăng lực chất chồng thành một đống cao ngất.
 
-Trong giỏ hàng là một đống lon nước tăng lực chất cao như núi.
+Tôi dụi mắt vài lần, cứ ngỡ mình đang gặp ảo giác.
 
-◆
+Nhưng dáng vẻ ngái ngủ của vị tiền bối ấy vẫn không biến mất. Vừa nhắc Tào Tháo là Tào Tháo tới sao?
 
-Trước hết, tôi đồ rằng mình đang gặp ảo giác nên đã dụi mắt mấy lần.
+Khoác trên mình chiếc áo khoác ngoài trông có vẻ đắt tiền, Watanuki-senpai cầm vài lon nước, quay gót bước về phía kệ hàng.
 
-Thế nhưng dáng vẻ ngái ngủ của đàn chị vẫn không biến mất. Vừa mới nhắc đến tào tháo là tào tháo xuất hiện ngay?
+Động tác nhanh nhẹn ấy, dù chỉ là một hành động đời thường, vẫn toát lên một sự "sắc bén" khó tả. Rất khớp với ấn tượng tôi thấy sáng nay.
 
-Chị Watanuki đang khoác trên mình chiếc áo khoác ngoài trông có vẻ đắt tiền, cầm lấy mấy lon nước rồi quay gót trở lại quầy hàng.
+Ơ... Hóa ra Watanuki-senpai là kiểu người đi mua cả đống nước tăng lực vào đêm khuya thế này sao. Một sự thật bất ngờ. Ảo tưởng vừa mới nhen nhóm trong tôi lập tức vỡ tan tành.
 
-Chuyển động nhanh nhẹn ấy, dù chỉ là một hành vi đời thường nhưng lại toát lên sự "sắc sảo". Chuyển động đó hoàn toàn khớp với ấn tượng của tôi về chị ấy hồi sáng nay.
+Mà, dù ấn tượng về một tiền bối có chỉ số quan hệ bằng 0 có thay đổi thế nào thì cũng chẳng liên quan gì đến tôi.
 
-Hở... hóa ra chị Watanuki lại là kiểu người mua cả đống nước tăng lực vào lúc đêm muộn thế này à. Một sự thật bất ngờ. Hình tượng hoàn hảo vừa mới nhen nhóm trong tôi đã sụp đổ ngay tức khắc.
+Thôi thì lo làm cho xong việc của mình đã. Tôi nhanh chóng nhặt hai hộp kem mà Mei thích, rồi xếp hàng chờ thanh toán — Ơ, chị ấy vẫn chưa tính tiền xong sao.
 
-Mà, dù ấn tượng về một đàn chị chẳng chút quen biết có thay đổi thì cũng chẳng liên quan gì đến mình.
+Vì là cửa hàng tiện lợi chưa có máy tính tiền tự động, nên tiến độ thanh toán cứ thế đập vào mắt tôi.
 
-Mau mau làm xong việc được giao thôi. Tôi nhanh chóng chọn lấy hai hộp kem mà Mei thích rồi xếp hàng vào quầy thu ngân — ơ, đàn chị vẫn chưa thanh toán xong à.
+Số tiền hiển thị trên màn hình suýt soát 7000 yên. Với học sinh cao trung thì đó là cả một gia tài.
 
-Vì đây là cửa hàng tiện lợi chưa lắp đặt máy tự thanh toán nên tôi vô tình nhìn thấy tiến độ tính tiền.
+Watanuki-senpai rút vài tờ tiền từ kẹp tiền ra, lặng lẽ đặt xuống. Nam nhân viên xỏ khuyên tai cất giọng cộc lốc:
 
-Con số hiển thị là suýt soát bảy ngàn yên. Đó là một số tiền lớn đối với học sinh trung học.
+"Có tích điểm không ạ?"
 
-Chị Watanuki rút từ kẹp tiền ra vài tờ tiền giấy rồi khẽ khàng đặt xuống. Anh nhân viên thu ngân có xỏ khuyên tai cộc lốc nói:
+"A, tôi không phải hội viên... Nhưng mua nhiều thế này, nếu được thì tôi cũng muốn tích..."
 
-"Chị có tích điểm không?"
+"Thế thì, cài đặt ứng dụng đi ạ."
 
-"A, em chưa có thẻ thành viên ạ. ... Vì mua nhiều tiền thế này nên nếu được thì em cũng muốn tích ạ."
+"Vâng..."
 
-"Vậy chị tải ứng dụng về rồi cài đặt giúp em nhéee."
+Watanuki-senpai đáp lại bằng giọng mệt mỏi, rồi lục lọi trong túi chiếc áo khoác đen tuyền, bỗng nhiên khựng lại. Ơ, có chuyện gì thế nhỉ?
 
-"Vâng ạ..."
+"...Thôi, không tích điểm nữa ạ. Tôi quên mang điện thoại rồi..."
 
-Với giọng nói mệt mỏi, chị Watanuki thò tay vào túi chiếc áo khoác đen kịt rồi lục lọi, sau đó đứng sững lại. Ơ kìa, có chuyện gì vậy?
+Trời, tội nghiệp ghê... Ấn tượng ban đầu về Watanuki-senpai trong tôi hình như đang bay biến đi đâu mất rồi. Nói sao nhỉ, con người này, hào quang "số nhọ" đang tỏa ra ngùn ngụt.
 
-"... Em không tích điểm nữa đâu ạ. Em quên mang điện thoại mất rồi..."
+Khi Watanuki-senpai xách hai túi nilon đã được gói ghém lên, tiếng *lách cách* của những lon nước tăng lực va vào nhau vang lên rõ mồn một.
 
-Hả, tội nghiệp quá... Ấn tượng ban đầu của tôi về chị Watanuki sắp bay sạch sành sanh rồi đây. Nói sao nhỉ, người này toát ra một cái "vibe" xui xẻo ngập tràn luôn.
+Trông có vẻ nặng lắm, nhưng chắc nhờ sức tay của thành viên câu lạc bộ thể thao nên mới xách nổi. Tôi thì chịu. Thằng nhóc ẻo lả hít đất 5 cái không xong như tôi mà xách thế kia thì trật khớp vai là cái chắc.
 
-Khi chị Watanuki nhấc hai túi nilon đã được đóng gói xong lên, những lon nước tăng lực bên trong va vào nhau nghe lạch cạch.
+Nhưng mà, mua nhiều nước tăng lực thế để làm gì nhỉ?
 
-Trông có vẻ khá nặng, chắc phải là người có sức cánh tay của vận động viên CLB thể thao mới xách nổi. Tôi thì chịu. Tôi là thằng "mắm" đến chống đẩy năm cái còn không xong đây. Xách đống đó chắc trật khớp hai tay mất.
+Hồi trước tôi cũng hay uống để lấy tinh thần leo rank. Chắc Watanuki-senpai cũng có việc gì đó cần sự tập trung cao độ đây.
 
-Nhưng mà, chị ấy mua đống nước tăng lực đó để làm gì nhỉ?
+"Xin cảm ơn quý khách."
 
-Tôi cũng đã có một thời gian hay uống khi muốn tập trung tinh thần để leo rank. Chắc chị Watanuki cũng có "cái gì đó" cần sự tập trung cao độ chăng.
+Đang suy nghĩ vẩn vơ thì việc thanh toán có vẻ đã xong.
 
-"Cảm ơn quý khách ạaa."
+Lúc rời đi, Watanuki-senpai lại một lần nữa lịch sự cúi đầu chào người khách đang đợi phía sau (tức là tôi)—
 
-Đang mông lung suy nghĩ thì việc thanh toán có vẻ đã xong.
+"\!\!\!?"
 
-Khi rời đi, chị Watanuki lại một lần nữa cúi đầu chào lịch sự với vị khách đang chờ phía sau (tức là tôi) —
+—Và rồi chị ấy khẽ khựng lại.
 
-"!!?"
+Trông có vẻ như Watanuki-senpai vừa nhận ra mặt tôi và có chút dao động, nhưng không không, chín phần mười là do tôi tưởng bở thôi. Đã bảo là chỉ số quan hệ bằng 0 mà lị.
 
-— Rồi chị ấy bỗng khựng lại một chút.
+Người như tôi làm sao khiến chị ấy bận tâm được. Chỉ là tôi tự ý thức quá cao thôi.
 
-Trông chị Watanuki có vẻ dao động khi nhận diện ra khuôn mặt tôi, nhưng không không, **chín phần mười** là do tôi tưởng tượng thôi. Đã bảo là chẳng liên quan gì nhau rồi mà.
+Cảm giác như vừa chứng kiến một sự kiện hiếm có, tôi bước tới quầy thu ngân vừa trống.
 
-Làm gì có chuyện chị ấy lại thấy tâm thần bất ổn vì một đứa như tôi chứ. Chắc chắn là tôi tự luyến quá mức rồi.
+Việc thanh toán của tôi diễn ra nhanh chóng. Trả tiền xong xuôi như một quy trình máy móc.
 
-Cảm giác như vừa chứng kiến một sự kiện hiếm có, tôi tiến về phía quầy thu ngân vừa mới trống.
+Giờ thì mang cái này về cho Mei, rồi mình cũng về phòng thưởng thức kem... Hôm nay nghỉ ngơi sớm thôi. Vừa tính toán như thế, tôi vừa bước ra khỏi cửa hàng.
 
-Việc thanh toán của tôi kết thúc nhanh chóng. Cứ như một dây chuyền, tôi trả tiền rồi xong ngay.
+"Là Amemoto-kun đúng không, em ấy. Học sinh năm nhất."
 
-Giờ chỉ việc mang kem về cho Mei, rồi tôi cũng sẽ thưởng thức kem trong phòng mình... hôm nay phải nghỉ ngơi sớm thôi. Vừa tính toán như thế, tôi vừa bước ra khỏi cửa hàng.
+"Dạ?"
 
-"Em là Amemoto-kun đúng không? Học sinh lớp mười."
+Trong đời người hiếm khi nào có trải nghiệm được người khác đứng chờ sẵn.
 
-"Hả."
+Đã thế đối phương lại còn là Watanuki-senpai \- người mà tôi ngỡ là chẳng có chút liên hệ nào, khiến tôi ngạc nhiên đến mức suýt rụng rời chân tay. Nếu không nhờ rèn luyện kìm nén cảm xúc thì chắc tôi đã vừa hét "Oáaaaa\!" vừa ngã lăn ra đất rồi.
 
-Cả đời tôi hiếm khi gặp phải trải nghiệm bị ai đó đứng chờ sẵn ở cửa thế này.
+"V-Vâng, đúng là vậy... nhưng có chuyện gì không ạ?"
 
-Mà người đó lại là chị Watanuki chẳng chút quen biết, khiến tôi kinh ngạc đến mức suýt chút nữa là khuỵu cả chân. Nếu không nhờ được huấn luyện kiềm chế cảm xúc, chắc tôi đã ngã nhào ra đó mà hét lên "Oaaa!" mất rồi.
+"Chị là Watanuki Rino, năm hai. Chúng ta học cùng trường, em có biết chị không?"
 
-"V-Vâng, đúng là em... có chuyện gì không chị?"
+*Dạ không, sáng nay em mới biết. Tên chị thì giờ em mới nghe.*
 
-"Chị là Watanuki Rino, học sinh lớp mười một. Học cùng trường đấy, không biết em có biết chị không?"
+Kỹ năng đo lường khoảng cách với người lạ của tôi cũng không tệ đến mức buột miệng nói ra những lời đó. Nhìn Watanuki-senpai đang nhìn mình với vẻ hơi lo lắng, tôi nở một nụ cười xã giao hết mức có thể.
 
-Dạ, đến sáng nay em mới biết chị ạ. Còn tên thì đến bây giờ em mới biết.
+"Vâng, em cũng có nghe đồn đại ạ. Chị là người nổi tiếng trong trường mà, đúng không ạ?"
 
-Nhưng tôi không đến mức kém cỏi trong việc đo lường khoảng cách khi lần đầu gặp mặt mà nói ra như thế. Nhìn đàn chị đang có vẻ hơi bất an kia, tôi cố gắng nặn ra nụ cười thân thiện nhất có thể.
+Có bạn học hâm mộ chị ấy đến thế, chắc chắn là người nổi tiếng rồi.
 
-"Vâng ạ, em cũng có nghe qua danh tiếng của chị rồi. Chị là người nổi tiếng trong trường mà đúng không ạ?"
+Nếu không phải thì tôi sẽ quê độ lắm đây — nhưng may quá, Watanuki-senpai đã khẽ gật đầu xác nhận. Tốt rồi, đoán trúng. Mà sao tôi lại làm bộ như biết rõ thế nhỉ.
 
-Đến mức có cả bạn cùng lớp là fan cơ mà, chắc chắn chị ấy phải là người nổi tiếng rồi.
+"Nổi tiếng thì hơi quá lời. Nhưng chị cũng tự biết mình dễ gây chú ý. Thế nên, chuyện gặp nhau hôm nay, chị muốn em giữ bí mật."
 
-Nếu không phải vậy thì tôi sẽ ngượng chín mặt mất — nhưng chị Watanuki đã gật đầu xác nhận. May quá, đúng rồi. Mà sao mình lại giả bộ như biết rõ thế nhỉ.
+"À, vâng vâng. Em hiểu rồi."
 
-"Nổi tiếng thì hơi quá, nhưng chị cũng tự ý thức được mình là người dễ gây chú ý. Thế nên, chuyện hôm nay gặp nhau ở đây, mong em hãy giữ bí mật giúp chị nhé."
+Chuyện nửa đêm đi mua cả đống nước tăng lực mà lan truyền trong trường thì cũng phiền phức thật — có lẽ vì phán đoán như vậy nên chị ấy mới đợi tôi.
 
-"À, vâng vâng. Em hiểu rồi ạ."
+"Em giữ bí mật giúp chị, được không?"
 
-Nửa đêm nửa hôm ra ngoài mua một đống nước tăng lực, nếu chuyện này lan ra trong trường thì chắc chắn sẽ phiền phức lắm — chắc chị ấy đã phán đoán như vậy nên mới đứng chờ tôi.
+"Vâng, em hiểu rồi ạ. Em sẽ không nói với ai đâu. Cơ mà, em cũng có điều muốn hỏi chị—"
 
-"Em giữ bí mật giúp chị được không?"
+*Tại sao chị lại biết tên của một đứa hậu bối mờ nhạt như Amemoto này vậy ạ?*
 
-"Vâng, em biết rồi. Em sẽ không nói với ai đâu. Mà cái đó, em cũng có chuyện muốn hỏi chị—"
+Chưa kịp hỏi câu đó, Watanuki-senpai đã thốt lên "May quá" rồi lả người khuỵu xuống. Tiếng thở phào nhẹ nhõm kéo dài tan vào không gian tĩnh mịch của khu dân cư.
 
-*Tại sao chị lại biết tên của Amemoto, một kẻ đại diện cho 'hậu bối mờ nhạt' như em vậy?*
+"...Ư, căng thẳng vừa tan biến... tự nhiên... thấy buồn nôn quá, hình như là..."
 
-Trước khi tôi kịp đặt câu hỏi đó, chị Watanuki đã thốt lên "May quá" rồi khuỵu xuống như thể mất hết sức lực. Một tiếng thở phào nhẹ nhõm dài tan biến vào khu dân cư yên tĩnh.
+"Hả? Chị có sao không, có cử động được không?"
 
-"... Ư, vừa thả lỏng cái là... tự nhiên thấy buồn nôn quá..."
+"...Hơi tệ rồi... Chắc chị cần nghỉ một chút..."
 
-"Hả? Chị có sao không, có đứng dậy được không ạ?"
+Tại bãi đậu xe không một bóng người, một vị tiền bối xinh đẹp đang ngồi sụp xuống (vì kiệt sức). Bên cạnh là hai túi đồ nặng trịch. Và kem của tôi với Mei đang tan chảy dần. Đồng hồ đã điểm qua 0 giờ đêm.
 
-"... Chắc hơi tệ rồi đây... Chị cần nghỉ một lát..."
+Có lẽ nào: Tình huống khẩn cấp?
 
-Giữa bãi đỗ xe không một bóng xe, một đàn chị xinh đẹp (đang bất ổn về sức khỏe) đang ngồi bó gối run rẩy. Bên cạnh là hai túi đồ nặng trĩu. Và kem của tôi với Mei thì đang chảy dần đều. Đồng hồ sắp điểm mười hai giờ đêm.
+Thấy tôi lúng túng, chị ấy cười yếu ớt.
 
-Có khi nào là: Tình trạng khẩn cấp?
+"A, làm em khó xử rồi... Xin lỗi nhé, chắc là thiếu máu thôi. Thỉnh thoảng chị hay bị thế nên đừng bận tâm. Chị sẽ... nghỉ ở đây một lát rồi đi."
 
-Thấy tôi đang bối rối, đàn chị yếu ớt mỉm cười với tôi.
+Watanuki-senpai lảo đảo đứng dậy, rồi lại ngồi thụp xuống gần mấy lá cờ quảng cáo.
 
-"Hức, làm em khó xử rồi nhỉ... Xin lỗi nhé, chắc chị bị thiếu máu thôi. Chuyện này thỉnh thoảng vẫn xảy ra nên em đừng bận tâm. Chị sẽ... nghỉ ở đây một lát..."
+...Nghỉ ở đây sao? Giữa trời lạnh thế này á? Không gọi người nhà đến đón được sao? À không được, người này quên mang điện thoại rồi.
 
-Chị Watanuki lảo đảo đứng dậy, rồi lại ngồi sụp xuống gần mấy cái cờ quảng cáo.
+"Chị có cần liên lạc với gia đình không? Nếu cần em cho mượn điện thoại."
 
-... Nghỉ ở đây sao? Giữa cái tiết trời se lạnh này á. Không thể gọi người nhà đến đón sao? À không được, chị ấy quên điện thoại rồi.
+"Không cần đâu... Chị lén ra khỏi nhà... không muốn bị lộ."
 
-"Chị có cần liên lạc với người nhà không? Nếu chị cần, em cho chị mượn điện thoại."
+Giọng nói nhỏ dần vì mệt mỏi. Tuy nhiên, trong đó vẫn chứa đựng một ý chí kiên định.
 
-"Không đâu... Chị lén ra khỏi nhà nên... không muốn bị lộ đâu."
+"Đừng lo. Nghỉ chút là chị khỏe thôi..."
 
-Có lẽ vì mệt nên giọng chị ấy cứ nhỏ dần. Thế nhưng, trong đó vẫn lộ rõ một ý chí kiên định.
+Không không không. Suy nghĩ thực tế chút đi, làm sao tôi có thể bỏ mặc một đàn chị đang cúi gầm mặt đau đớn thế này mà phán một câu "Vậy hả. Thế em về nhé\!" được chứ.
 
-"Đừng lo. Nghỉ một lát là chị khỏe thôi..."
+Nếu vậy thì... đành thôi.
 
-Không không không. Xét theo thực tế, không thể để mặc một đàn chị đang cúi gằm mặt vì mệt mỏi thế này mà bảo "Thế ạ. Vậy em về đây!" được.
+Theo kinh nghiệm của tôi, quyết định phương hướng hành động càng sớm càng tốt. Tôi quyết định làm theo lựa chọn vừa nảy ra trong đầu.
 
-Nếu vậy thì, thôi vậy...
+"Anô. Đề nghị điều này với một tiền bối chẳng thân thiết gì thì có hơi mạo phạm, nhưng mà..."
 
-Theo kinh nghiệm của tôi, việc quyết định phương hướng hành động càng sớm càng tốt. Tôi quyết định làm theo lựa chọn vừa lóe lên trong đầu.
+"? Gì cơ?"
 
-"À thì. Đề nghị chuyện này với một đàn chị chẳng chút quen biết như chị có vẻ hơi mạo muội..."
+Tôi lấy điện thoại ra, gọi cho Mei, rồi đưa máy cho Watanuki-senpai.
 
-"? Chuyện gì thế em?"
+Khuôn mặt thanh tú trắng bệch vì mệt mỏi ngước lên nhìn tôi đầy vẻ khó hiểu. Bàn tay run run vươn ra, đón lấy chiếc điện thoại đang ở trạng thái chờ kết nối.
 
-Tôi lấy điện thoại ra, gọi cho Mei rồi đưa cho chị Watanuki.
+"Nhà em cách đây chưa đầy 2 phút đi bộ. Nếu được, chị có muốn qua đó nghỉ tạm một chút không? Ở nhà cũng có chị gái em học cùng khối với chị đấy. Đúng như em nói luôn."
 
-Khuôn mặt thanh tú đang xanh xao vì mệt mỏi kia ngơ ngác nhìn tôi. Đôi tay run rẩy vươn ra đón lấy chiếc điện thoại đang ở trạng thái chờ cuộc gọi.
+『Alôôô, nghe nè nghe nèee? A, khoan để chị đoán. Em quên mua vị kem chị thích đúng không. Không cần nói nhiều, chị đây hiền lành nên em muốn chị nhắc lại mấy lần cũng được hết á ☆』
 
-"Nhà em cách đây chưa đầy hai phút đi bộ đâu ạ. Nếu chị thấy ổn, chị qua đó nghỉ tạm một lát được không? Trong nhà em cũng có một bà chị cùng khóa với chị đấy. Đúng lúc luôn."
+"Giọng này là... Amemoto Mei-san lớp bên cạnh nhỉ."
 
-『Alô alô, gì thế em trai? À chờ tí để chị đoán. Em quên loại kem chị thích rồi chứ gì. Đừng nói gì hết, chị đây hiền lành lắm nên em hỏi bao nhiêu lần chị cũng chỉ cho hết á ☆』
+『Ủa, ủa ai dợ\!? Giọng con gái nhà ai dợ\!?』
 
-"Giọng nói này... là bạn Amemoto Mei ở lớp bên cạnh đúng không?"
+Dù chưa bật loa ngoài mà giọng Mei vẫn xuyên thấu đến tận đây.
 
-『C-Cái gì!? Đứa con gái nào đấy!?』
+Biết nhà tôi có bà chị ồn ào thế này, chắc chị ấy cũng bớt cảnh giác phần nào. Dù là học sinh cấp ba, nhưng con trai mời về nhà lúc nửa đêm thì cũng không hay ho gì.
 
-Dù không để loa ngoài nhưng giọng của Mei vẫn xuyên thấu đến tận đây.
+Nhưng mà, tôi cũng không thể bỏ mặc tiền bối đang thở dốc đau đớn thế kia dưới bầu trời lạnh giá này được.
 
-Nếu biết nhà tôi có một bà chị ồn ào như thế này, chắc chị ấy sẽ bớt cảnh giác hơn chăng. Dù là học sinh trung học nhưng việc nam giới mời phụ nữ về nhà lúc nửa đêm là điều không nên.
+"Có thể em hơi lo chuyện bao đồng. Nhưng đêm hôm thế này, để con gái bị bệnh một mình ở đây thì nguy hiểm lắm."
 
-Nhưng tôi cũng không thể bỏ mặc một đàn chị đang thở dốc vì mệt mỏi dưới bầu trời lạnh giá này được.
+"Ưm, ừ thì... Thật sự không phiền chứ?"
 
-"Có thể là em hơi bao đồng, nhưng em nghĩ một phụ nữ đang mệt mỏi mà ở một mình lúc đêm muộn thế này thì nguy hiểm lắm."
+Vẻ mặt đắn đo, cùng ánh mắt xác nhận đầy nghiêm túc.
 
-"Hừm... thật sự ổn chứ em?"
+"Vâng. Nếu chị thấy ngại thì cứ từ chối, không sao cả đâu ạ. Thật ra thì—"
 
-Sự phân vân hiện rõ trong ánh mắt nghiêm túc khi chị ấy xác nhận lại.
+『Ê này Touyaaa giải thích coi—\! Khoan đã, đây là tài khoản của Touya mà? Là sao? Đi mua đồ tiện thể hẹn hò đêm khuya hả? ...Chị khóc đấy nhé? Không được ăn kem là khóc tập 1, cậu em trai đáng yêu có bạn gái bí ẩn là khóc tập 2 đấy nhé\!?』
 
-"Vâng ạ. Nếu chị thấy không tiện thì cứ từ chối, không sao hết. Thậm chí là—"
+"Thật ra chị em em mới là người gây phiền phức cho chị ấy chứ. Nếu chị không ngại chuyện đó."
 
-『Này này Touya giải thích mau lên! Khoan đã, đây là tài khoản của Touya đúng không? Vụ gì đây? Đi mua đồ tiện thể hẹn hò giữa đêm hả? ... Chị khóc cho em xem đấy nhá! Đầu tiên là không có kem ăn nên khóc một lần, rồi thằng em trai đáng yêu có bạn gái bí ẩn nên khóc lần hai luôn đấy nhé!?』
+"Phù... Vậy thì, chị xin phép làm phiền nhé... Có vẻ như cũng cần giải thích với chị gái em nữa."
 
-"Thậm chí là hai chị em em có khi còn làm phiền chị ấy chứ. Nếu chị thấy ổn thì cứ qua ạ."
+Cười khổ trước bà chị Mei đang để trí tưởng tượng bay xa, Watanuki-senpai đã quyết định đến nhà tôi nghỉ ngơi.
 
-"Phì... Vậy thì, chị xin nhận lòng tốt của em nhé... Chắc chị cũng cần giải thích với chị gái em nữa."
+Tôi thở phào nhẹ nhõm vì lời đề nghị táo bạo đã được chấp nhận. Tất nhiên là không để lộ ra mặt rồi.
 
-Cười khổ trước việc Mei đang khiến hiểu lầm ngày càng lan rộng, chị Watanuki đã quyết định qua nhà tôi nghỉ ngơi.
+"Vậy thì, mình đi từ từ thôi ạ. Để em xách hai cái túi cho."
 
-Tôi thở phào nhẹ nhõm khi đề nghị táo bạo của mình được chấp nhận. Tất nhiên là tôi không để lộ ra ngoài rồi.
+"Thật hả? Cứu tinh của chị... Thú thật là giờ chị chẳng còn chút sức lực nào để xách nó nữa, đang lo không biết làm sao."
 
-"Vậy thì, chúng ta đi thong thả nhé chị. Hai túi này để em xách cho."
+Nụ cười *hề hề* yếu ớt hiện lên. Trông "người" hơn hẳn nụ cười công nghiệp hoàn hảo sáng nay. Thú thật, tôi thích kiểu này hơn.
 
-"Thật sao? Cảm ơn em nhiều nhé... Hiện giờ chị thấy mình chẳng đủ sức để xách nữa, đang bí quá đây."
+Cơ mà, tự mình đề nghị xong mới thấy lo. Hai túi nước tăng lực nặng trịch này, liệu tôi có xách nổi không đây.
 
-Một nụ cười yếu ớt. Nói thật, tôi thích nụ cười mang hơi thở con người này hơn là nụ cười hoàn hảo hồi sáng nay.
+...Thôi thì chuẩn bị tinh thần trật khớp vậy.
 
-Mà, dù chính miệng mình nói ra nhưng không biết hai túi nước tăng lực nặng trịch này tôi có xách nổi không nữa.
+Vừa mở cửa bước vào, tôi đã gặp ngay một con quỷ.
 
-... Tôi đành chuẩn bị tinh thần cho việc bị trật khớp vậy.
+"Touuu-yaaa?"
 
-◆
+Giọng nói trầm thấp đầy vẻ tra hỏi phát ra từ chiếc mặt nạ quỷ (đồ chơi chọc ghẹo che mặt mộc) của Mei.
 
-Vừa mở cửa vào nhà, tôi đã thấy một con quỷ đứng đó.
+"Hiií...\!"
 
-"To-u-ya-a?"
+Nhìn thấy chiếc mặt nạ nhe nanh, Watanuki-senpai thốt lên tiếng hét dễ thương rồi cứng đờ người.
 
-Một giọng trầm đầy chất vấn phát ra từ chiếc mặt nạ quỷ của Mei (đó là một món đồ đùa giỡn để che mặt mộc đấy).
+Và có lẽ do phản xạ, chị ấy bám chặt lấy cánh tay tôi.
 
-"Hức...!"
+"Tự nhiên sai đi mua đồ, xong lại dẫn người nổi tiếng như Watanuki-san về là sao hảảả? Lỡ học sinh trong trường biết được thì loạn hết cả lên đấy nhéee?"
 
-Trước chiếc mặt nạ mọc sừng, đàn chị kêu lên một tiếng nhỏ dễ thương rồi đứng sững lại.
+"Em vừa báo cáo vài phút trước rồi mà. Theo trực giác thì em thấy để chị ấy nghỉ ở đây tốt hơn. Nhà mình có bà chị tâm lý mà lị."
 
-Và theo phản xạ, chị ấy bám chặt lấy cánh tay tôi.
+"Không, lý trí thì chị hiểu... Nhưng con tim chưa kịp load kịp ấy chứ... Mà độ quyết đoán của em vẫn kinh khủng như mọi khi nhỉ... Trước hết, cái đống nước tăng lực kinh dị kia là sao?"
 
-"Sao bảo đi mua đồ mà lại dắt cả người nổi tiếng như bạn Watanuki về đây hả? Chuyện này mà lộ ra ở trường là to chuyện lắm đấy biết chưa?"
+"...Là của em, để uống lúc cần cố gắng."
 
-"Em vừa giải thích qua điện thoại rồi còn gì. Em cảm thấy để chị ấy nghỉ ở đây là tốt nhất. Với lại nhà mình còn có một bà chị rất biết thấu cảm nữa mà."
+"Hảaaa, rồi lỡ lại gục ngã thì sao\! Chị không muốn em lại ngủ quên suốt ngày như hồi cấp 2 đâu nhá\!?"
 
-"À thì, cái đầu chị hiểu nhưng trái tim chị chưa thông... Mà công nhận quyết đoán gớm thật... Trước hết, đống nước tăng lực kinh khủng kia là sao đây?"
+"Không sao đâu mà. Em tự hiểu rõ bản thân mình nhất. Sẽ không làm Mei lo lắng nữa đâu."
 
-"... Là đồ để em uống khi cần cố gắng thôi."
+Tuy nói vậy, nhưng bà chị "Gal nghiêm túc" vẫn thở dài "Nặng lắm đúng không, đưa một bên đây" rồi đỡ giúp tôi. May quá, cầm thêm chút nữa là tay phải tôi rụng rời luôn rồi.
 
-"Hả, lỡ lại ngất ra đấy thì tính sao! Chị không muốn em lại suốt ngày ngủ nướng như hồi cấp hai đâu đấy nhé!?"
+Dù phải nói dối một cách áy náy, nhưng ít ra cũng không để lộ chuyện Watanuki-senpai mua đống đó.
 
-"Không sao đâu mà. Em là người hiểu rõ bản thân mình nhất. Em sẽ không để chị phải lo lắng nữa đâu."
+Thế này là ổn rồi nhỉ, tôi quay sang nhìn người cùng giữ bí mật, thì thấy chị ấy vẫn mặt mày tái mét ngồi bệt xuống đất.
 
-Thế nhưng bà chị theo phong cách "gyaru nghiêm túc" của tôi lại bảo "Nặng lắm đúng không, đưa một túi đây" rồi đưa tay ra giúp đỡ. May quá, nếu xách thêm nữa chắc vai phải tôi rớt ra luôn mất.
+"A, Amemoto-kun... Tại sao Mei-san lại đeo mặt nạ quỷ thế... Xuất hiện bất ngờ làm chị... hơi hết hồn..."
 
-Dù phải nói dối một cách cắn rứt, nhưng có vẻ như đã không bị lộ chuyện đó là đồ mua của chị Watanuki.
+"A, đúng rồi nhỉ. Mei, tháo cái mặt nạ đó ra rồi giải thích đi. Tiền bối đang sợ kìa."
 
-*Như vậy là ổn rồi đúng không ạ*, tôi nhìn sang phía "người cùng giữ bí mật" thì thấy chị ấy đang mặt cắt không còn giọt máu, ngồi bệt xuống đất.
+"Không không không chịu đâu. Bắt chị để mặt mộc cho người ngoài ngoài Touya nhìn thấy thì thà chị làm quỷ còn hơn."
 
-"Amemoto-kun... tại sao bạn Mei lại đeo mặt nạ quỷ thế... sự xuất hiện bất ngờ đó làm chị thực sự hơi bị sốc đấy..."
+Đừng có từ bỏ làm người vì lý do đó chứ. Hôm nọ xem *Diệt Quỷ* khóc lóc um sùm là sao hả.
 
-"À, đúng rồi. Mei, tháo cái mặt nạ đó ra rồi giải thích tình hình đi. Đàn chị đang sợ kìa."
+Tôi thấy dù không trang điểm thì chị ấy cũng nét nào ra nét đấy mà. Chắc không phải do tôi bênh người nhà đâu. Nhớ mang máng Meroru-san từng bảo "Đánh giá bản thân của con gái tuổi dậy thì phức tạp lắm nhóc ơi".
 
-"Không không không. So với việc để người khác ngoài Touya nhìn thấy mặt mộc thì chị thà làm quỷ suốt đời còn hơn."
+Mà quan trọng hơn, giờ là lúc phải lo cho khách.
 
-Đừng vì lý do đó mà từ bỏ tư cách làm người chứ. Thế vụ hôm nọ xem phim *Thanh Gươm Diệt Quỷ* rồi khóc nức nở là sao đây.
+"Xin lỗi chị, con quỷ đó đáng sợ quá nhỉ... Mei, đổi cái mặt nạ nào dễ thương hơn đi. Đừng dọa Watanuki-senpai nữa."
 
-Tôi thấy dù không trang điểm thì khuôn mặt chị ấy vẫn rất dễ thương mà. Đó chắc chắn không phải là sự thiên vị người nhà đâu. "Đánh giá bản thân của thiếu nữ đang tuổi dậy thì khó lường lắm đấy chàng trai à", hình như anh Meloryl cũng từng nói thế thì phải.
+"Rõ rồiii. Chắc trong tủ còn cái mặt nạ Thủy thủ á\! Để chị tìm rồi đổi nhaaa."
 
-Nhưng quan trọng hơn bây giờ là đón khách.
+Lẽ ra phải chu đáo hơn, ai ngờ lại làm chị ấy thêm hoảng sợ. Phải kiểm điểm thôi. Phải chấn chỉnh lại tinh thần mới được.
 
-"Em xin lỗi, mặt nạ quỷ đáng sợ quá phải không chị... Mei, đổi cái mặt nạ nào dễ thương hơn đi. Đừng làm chị Watanuki sợ thêm nữa."
+"Khoan đã Amemoto-kun. Chị không có sợ. Chỉ là hơi giật mình chút thôi. Thật sự là không sợ... Ư..."
 
-"Tuân lệnhhh. Trong tủ chắc còn cái mặt nạ ma pháp thiếu nữ đấy! Chị đi tìm rồi đổi nhéee."
+Có lẽ là buồn nôn, chị ấy đang che miệng lại. Phải chuẩn bị túi nôn thôi.
 
-Lẽ ra phải ở vị trí quan tâm khách khứa mà tôi lại gây thêm lo lắng không đáng có. Đáng trách thật. Phải chấn chỉnh lại thôi.
+"Chị đừng cố quá. Trước hết cứ nghỉ ngơi đã. Ghế sofa phòng khách êm lắm, chị dùng đi. Đi hết hành lang này là tới, chị đứng dậy nổi không?"
 
-"Dừng lại đi Amemoto-kun. Chị đâu có sợ. Chỉ là hơi bất ngờ thôi mà. Thật sự chị không hề run rẩy gì hết... Ư..."
+"...Chị không có sợ mà... Lần đầu tiên trong đời... bị coi là đứa trẻ yếu đuối thế này đấy..."
 
-Chắc là lại buồn nôn rồi, chị ấy đang lấy tay che miệng. Phải chuẩn bị cả túi vệ sinh nữa.
+Tôi đặt đống nước tăng lực ở cửa, rồi dìu Watanuki-senpai đang không cử động nổi.
 
-"Chị đừng cố quá. Trước hết cứ nghỉ ngơi đã ạ. Ghế sofa ở phòng khách êm lắm, chị cứ dùng tự nhiên nhé. Ở cuối hành lang này thôi ạ, chị đứng dậy được không?"
+Tôi cố gắng không để tâm đến cảm giác mềm mại đặc trưng của phái nữ khi tiếp xúc. Tình huống khẩn cấp, không được suy nghĩ lung tung.
 
-"... Chị không có run mà... nhưng đây là lần đầu tiên trong đời chị được đối xử như một đứa trẻ yếu ớt thế này đấy..."
+Phòng khách đêm khuya tắt tivi tĩnh lặng như tờ.
 
-Tạm thời đặt đống nước tăng lực ở hiên nhà, tôi đỡ lấy vai đàn chị đang không thể cử động.
+Ảnh hưởng từ ông bố theo chủ nghĩa tối giản, nhà tôi không có mấy loại đồng hồ để bàn. Thế nên giờ đây, chỉ nghe thấy tiếng thở của tôi và Watanuki-senpai.
 
-Lúc đó, tôi cũng cố gắng không nghĩ về cảm giác mềm mại đặc trưng của phái nữ đang chạm vào mình. Trong tình huống khẩn cấp mà nghĩ bậy bạ là không tốt.
+Trên chiếc sofa mà lúc nãy Mei còn chiếm đóng, giờ Watanuki-senpai đang nằm. Tư thế thoải mái, yên tĩnh nghỉ ngơi.
 
-◆
+Phần chân được kê cao lên một chút bằng gối ôm trong phòng tôi. Đôi chân khỏe khoắn nối dài từ chiếc quần short không thích hợp để ra ngoài kia, tôi cố gắng không để lọt vào tầm mắt...
 
-Phòng khách đêm muộn khi TV đã tắt thật là yên tĩnh.
+Tôi thận trọng đưa cốc nước đã rót sẵn, cẩn thận không để sánh ra ngoài.
 
-Do ảnh hưởng của người bố theo chủ nghĩa tối giản nên nhà tôi chẳng có cái đồng hồ treo tường nào. Vì thế lúc này, tôi chỉ nghe thấy tiếng thở của mình và của chị Watanuki.
+"Chị thấy sao rồi, cũng 20 phút trôi qua rồi. Đã thấy khỏe hơn chưa ạ?"
 
-Trên chiếc ghế sofa mà Mei vừa chiếm hữu ban nãy, hiện giờ chị Watanuki đang nằm đó. Chị ấy đang nghỉ ngơi trong một tư thế thoải mái nhất.
+Senpai uống một ngụm nước, rồi mỉm cười dịu dàng.
 
-Phần chân chị ấy được kê hơi cao bằng mấy chiếc gối ôm trong phòng tôi. Cố gắng không để đôi chân khỏe khoắn và chiếc quần short không hợp để ra ngoài kia lọt vào tầm mắt...
+"Ừm, nhờ ơn em cả. Cảm giác khó chịu cũng hết rồi."
 
-Tôi cẩn thận đưa ly nước đầy cho chị ấy để không bị đổ.
+"Vậy thì tốt quá. Về chuyện đi về, để em đưa chị—"
 
-"Chị thấy sao rồi ạ, cũng qua được hai mươi phút rồi. Chị đã thấy đỡ hơn chưa?"
+"Khoan đã, sao em lại đeo còng tay?"
 
-Đàn chị nhấp một ngụm nước rồi mỉm cười dịu dàng.
+Senpai ngơ ngác chỉ vào chiếc còng tay nhựa trên cổ tay tôi. Là đồ chơi khống chế tự do mượn từ hộp đồ chơi khăm của Mei.
 
-"Ừm, nhờ em cả đấy. Chị hết thấy buồn nôn rồi."
+"À thì... Em nghĩ nếu cử động của em bị hạn chế thì chị sẽ đỡ bất an hơn. Nên em đeo tạm vào."
 
-"Vậy thì tốt quá. Còn về việc về nhà, em sẽ đưa chị về nên—"
+"Quả nhiên là thế... Phụt, hahaha, ahahahaha\!"
 
-"Mà này, sao em lại đeo còng tay thế?"
+Ơ, tôi đâu có định tấu hài mà sao chị ấy cười dữ vậy. Trên ghế sofa, Senpai ôm bụng cười ngặt nghẽo, người co lại thành hình chữ C.
 
-Đàn chị với khuôn mặt ngây thơ đang chỉ vào chiếc còng tay bằng nhựa đang đeo trên cổ tay tôi. Đó là một món đồ chơi kiềm chế sự tự do của cánh tay mà tôi mượn từ hộp đồ chơi của Mei.
+"Nhìn em khả nghi hơn gấp bội đấy biết không? Fufufu, em soi gương thử đi."
 
-"À thì... Em nghĩ nếu em ở trong trạng thái bị hạn chế cử động thì chị sẽ bớt thấy bất an hơn. Nên em cứ đeo vào cho chắc thôi ạ."
+"...Công nhận."
 
-"Đúng như chị nghĩ mà... Phì, hì hì, ha ha ha ha!"
+Lo lắng quá mức sợ bị coi là nam sinh biến thái, ai ngờ lại tự biến mình thành kẻ biến thái thật. Như diễn hài độc thoại ấy.
 
-Ơ, tôi đâu có định tấu hài đâu mà chị ấy cười dữ vậy. Trên ghế sofa, đàn chị đang ôm bụng cười ngặt nghẽo đến mức gập cả người lại.
+Trời, tự nhiên thấy xấu hổ ghê. Mei, đừng có tìm mặt nạ Thủy thủ nữa. Làm chị thì phải ngăn thằng em làm chuyện lố lăng này từ trước chứ...
 
-"Ngược lại nhìn em còn đáng nghi hơn đấy biết không? Hì hì, em nên đi soi gương đi nhé."
+"Fufu, xin lỗi vì đã cười nhé. Nhưng mà, trong tình huống này — chị sẽ không nghi ngờ Amemoto-kun đâu. Chị đã hết bất an từ lâu rồi."
 
-"... Đúng là vậy thật."
+Vẫn chưa nín cười hẳn, Watanuki-senpai che miệng ngồi dậy. Mái tóc đen hơi rối bỗng trở nên quyến rũ lạ thường.
 
-Vì quá lo lắng chuyện bị coi là nam sinh khả nghi mà tôi đã biến mình thành một kẻ khả nghi thực thụ luôn rồi. Cứ như diễn kịch hài ấy.
+"Thiệt tình, đúng là trăm nghe không bằng một thấy. Em thú vị hơn lời đồn nhiều đấy, Amemoto Touya-kun."
 
-Oa, tự nhiên thấy ngượng quá đi mất. Mei ơi, đừng có đi tìm mặt nạ ma pháp thiếu nữ nữa. Với tư cách là chị gái, hãy ngăn cản thằng em mình làm quá lố đi chứ...
+"A, nhắc mới nhớ."
 
-"Hì hì, xin lỗi vì đã cười em nhé. Nhưng mà... đến nước này rồi — chị chẳng còn thấy Amemoto-kun đáng nghi chút nào đâu. Chị hết thấy bất an từ lâu rồi mà."
+Thắc mắc tôi muốn hỏi từ lúc nãy.
 
-Vừa cố nhịn cười, chị Watanuki vừa che miệng ngồi dậy. Mái tóc đen hơi rũ xuống trông quyến rũ đến lạ kỳ.
+"Tại sao chị lại biết mặt và tên em vậy? Ngoài cái họ hiếm ra thì em chẳng có đặc điểm gì nổi bật cả."
 
-"Thật đúng là **trăm nghe không bằng một thấy** nhỉ. Em là một hậu bối thú vị hơn nhiều so với những gì chị nghe đấy, Amemoto Touya-kun."
+"Không đâu, có chứ? Hậu bối trong câu lạc bộ Cung đạo của chị từng nhắc đến một lần. Rằng có một bạn cùng lớp bắn FPS cực đỉnh."
 
-"A, vụ đó."
+"...Chỉ vì lý do đó mà chị nhớ em sao?"
 
-Đó là thắc mắc mà tôi vẫn muốn hỏi nãy giờ.
+"Ừm ừm. Biết đâu có lúc sẽ cần nói chuyện nên chị ghi nhớ thôi."
 
-"Tại sao chị lại biết tên và mặt em khớp với nhau vậy ạ? Ngoài cái họ hiếm ra thì em chẳng có gì đặc biệt cả."
+"Hể..."
 
-"Không đâu, có chứ. Một hậu bối trong CLB Cung Đạo của chị từng nhắc đến em đấy. Bảo là có cậu bạn cùng lớp chơi FPS giỏi cực luôn."
+Dù vẫn đang đeo còng tay nhưng tôi cũng phải lùi lại một bước. Dù bộ dạng này không có tư cách để lùi, nhưng tôi vẫn lùi.
 
-"... Chỉ vì lý do đó mà chị nhớ em luôn á?"
+Bình thường, chẳng ai lại đi nhớ 'một thằng con trai chơi game giỏi là người quen của đàn em trong CLB' làm gì.
 
-"Ừm ừm. Chị nghĩ biết đâu sau này có dịp nói chuyện với nhau thì sao. Nên chị ghi nhớ luôn."
+Vậy mà chỉ vì "có thể sẽ nói chuyện" mà nhớ được cả mặt... Trí nhớ của chị ấy tốt đến mức nào vậy.
 
-"Hả..."
+Đang vừa sợ vừa nể thì Watanuki-senpai vươn vai đứng dậy.
 
-Vẫn đang đeo còng tay nhưng tôi vẫn thấy ái ngại. Dù biết mình không ở vị trí để mà tỏ ra ái ngại, nhưng tôi vẫn thấy ái ngại thật.
+"Amemoto-kun, hôm nay cảm ơn em nhé, nhờ em mà chị về được an toàn rồi. Ở lâu làm phiền bố mẹ em thức giấc thì ngại lắm, chị xin phép về đây."
 
-Vốn dĩ, chẳng có mấy lý do để ghi nhớ một 'cậu bạn chơi game giỏi, là người quen của hậu bối trong CLB'.
+Bố tôi đang đi làm xa, mẹ thì trực đêm ở bệnh viện nên không cần lo, nhưng cũng chẳng có lý do gì để giải thích rồi giữ chị ấy lại.
 
-Vậy mà chỉ vì "biết đâu có dịp nói chuyện" mà chị ấy đã nhớ cả mặt lẫn tên... chắc là trí nhớ của chị ấy phải siêu phàm lắm.
+"Để em tiễn chị. Chờ em tháo còng tay đã."
 
-Vừa thấy ngại vừa thấy thán phục, chị Watanuki vươn vai đứng dậy.
+"Được rồi được rồi. Nhà chị chạy ù một cái là tới ngay ấy mà. Chị tự tin vào tốc độ của mình lắm."
 
-"Amemoto-kun, cảm ơn em vì ngày hôm nay nhé, nhờ em mà chị có vẻ sẽ về nhà an toàn được rồi. Ở lâu quá làm phiền bố mẹ em thức giấc thì ngại lắm, nên chắc chị xin phép về đây."
+Giờ tôi mới nhận ra chiếc quần short phong phanh kia là để chạy bộ. Khác hẳn với lý do mặc cho thoải mái của Mei.
 
-Bố tôi đang đi công tác xa, còn mẹ thì đang trực đêm ở bệnh viện nên chẳng cần lo chuyện phụ huynh, nhưng tôi cũng chẳng có lý do gì để giữ chị ấy lại mà giải thích.
+"Ơ, nhưng mà, chị thực sự ổn chưa ạ? Dù đã đỡ nhưng vẫn nguy hiểm..."
 
-"Để em tiễn chị về. Nhưng phải chờ em tháo còng tay ra đã."
+"Chị có học Aikido đấy, gặp kẻ xấu cũng chạy thoát được thôi. Trông thế này chứ chị mạnh lắm đó nha?"
 
-"Thôi thôi được rồi. Nhà chị chạy từ đây tí là tới thôi mà. Chị tự tin vào tốc độ chạy của mình lắm đấy."
+Chị ấy trưng ra vẻ mặt tự tin đầy đắc ý. Dù trong tôi ấn tượng về một 'tiền bối số nhọ và yếu đuối' đã in sâu... nhưng chắc đúng như lời chị ấy nói, bình thường chị ấy rất mạnh mẽ. Hôm nay chỉ là ngoại lệ thôi.
 
-Đến lúc này tôi mới nhận ra chiếc quần short có vẻ mát mẻ kia là để chị ấy chạy bộ. Chắc chắn là khác hẳn với việc Mei mặc vì nó thoải mái rồi.
+"Không thể làm phiền hai chị em thêm nữa. Chị khỏe rồi. Không cần lo đâu, chị tự về được."
 
-"Ơ, nhưng mà, chị thật sự ổn chứ ạ? Dù đã khỏe lại nhưng đi một mình có nguy hiểm quá không..."
+"Nếu chị đã nói vậy... Em hiểu rồi ạ. Còn đống nước tăng lực thì sao ạ?"
 
-"Chị cũng có học qua Aikido đấy, gặp kẻ xấu chị vẫn chạy thoát được mà. Chị đây cũng mạnh lắm đấy nhé?"
+"Hôm sau chị sẽ quay lại lấy. Chị cần chúng. Nói ra thì xấu hổ, nhưng không thức khuya thì chị không xoay sở kịp."
 
-Một khuôn mặt đầy tự tin hiện ra. Dù trong mắt tôi hiện giờ ấn tượng về một 'đàn chị xui xẻo và yếu ớt' đang chiếm ưu thế... nhưng đúng như chị ấy nói, lúc bình thường chắc chị ấy là người mạnh mẽ lắm. Tình trạng hôm nay chắc là hiếm thấy thôi.
+Người nổi tiếng cũng có nỗi khổ của người nổi tiếng, chắc là vậy.
 
-"Chị không thể làm phiền chị em em thêm được nữa. Sức khỏe cũng ổn rồi. Em không cần lo đâu, chị tự về được mà."
+Đến một đứa có mối quan hệ rộng nhưng hời hợt như tôi còn hay thiếu ngủ vì xã giao, thì Watanuki-senpai chắc còn vất vả hơn nhiều.
 
-"Nếu chị đã nói vậy thì... em hiểu rồi. Còn đống nước tăng lực thì tính sao ạ?"
+Khoác lại chiếc áo khoác rộng thùng thình, Senpai đặt tay lên tay nắm cửa phòng khách.
 
-"Hôm sau chị sẽ qua lấy. Chị cần đống đó mà. Thật xấu hổ khi phải nói ra, nhưng không thức khuya là chị làm không xuể việc."
+Chị ấy nở nụ cười hoàn hảo y hệt lúc sáng, bước ra nửa bước rồi nói:
 
-Người nổi tiếng cũng có nỗi khổ của người nổi tiếng, chắc là vậy rồi.
+"Xin lỗi vì đã làm phiền nhé. Cho chị gửi lời hỏi thăm Mei-san nữa — Với lại, chị sẽ sớm cảm ơn em sau. Sớm thôi nhé?"
 
-Ngay cả một đứa có mối quan hệ rộng nhưng nông như tôi cũng hay bị thiếu ngủ vì nể nang bạn bè, chắc đàn chị Watanuki còn vất vả hơn nhiều.
+"Dạ?"
 
-Chị ấy khoác lại chiếc áo khoác rộng rinh, đặt tay lên cánh cửa phòng khách.
+Cảm ơn cụ thể là gì thế ạ?
 
-Lại một lần nữa nở nụ cười hoàn hảo, chị ấy bước một chân ra ngoài rồi nói:
+Chưa kịp hỏi thì cửa phòng khách đã đóng lại. T-Tò mò quá... Tò mò đến mất ngủ luôn quá. Thế này thì cần gì caffeine nữa...
 
-"Chị xin phép nhé. Cho chị gửi lời chào tới bạn Mei — với lại, ơn nghĩa lần này chị sẽ trả sau. Sớm thôi nhé?"
+"Tèn tennn, Thủy thủ Mei đến rồi đâyyy\! Bụi bám đầy tìm mãi mới thấy. Để chị trừng trị cơn bệnh của Watanuki-san nàooo ☆"
 
-"Hả."
+"Chị ấy vừa về rồi."
 
-Trả ơn cụ thể là cái gì vậy chị?
+"Chưa kịp trừng trị đã về rồi hảảả\! ...Chị ít khi nói chuyện với bạn ấy nên đã lấy hết can đảm ra đó. Chán ghê. Thôi ăn kem rồi ngủ đâyyy."
 
-Chưa kịp hỏi thì cánh cửa phòng khách đã đóng lại. K-Khiến người ta tò mò quá... Tò mò đến mức chắc đêm nay tôi khỏi ngủ luôn quá. Thế này thì chẳng cần đến caffeine nữa rồi...
+"Em cũng... căng thẳng muốn chết..."
 
-"Ta-daaa, ma pháp thiếu nữ Mei đến đâyyy! Cái mặt nạ này bám đầy bụi nên chị tìm mãi mới thấy đấy. Để chị đi tiêu diệt cơn mệt mỏi của bạn Watanuki cho nào ☆"
-
-"Chị ấy vừa về xong."
-
-"Hả, bị tiêu diệt xong rồi á! ... Chị đã mất công chuẩn bị tâm lý để nói chuyện với cái người mà mình chưa bao giờ tiếp xúc rồi mà. Ghét ghê. Ăn kem rồi đi ngủ đây."
-
-"Em cũng... căng thẳng quá..."
-
-Với cái từ 'trả ơn' khiến tôi vô tình nảy sinh kỳ vọng, cùng với mùi hương thanh khiết còn vương lại, sự kiện hiếm có mang tên "Đàn chị Watanuki mệt mỏi ghé thăm" đã chính thức khép lại.
+Lỡ nuôi hy vọng vào cái từ 'trả ơn' ấy, cùng với hương thơm thanh khiết còn vương lại, sự kiện hiếm có mang tên "Tiền bối Watanuki yếu đuối ghé thăm" cứ thế khép lại.
